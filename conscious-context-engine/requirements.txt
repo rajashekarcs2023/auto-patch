@@ -1,0 +1,9 @@
+openpipe-art==0.5.0
+firecrawl-py
+litellm
+weave
+pydantic>=2.0
+python-dotenv
+requests
+tqdm
+asyncio
