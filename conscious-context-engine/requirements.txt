@@ -7,3 +7,6 @@ python-dotenv
 requests
 tqdm
 asyncio
+streamlit
+plotly
+pandas
