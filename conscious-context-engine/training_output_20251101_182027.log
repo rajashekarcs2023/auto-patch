@@ -1,0 +1,2137 @@
+
+================================================================================
+SELF-IMPROVING REASONING CHAIN ENGINE - EXTENDED TRAINING LOG
+================================================================================
+Training Session: 2025-11-01T18:20:27.968497
+Goal: Demonstrate complete reasoning evolution over 20 training steps
+Log File: training_output_20251101_182027.log
+================================================================================
+
+[36m[1mweave[0m: Logged in as Weights & Biases user: rajashekarvennavelli.
+[36m[1mweave[0m: View Weave data at https://wandb.ai/rajashekarvennavelli-uc-berkeley-electrical-engineering-/self-improving-reasoning/weave
+Self-Improving Reasoning Chain Engine
+============================================================
+Revolutionary AI that learns to rewrite its own reasoning process
+
+
+REASONING EVOLUTION DEMONSTRATION
+============================================================
+Test Problem: Design a secure OAuth2 implementation for a distributed microservices architecture
+
+BASELINE REASONING PATTERN:
+For technical problems, reason as follows:
+
+1. ANALYSIS: Break down the technical requirements and constraints
+2. HYPOTHESIS: Identify the most likely solution approach
+3. VERIFICATION: Test the approach against known cases
+4. CONCLUSION: Provide concrete implementation steps
+
+Performance: 0.00
+
+SIMULATING LEARNING PROCESS...
+REASONING EVOLVED: technical_active_0 -> technical_001
+
+EVOLVED REASONING PATTERN:
+For technical problems, reason as follows:
+
+1. ANALYSIS: Systematically decompose the problem into core components and identify critical constraints
+2. HYPOTHESIS: Identify the most likely solution approach
+3. VERIFICATION: Test each hypothesis against known principles and edge cases
+4. CONCLUSION: Provide concrete implementation steps
+
+
+KEY IMPROVEMENTS:
+• More systematic analysis approach
+• Enhanced hypothesis generation
+• Better verification methods
+• Meta-reasoning for complex problems
+
+EVOLUTION METRICS:
+   Reasoning Sophistication: 0.00
+   Evolution Rate: 0.50
+   Step Effectiveness: {'analysis': 0.0, 'hypothesis': 0.9990234375, 'verification': 0.0, 'conclusion': 0.9990234375}
+Initializing Self-Improving Reasoning Engine...
+Model registered: reasoning-evolution-agent-001
+
+Starting reasoning training from step 10
+
+Reasoning Training Step 10
+==================================================
+Gathering reasoning trajectories...
+
+Reasoning Step 10:   0%|          | 0/12 [00:00<?, ?it/s]
+Reasoning Step 10:   8%|▊         | 1/12 [00:10<01:51, 10.17s/it]
+Reasoning Step 10:   8%|▊         | 1/12 [00:10<01:51, 10.17s/it, reward=0.877, reasoning_score=0.877, chain_performance=1, evolution_triggered=0, step_success_count=4, total_reasoning_steps=5, completion_tokens=1500.0]
+Reasoning Step 10:  17%|█▋        | 2/12 [00:10<01:41, 10.17s/it, reward=0.646, reasoning_score=0.646, chain_performance=0.5, evolution_triggered=0, step_success_count=3.5, total_reasoning_steps=9.5, completion_tokens=1500.0]
+Reasoning Step 10:  25%|██▌       | 3/12 [00:10<00:25,  2.78s/it, reward=0.646, reasoning_score=0.646, chain_performance=0.5, evolution_triggered=0, step_success_count=3.5, total_reasoning_steps=9.5, completion_tokens=1500.0]
+Reasoning Step 10:  25%|██▌       | 3/12 [00:10<00:25,  2.78s/it, reward=0.591, reasoning_score=0.591, chain_performance=0.5, evolution_triggered=0, step_success_count=3, total_reasoning_steps=9.67, completion_tokens=1.41e+3]
+Reasoning Step 10:  33%|███▎      | 4/12 [00:10<00:22,  2.78s/it, reward=0.58, reasoning_score=0.58, chain_performance=0.458, evolution_triggered=0, step_success_count=3.25, total_reasoning_steps=10.8, completion_tokens=1390.5]
+Reasoning Step 10:  42%|████▏     | 5/12 [00:11<00:10,  1.53s/it, reward=0.58, reasoning_score=0.58, chain_performance=0.458, evolution_triggered=0, step_success_count=3.25, total_reasoning_steps=10.8, completion_tokens=1390.5]
+Reasoning Step 10:  42%|████▏     | 5/12 [00:11<00:10,  1.53s/it, reward=0.565, reasoning_score=0.565, chain_performance=0.417, evolution_triggered=0, step_success_count=3, total_reasoning_steps=10.6, completion_tokens=1396.0] 
+Reasoning Step 10:  50%|█████     | 6/12 [00:11<00:07,  1.19s/it, reward=0.565, reasoning_score=0.565, chain_performance=0.417, evolution_triggered=0, step_success_count=3, total_reasoning_steps=10.6, completion_tokens=1396.0]
+Reasoning Step 10:  50%|█████     | 6/12 [00:11<00:07,  1.19s/it, reward=0.543, reasoning_score=0.543, chain_performance=0.347, evolution_triggered=0, step_success_count=3, total_reasoning_steps=11.2, completion_tokens=1.41e+3]
+Reasoning Step 10:  58%|█████▊    | 7/12 [00:12<00:06,  1.25s/it, reward=0.543, reasoning_score=0.543, chain_performance=0.347, evolution_triggered=0, step_success_count=3, total_reasoning_steps=11.2, completion_tokens=1.41e+3]
+Reasoning Step 10:  58%|█████▊    | 7/12 [00:12<00:06,  1.25s/it, reward=0.526, reasoning_score=0.526, chain_performance=0.298, evolution_triggered=0, step_success_count=3.29, total_reasoning_steps=13.1, completion_tokens=1.43e+3]
+Reasoning Step 10:  67%|██████▋   | 8/12 [00:12<00:04,  1.25s/it, reward=0.523, reasoning_score=0.523, chain_performance=0.26, evolution_triggered=0, step_success_count=3.25, total_reasoning_steps=12.9, completion_tokens=1435.0]  
+Reasoning Step 10:  75%|███████▌  | 9/12 [00:12<00:03,  1.25s/it, reward=0.575, reasoning_score=0.541, chain_performance=0.254, evolution_triggered=0.111, step_success_count=3.44, total_reasoning_steps=12.3, completion_tokens=1.44e+3]
+Reasoning Step 10:  83%|████████▎ | 10/12 [00:12<00:02,  1.25s/it, reward=0.629, reasoning_score=0.569, chain_performance=0.262, evolution_triggered=0.2, step_success_count=3.4, total_reasoning_steps=11.6, completion_tokens=1448.0]   
+Reasoning Step 10:  92%|█████████▏| 11/12 [00:12<00:01,  1.25s/it, reward=0.678, reasoning_score=0.596, chain_performance=0.283, evolution_triggered=0.273, step_success_count=3.45, total_reasoning_steps=11, completion_tokens=1.45e+3]
+Reasoning Step 10: 100%|██████████| 12/12 [00:12<00:00,  1.25s/it, reward=0.719, reasoning_score=0.619, chain_performance=0.295, evolution_triggered=0.333, step_success_count=3.5, total_reasoning_steps=10.5, completion_tokens=1.46e+3]
+Reasoning Step 10: 100%|██████████| 12/12 [00:12<00:00,  1.08s/it, reward=0.719, reasoning_score=0.619, chain_performance=0.295, evolution_triggered=0.333, step_success_count=3.5, total_reasoning_steps=10.5, completion_tokens=1.46e+3]
+Problem: research_quantum (research)
+Problem: research_quantum (research)
+Problem: research_quantum (research)
+Problem: research_quantum (research)
+Problem: research_ai_safety (research)
+Problem: research_ai_safety (research)
+Problem: research_ai_safety (research)
+Problem: research_ai_safety (research)
+Problem: diag_performance (diagnosis)
+Problem: diag_performance (diagnosis)
+Problem: diag_performance (diagnosis)
+Problem: diag_performance (diagnosis)
+Reasoning Score: 0.88
+Chain Performance: 1.00
+Reasoning Score: 0.42
+Chain Performance: 0.00
+Reasoning Score: 0.48
+Chain Performance: 0.50
+Reasoning Score: 0.54
+Chain Performance: 0.33
+Reasoning Score: 0.51
+Chain Performance: 0.25
+Reasoning Score: 0.43
+Chain Performance: 0.00
+Reasoning Score: 0.42
+Chain Performance: 0.00
+REASONING EVOLVED: research_active_0 -> research_002
+Reasoning Score: 0.68
+Chain Performance: 0.20
+Evolution Triggered: New chain research_002
+REASONING EVOLVED: research_active_0 -> research_003
+Reasoning Score: 0.81
+Chain Performance: 0.33
+Evolution Triggered: New chain research_003
+REASONING EVOLVED: research_active_0 -> research_004
+Reasoning Score: 0.87
+Chain Performance: 0.43
+Evolution Triggered: New chain research_004
+REASONING EVOLVED: research_active_0 -> research_005
+Reasoning Score: 0.87
+Chain Performance: 0.50
+Evolution Triggered: New chain research_005
+Reasoning Score: 0.51
+Chain Performance: 0.00
+Evaluating reasoning quality...
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+Training model on reasoning improvements...
+
+train:   0%|          | 0/12 [00:00<?, ?it/s]
+train:   8%|▊         | 1/12 [00:00<00:06,  1.62it/s]
+train:   8%|▊         | 1/12 [00:00<00:06,  1.62it/s, entropy=0.729, grad_norm=0.0668, loss=0.51, policy_loss=0.51]
+train:  17%|█▋        | 2/12 [00:01<00:09,  1.07it/s, entropy=0.729, grad_norm=0.0668, loss=0.51, policy_loss=0.51]
+train:  17%|█▋        | 2/12 [00:01<00:09,  1.07it/s, entropy=0.603, grad_norm=0.245, loss=-1.9, policy_loss=-1.9] 
+train:  25%|██▌       | 3/12 [00:02<00:09,  1.04s/it, entropy=0.603, grad_norm=0.245, loss=-1.9, policy_loss=-1.9]
+train:  25%|██▌       | 3/12 [00:02<00:09,  1.04s/it, entropy=0.793, grad_norm=0.0937, loss=0.629, policy_loss=0.629]
+train:  33%|███▎      | 4/12 [00:04<00:09,  1.13s/it, entropy=0.793, grad_norm=0.0937, loss=0.629, policy_loss=0.629]
+train:  33%|███▎      | 4/12 [00:04<00:09,  1.13s/it, entropy=0.76, grad_norm=0.0489, loss=0.345, policy_loss=0.345] 
+train:  42%|████▏     | 5/12 [00:05<00:08,  1.14s/it, entropy=0.76, grad_norm=0.0489, loss=0.345, policy_loss=0.345]
+train:  42%|████▏     | 5/12 [00:05<00:08,  1.14s/it, entropy=0.668, grad_norm=0.161, loss=-1.3, policy_loss=-1.3]  
+train:  50%|█████     | 6/12 [00:06<00:06,  1.15s/it, entropy=0.668, grad_norm=0.161, loss=-1.3, policy_loss=-1.3]
+train:  50%|█████     | 6/12 [00:06<00:06,  1.15s/it, entropy=0.67, grad_norm=0.252, loss=-1.88, policy_loss=-1.88]
+train:  58%|█████▊    | 7/12 [00:07<00:04,  1.04it/s, entropy=0.67, grad_norm=0.252, loss=-1.88, policy_loss=-1.88]
+train:  58%|█████▊    | 7/12 [00:07<00:04,  1.04it/s, entropy=0.55, grad_norm=0.0668, loss=0.571, policy_loss=0.571]
+train:  67%|██████▋   | 8/12 [00:08<00:04,  1.03s/it, entropy=0.55, grad_norm=0.0668, loss=0.571, policy_loss=0.571]
+train:  67%|██████▋   | 8/12 [00:08<00:04,  1.03s/it, entropy=0.64, grad_norm=0.191, loss=1.54, policy_loss=1.54]   
+train:  75%|███████▌  | 9/12 [00:09<00:03,  1.06s/it, entropy=0.64, grad_norm=0.191, loss=1.54, policy_loss=1.54]
+train:  75%|███████▌  | 9/12 [00:09<00:03,  1.06s/it, entropy=0.653, grad_norm=0.107, loss=-0.742, policy_loss=-0.741]
+train:  83%|████████▎ | 10/12 [00:10<00:02,  1.08s/it, entropy=0.653, grad_norm=0.107, loss=-0.742, policy_loss=-0.741]
+train:  83%|████████▎ | 10/12 [00:10<00:02,  1.08s/it, entropy=0.758, grad_norm=0.12, loss=0.902, policy_loss=0.902]   
+train:  92%|█████████▏| 11/12 [00:11<00:01,  1.10s/it, entropy=0.758, grad_norm=0.12, loss=0.902, policy_loss=0.902]
+train:  92%|█████████▏| 11/12 [00:11<00:01,  1.10s/it, entropy=0.709, grad_norm=0.132, loss=0.904, policy_loss=0.904]
+train: 100%|██████████| 12/12 [00:12<00:00,  1.15s/it, entropy=0.709, grad_norm=0.132, loss=0.904, policy_loss=0.904]
+train: 100%|██████████| 12/12 [00:12<00:00,  1.15s/it, entropy=0.498, grad_norm=0.0813, loss=0.692, policy_loss=0.692]
+train: 100%|██████████| 12/12 [00:23<00:00,  1.99s/it, entropy=0.498, grad_norm=0.0813, loss=0.692, policy_loss=0.692]
+
+Reasoning Evolution Metrics:
+   Total Chains: 6
+   Evolved Chains: 4
+   Average Performance: 0.08
+   Reasoning Sophistication: 0.12
+
+Reasoning Training Step 11
+==================================================
+Gathering reasoning trajectories...
+
+Reasoning Step 11:   0%|          | 0/12 [00:00<?, ?it/s]
+Reasoning Step 11:   8%|▊         | 1/12 [00:11<02:04, 11.31s/it]
+Reasoning Step 11:   8%|▊         | 1/12 [00:11<02:04, 11.31s/it, reward=0.478, reasoning_score=0.478, chain_performance=0, evolution_triggered=0, step_success_count=5, total_reasoning_steps=26, completion_tokens=1357.0]
+Reasoning Step 11:  17%|█▋        | 2/12 [00:11<00:47,  4.78s/it, reward=0.478, reasoning_score=0.478, chain_performance=0, evolution_triggered=0, step_success_count=5, total_reasoning_steps=26, completion_tokens=1357.0]
+Reasoning Step 11:  17%|█▋        | 2/12 [00:11<00:47,  4.78s/it, reward=0.613, reasoning_score=0.613, chain_performance=0.25, evolution_triggered=0, step_success_count=9, total_reasoning_steps=20.5, completion_tokens=1360.0]
+Reasoning Step 11:  25%|██▌       | 3/12 [00:11<00:24,  2.69s/it, reward=0.613, reasoning_score=0.613, chain_performance=0.25, evolution_triggered=0, step_success_count=9, total_reasoning_steps=20.5, completion_tokens=1360.0]
+Reasoning Step 11:  25%|██▌       | 3/12 [00:11<00:24,  2.69s/it, reward=0.606, reasoning_score=0.606, chain_performance=0.278, evolution_triggered=0, step_success_count=9.67, total_reasoning_steps=20.3, completion_tokens=1.39e+3]
+Reasoning Step 11:  33%|███▎      | 4/12 [00:12<00:13,  1.74s/it, reward=0.606, reasoning_score=0.606, chain_performance=0.278, evolution_triggered=0, step_success_count=9.67, total_reasoning_steps=20.3, completion_tokens=1.39e+3]
+Reasoning Step 11:  33%|███▎      | 4/12 [00:12<00:13,  1.74s/it, reward=0.637, reasoning_score=0.562, chain_performance=0.208, evolution_triggered=0.25, step_success_count=8.25, total_reasoning_steps=20, completion_tokens=1416.25]
+Reasoning Step 11:  42%|████▏     | 5/12 [00:13<00:11,  1.61s/it, reward=0.637, reasoning_score=0.562, chain_performance=0.208, evolution_triggered=0.25, step_success_count=8.25, total_reasoning_steps=20, completion_tokens=1416.25]
+Reasoning Step 11:  42%|████▏     | 5/12 [00:13<00:11,  1.61s/it, reward=0.664, reasoning_score=0.544, chain_performance=0.167, evolution_triggered=0.4, step_success_count=7.8, total_reasoning_steps=19.8, completion_tokens=1426.0] 
+Reasoning Step 11:  50%|█████     | 6/12 [00:13<00:09,  1.61s/it, reward=0.68, reasoning_score=0.53, chain_performance=0.139, evolution_triggered=0.5, step_success_count=7.17, total_reasoning_steps=19.2, completion_tokens=1.44e+3]
+Reasoning Step 11:  58%|█████▊    | 7/12 [00:13<00:08,  1.61s/it, reward=0.698, reasoning_score=0.527, chain_performance=0.119, evolution_triggered=0.571, step_success_count=6.71, total_reasoning_steps=18.6, completion_tokens=1.44e+3]
+Reasoning Step 11:  67%|██████▋   | 8/12 [00:13<00:06,  1.61s/it, reward=0.664, reasoning_score=0.514, chain_performance=0.135, evolution_triggered=0.5, step_success_count=6.88, total_reasoning_steps=19.8, completion_tokens=1.45e+3]  
+Reasoning Step 11:  75%|███████▌  | 9/12 [00:13<00:04,  1.61s/it, reward=0.678, reasoning_score=0.512, chain_performance=0.143, evolution_triggered=0.556, step_success_count=7.33, total_reasoning_steps=20.4, completion_tokens=1.46e+3]
+Reasoning Step 11:  83%|████████▎ | 10/12 [00:13<00:03,  1.61s/it, reward=0.688, reasoning_score=0.508, chain_performance=0.145, evolution_triggered=0.6, step_success_count=7.1, total_reasoning_steps=20.7, completion_tokens=1460.3]   
+Reasoning Step 11:  92%|█████████▏| 11/12 [00:13<00:00,  2.18it/s, reward=0.688, reasoning_score=0.508, chain_performance=0.145, evolution_triggered=0.6, step_success_count=7.1, total_reasoning_steps=20.7, completion_tokens=1460.3]
+Reasoning Step 11:  92%|█████████▏| 11/12 [00:13<00:00,  2.18it/s, reward=0.713, reasoning_score=0.522, chain_performance=0.145, evolution_triggered=0.636, step_success_count=7.18, total_reasoning_steps=20.2, completion_tokens=1.46e+3]
+Reasoning Step 11: 100%|██████████| 12/12 [00:13<00:00,  2.18it/s, reward=0.723, reasoning_score=0.523, chain_performance=0.143, evolution_triggered=0.667, step_success_count=7.25, total_reasoning_steps=20.7, completion_tokens=1.47e+3]
+Reasoning Step 11: 100%|██████████| 12/12 [00:13<00:00,  1.16s/it, reward=0.723, reasoning_score=0.523, chain_performance=0.143, evolution_triggered=0.667, step_success_count=7.25, total_reasoning_steps=20.7, completion_tokens=1.47e+3]
+Problem: diag_performance (diagnosis)
+Problem: diag_performance (diagnosis)
+Problem: diag_performance (diagnosis)
+Problem: diag_performance (diagnosis)
+Problem: tech_scaling (technical)
+Problem: tech_scaling (technical)
+Problem: tech_scaling (technical)
+Problem: tech_scaling (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Reasoning Score: 0.48
+Chain Performance: 0.00
+Reasoning Score: 0.75
+Chain Performance: 0.50
+Reasoning Score: 0.59
+Chain Performance: 0.33
+REASONING EVOLVED: diagnosis_active_1 -> diagnosis_007
+Reasoning Score: 0.43
+Chain Performance: 0.00
+Evolution Triggered: New chain diagnosis_007
+REASONING EVOLVED: diagnosis_active_1 -> diagnosis_008
+Reasoning Score: 0.47
+Chain Performance: 0.00
+Evolution Triggered: New chain diagnosis_008
+REASONING EVOLVED: diagnosis_active_1 -> diagnosis_009
+Reasoning Score: 0.46
+Chain Performance: 0.00
+Evolution Triggered: New chain diagnosis_009
+Reasoning Score: 0.43
+Chain Performance: 0.25
+REASONING EVOLVED: diagnosis_active_1 -> diagnosis_010
+Reasoning Score: 0.51
+Chain Performance: 0.00
+Evolution Triggered: New chain diagnosis_010
+REASONING EVOLVED: technical_active_6 -> technical_011
+Reasoning Score: 0.49
+Chain Performance: 0.20
+Evolution Triggered: New chain technical_011
+REASONING EVOLVED: technical_active_6 -> technical_012
+Reasoning Score: 0.48
+Chain Performance: 0.17
+Evolution Triggered: New chain technical_012
+REASONING EVOLVED: technical_active_6 -> technical_013
+Reasoning Score: 0.66
+Chain Performance: 0.14
+Evolution Triggered: New chain technical_013
+REASONING EVOLVED: technical_active_6 -> technical_014
+Reasoning Score: 0.53
+Chain Performance: 0.12
+Evolution Triggered: New chain technical_014
+Evaluating reasoning quality...
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+Training model on reasoning improvements...
+
+train:   0%|          | 0/12 [00:00<?, ?it/s]
+train:   8%|▊         | 1/12 [00:00<00:06,  1.75it/s]
+train:   8%|▊         | 1/12 [00:00<00:06,  1.75it/s, entropy=0.792, grad_norm=0.0249, loss=-0.175, policy_loss=-0.175]
+train:  17%|█▋        | 2/12 [00:01<00:09,  1.08it/s, entropy=0.792, grad_norm=0.0249, loss=-0.175, policy_loss=-0.175]
+train:  17%|█▋        | 2/12 [00:01<00:09,  1.08it/s, entropy=0.706, grad_norm=0.0118, loss=-0.0955, policy_loss=-0.0955]
+train:  25%|██▌       | 3/12 [00:02<00:06,  1.29it/s, entropy=0.706, grad_norm=0.0118, loss=-0.0955, policy_loss=-0.0955]
+train:  25%|██▌       | 3/12 [00:02<00:06,  1.29it/s, entropy=0.716, grad_norm=0.175, loss=-1.33, policy_loss=-1.33]     
+train:  33%|███▎      | 4/12 [00:03<00:07,  1.09it/s, entropy=0.716, grad_norm=0.175, loss=-1.33, policy_loss=-1.33]
+train:  33%|███▎      | 4/12 [00:03<00:07,  1.09it/s, entropy=0.716, grad_norm=0.0146, loss=0.104, policy_loss=0.104]
+train:  42%|████▏     | 5/12 [00:04<00:06,  1.00it/s, entropy=0.716, grad_norm=0.0146, loss=0.104, policy_loss=0.104]
+train:  42%|████▏     | 5/12 [00:04<00:06,  1.00it/s, entropy=0.736, grad_norm=0.216, loss=-1.67, policy_loss=-1.67] 
+train:  50%|█████     | 6/12 [00:05<00:06,  1.05s/it, entropy=0.736, grad_norm=0.216, loss=-1.67, policy_loss=-1.67]
+train:  50%|█████     | 6/12 [00:05<00:06,  1.05s/it, entropy=0.862, grad_norm=0.289, loss=2.11, policy_loss=2.11]  
+train:  58%|█████▊    | 7/12 [00:06<00:05,  1.10s/it, entropy=0.862, grad_norm=0.289, loss=2.11, policy_loss=2.11]
+train:  58%|█████▊    | 7/12 [00:06<00:05,  1.10s/it, entropy=0.76, grad_norm=0.13, loss=-0.99, policy_loss=-0.99]
+train:  67%|██████▋   | 8/12 [00:08<00:04,  1.13s/it, entropy=0.76, grad_norm=0.13, loss=-0.99, policy_loss=-0.99]
+train:  67%|██████▋   | 8/12 [00:08<00:04,  1.13s/it, entropy=0.603, grad_norm=0.212, loss=1.76, policy_loss=1.76]
+train:  75%|███████▌  | 9/12 [00:09<00:03,  1.14s/it, entropy=0.603, grad_norm=0.212, loss=1.76, policy_loss=1.76]
+train:  75%|███████▌  | 9/12 [00:09<00:03,  1.14s/it, entropy=0.604, grad_norm=0.145, loss=-1.25, policy_loss=-1.25]
+train:  83%|████████▎ | 10/12 [00:10<00:02,  1.15s/it, entropy=0.604, grad_norm=0.145, loss=-1.25, policy_loss=-1.25]
+train:  83%|████████▎ | 10/12 [00:10<00:02,  1.15s/it, entropy=0.666, grad_norm=0.0605, loss=-0.479, policy_loss=-0.479]
+train:  92%|█████████▏| 11/12 [00:11<00:01,  1.15s/it, entropy=0.666, grad_norm=0.0605, loss=-0.479, policy_loss=-0.479]
+train:  92%|█████████▏| 11/12 [00:11<00:01,  1.15s/it, entropy=0.809, grad_norm=0.245, loss=1.71, policy_loss=1.71]     
+train: 100%|██████████| 12/12 [00:12<00:00,  1.15s/it, entropy=0.809, grad_norm=0.245, loss=1.71, policy_loss=1.71]
+train: 100%|██████████| 12/12 [00:12<00:00,  1.15s/it, entropy=0.646, grad_norm=0.0501, loss=0.403, policy_loss=0.403]
+train: 100%|██████████| 12/12 [00:23<00:00,  2.00s/it, entropy=0.646, grad_norm=0.0501, loss=0.403, policy_loss=0.403]
+
+Reasoning Evolution Metrics:
+   Total Chains: 15
+   Evolved Chains: 12
+   Average Performance: 0.04
+   Reasoning Sophistication: 0.09
+
+🎯 RUNNING TASK BENCHMARKS (Step 11)
+
+============================================================
+COMPREHENSIVE TASK PERFORMANCE BENCHMARK
+============================================================
+
+Benchmarking Task: microservices_oauth
+Difficulty: 0.9
+--------------------------------------------------
+Task Score: 0.929
+Reasoning Score: 0.000
+Chain Performance: 0.111
+Response Time: 17.2s
+EVOLUTION: technical_active_6 -> technical_015
+
+Benchmarking Task: performance_debugging
+Difficulty: 0.85
+--------------------------------------------------
+Task Score: 0.586
+Reasoning Score: 0.000
+Chain Performance: 0.000
+Response Time: 13.0s
+EVOLUTION: diagnosis_active_1 -> diagnosis_016
+
+Benchmarking Task: real_time_matching
+Difficulty: 0.95
+--------------------------------------------------
+Task Score: 0.812
+Reasoning Score: 0.000
+Chain Performance: 0.000
+Response Time: 12.8s
+
+Benchmarking Task: api_security_audit
+Difficulty: 0.9
+--------------------------------------------------
+Task Score: 0.787
+Reasoning Score: 0.000
+Chain Performance: 0.000
+Response Time: 13.3s
+
+Benchmarking Task: real_time_analytics
+Difficulty: 0.9
+--------------------------------------------------
+Task Score: 0.868
+Reasoning Score: 0.000
+Chain Performance: 0.000
+Response Time: 14.4s
+
+========================================
+BENCHMARK SUMMARY
+========================================
+Average Task Score: 0.796
+Average Reasoning Score: 0.000
+Evolutions Triggered: 2
+High Performance Tasks: 3/5
+Average Response Time: 14.1s
+
+Benchmark results saved to: task_benchmark_results_20251101_182317.json
+
+📊 BASELINE ESTABLISHED
+
+Benchmark results saved to: task_benchmark_results_baseline_20251101_182317.json
+
+REASONING EVOLUTION DEMONSTRATION
+============================================================
+Test Problem: Design a secure OAuth2 implementation for a distributed microservices architecture
+
+BASELINE REASONING PATTERN:
+For technical problems, reason as follows:
+
+1. ANALYSIS: Break down the technical requirements and constraints
+2. HYPOTHESIS: Identify the most likely solution approach
+3. VERIFICATION: Test the approach against known cases
+4. CONCLUSION: Provide concrete implementation steps
+
+Performance: 0.00
+
+SIMULATING LEARNING PROCESS...
+REASONING EVOLVED: technical_active_0 -> technical_001
+
+EVOLVED REASONING PATTERN:
+For technical problems, reason as follows:
+
+1. ANALYSIS: Systematically decompose the problem into core components and identify critical constraints
+2. HYPOTHESIS: Identify the most likely solution approach
+3. VERIFICATION: Test each hypothesis against known principles and edge cases
+4. CONCLUSION: Provide concrete implementation steps
+
+
+KEY IMPROVEMENTS:
+• More systematic analysis approach
+• Enhanced hypothesis generation
+• Better verification methods
+• Meta-reasoning for complex problems
+
+EVOLUTION METRICS:
+   Reasoning Sophistication: 0.00
+   Evolution Rate: 0.50
+   Step Effectiveness: {'analysis': 0.0, 'hypothesis': 0.9990234375, 'verification': 0.0, 'conclusion': 0.9990234375}
+
+Reasoning Training Step 12
+==================================================
+Gathering reasoning trajectories...
+
+Reasoning Step 12:   0%|          | 0/12 [00:00<?, ?it/s]
+Reasoning Step 12:   8%|▊         | 1/12 [00:10<01:53, 10.28s/it]
+Reasoning Step 12:   8%|▊         | 1/12 [00:10<01:53, 10.28s/it, reward=0.892, reasoning_score=0.592, chain_performance=0.1, evolution_triggered=1, step_success_count=4, total_reasoning_steps=13, completion_tokens=1420.0]
+Reasoning Step 12:  17%|█▋        | 2/12 [00:10<00:43,  4.36s/it, reward=0.892, reasoning_score=0.592, chain_performance=0.1, evolution_triggered=1, step_success_count=4, total_reasoning_steps=13, completion_tokens=1420.0]
+Reasoning Step 12:  17%|█▋        | 2/12 [00:10<00:43,  4.36s/it, reward=0.833, reasoning_score=0.533, chain_performance=0.272, evolution_triggered=1, step_success_count=4, total_reasoning_steps=16.5, completion_tokens=1449.5]
+Reasoning Step 12:  25%|██▌       | 3/12 [00:10<00:22,  2.47s/it, reward=0.833, reasoning_score=0.533, chain_performance=0.272, evolution_triggered=1, step_success_count=4, total_reasoning_steps=16.5, completion_tokens=1449.5]
+Reasoning Step 12:  25%|██▌       | 3/12 [00:10<00:22,  2.47s/it, reward=0.836, reasoning_score=0.536, chain_performance=0.315, evolution_triggered=1, step_success_count=3.67, total_reasoning_steps=16, completion_tokens=1.47e+3]
+Reasoning Step 12:  33%|███▎      | 4/12 [00:11<00:14,  1.87s/it, reward=0.836, reasoning_score=0.536, chain_performance=0.315, evolution_triggered=1, step_success_count=3.67, total_reasoning_steps=16, completion_tokens=1.47e+3]
+Reasoning Step 12:  33%|███▎      | 4/12 [00:11<00:14,  1.87s/it, reward=0.844, reasoning_score=0.544, chain_performance=0.259, evolution_triggered=1, step_success_count=5.25, total_reasoning_steps=16.8, completion_tokens=1474.75]
+Reasoning Step 12:  42%|████▏     | 5/12 [00:11<00:13,  1.87s/it, reward=0.852, reasoning_score=0.552, chain_performance=0.224, evolution_triggered=1, step_success_count=6.2, total_reasoning_steps=17.2, completion_tokens=1479.8]  
+Reasoning Step 12:  50%|█████     | 6/12 [00:11<00:11,  1.87s/it, reward=0.867, reasoning_score=0.567, chain_performance=0.199, evolution_triggered=1, step_success_count=6, total_reasoning_steps=16.2, completion_tokens=1.48e+3] 
+Reasoning Step 12:  58%|█████▊    | 7/12 [00:11<00:09,  1.87s/it, reward=0.901, reasoning_score=0.601, chain_performance=0.236, evolution_triggered=1, step_success_count=5.57, total_reasoning_steps=14.6, completion_tokens=1.47e+3]
+Reasoning Step 12:  67%|██████▋   | 8/12 [00:12<00:03,  1.27it/s, reward=0.901, reasoning_score=0.601, chain_performance=0.236, evolution_triggered=1, step_success_count=5.57, total_reasoning_steps=14.6, completion_tokens=1.47e+3]
+Reasoning Step 12:  67%|██████▋   | 8/12 [00:12<00:03,  1.27it/s, reward=0.887, reasoning_score=0.587, chain_performance=0.215, evolution_triggered=1, step_success_count=6, total_reasoning_steps=16.5, completion_tokens=1.47e+3]   
+Reasoning Step 12:  75%|███████▌  | 9/12 [00:12<00:02,  1.27it/s, reward=0.885, reasoning_score=0.585, chain_performance=0.199, evolution_triggered=1, step_success_count=6.33, total_reasoning_steps=16.7, completion_tokens=1.48e+3]
+Reasoning Step 12:  83%|████████▎ | 10/12 [00:12<00:01,  1.27it/s, reward=0.898, reasoning_score=0.598, chain_performance=0.191, evolution_triggered=1, step_success_count=7.1, total_reasoning_steps=16.8, completion_tokens=1479.9] 
+Reasoning Step 12:  92%|█████████▏| 11/12 [00:12<00:00,  1.27it/s, reward=0.893, reasoning_score=0.593, chain_performance=0.211, evolution_triggered=1, step_success_count=6.73, total_reasoning_steps=16.2, completion_tokens=1.48e+3]
+Reasoning Step 12: 100%|██████████| 12/12 [00:12<00:00,  1.27it/s, reward=0.89, reasoning_score=0.59, chain_performance=0.199, evolution_triggered=1, step_success_count=6.75, total_reasoning_steps=16.4, completion_tokens=1.48e+3]  
+Reasoning Step 12: 100%|██████████| 12/12 [00:12<00:00,  1.08s/it, reward=0.89, reasoning_score=0.59, chain_performance=0.199, evolution_triggered=1, step_success_count=6.75, total_reasoning_steps=16.4, completion_tokens=1.48e+3]
+Problem: tech_scaling (technical)
+Problem: tech_scaling (technical)
+Problem: tech_scaling (technical)
+Problem: tech_scaling (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: research_quantum (research)
+Problem: research_quantum (research)
+Problem: research_quantum (research)
+Problem: research_quantum (research)
+REASONING EVOLVED: technical_active_6 -> technical_020
+Reasoning Score: 0.59
+Chain Performance: 0.10
+Evolution Triggered: New chain technical_020
+REASONING EVOLVED: research_active_0 -> research_021
+Reasoning Score: 0.47
+Chain Performance: 0.44
+Evolution Triggered: New chain research_021
+REASONING EVOLVED: research_active_0 -> research_022
+Reasoning Score: 0.54
+Chain Performance: 0.40
+Evolution Triggered: New chain research_022
+REASONING EVOLVED: technical_active_6 -> technical_023
+Reasoning Score: 0.57
+Chain Performance: 0.09
+Evolution Triggered: New chain technical_023
+REASONING EVOLVED: technical_active_6 -> technical_024
+Reasoning Score: 0.59
+Chain Performance: 0.08
+Evolution Triggered: New chain technical_024
+REASONING EVOLVED: technical_active_6 -> technical_025
+Reasoning Score: 0.64
+Chain Performance: 0.08
+Evolution Triggered: New chain technical_025
+REASONING EVOLVED: research_active_0 -> research_026
+Reasoning Score: 0.80
+Chain Performance: 0.45
+Evolution Triggered: New chain research_026
+REASONING EVOLVED: technical_active_6 -> technical_027
+Reasoning Score: 0.49
+Chain Performance: 0.07
+Evolution Triggered: New chain technical_027
+REASONING EVOLVED: technical_active_6 -> technical_028
+Reasoning Score: 0.57
+Chain Performance: 0.07
+Evolution Triggered: New chain technical_028
+REASONING EVOLVED: research_active_0 -> research_029
+Reasoning Score: 0.54
+Chain Performance: 0.42
+Evolution Triggered: New chain research_029
+REASONING EVOLVED: technical_active_6 -> technical_030
+Reasoning Score: 0.57
+Chain Performance: 0.06
+Evolution Triggered: New chain technical_030
+REASONING EVOLVED: technical_active_6 -> technical_031
+Reasoning Score: 0.71
+Chain Performance: 0.12
+Evolution Triggered: New chain technical_031
+Evaluating reasoning quality...
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+Training model on reasoning improvements...
+
+train:   0%|          | 0/12 [00:00<?, ?it/s]
+train:   8%|▊         | 1/12 [00:00<00:06,  1.75it/s]
+train:   8%|▊         | 1/12 [00:00<00:06,  1.75it/s, entropy=0.698, grad_norm=0.258, loss=-2.03, policy_loss=-2.03]
+train:  17%|█▋        | 2/12 [00:01<00:09,  1.11it/s, entropy=0.698, grad_norm=0.258, loss=-2.03, policy_loss=-2.03]
+train:  17%|█▋        | 2/12 [00:01<00:09,  1.11it/s, entropy=0.763, grad_norm=0.237, loss=1.77, policy_loss=1.77]  
+train:  25%|██▌       | 3/12 [00:02<00:09,  1.01s/it, entropy=0.763, grad_norm=0.237, loss=1.77, policy_loss=1.77]
+train:  25%|██▌       | 3/12 [00:02<00:09,  1.01s/it, entropy=0.713, grad_norm=0.0959, loss=0.79, policy_loss=0.79]
+train:  33%|███▎      | 4/12 [00:03<00:08,  1.06s/it, entropy=0.713, grad_norm=0.0959, loss=0.79, policy_loss=0.79]
+train:  33%|███▎      | 4/12 [00:03<00:08,  1.06s/it, entropy=0.836, grad_norm=0.0568, loss=-0.43, policy_loss=-0.43]
+train:  42%|████▏     | 5/12 [00:05<00:07,  1.09s/it, entropy=0.836, grad_norm=0.0568, loss=-0.43, policy_loss=-0.43]
+train:  42%|████▏     | 5/12 [00:05<00:07,  1.09s/it, entropy=0.529, grad_norm=0.0496, loss=0.447, policy_loss=0.447]
+train:  50%|█████     | 6/12 [00:06<00:06,  1.10s/it, entropy=0.529, grad_norm=0.0496, loss=0.447, policy_loss=0.447]
+train:  50%|█████     | 6/12 [00:06<00:06,  1.10s/it, entropy=0.559, grad_norm=0.133, loss=1.1, policy_loss=1.1]     
+train:  58%|█████▊    | 7/12 [00:07<00:05,  1.12s/it, entropy=0.559, grad_norm=0.133, loss=1.1, policy_loss=1.1]
+train:  58%|█████▊    | 7/12 [00:07<00:05,  1.12s/it, entropy=0.606, grad_norm=0.061, loss=0.464, policy_loss=0.464]
+train:  67%|██████▋   | 8/12 [00:08<00:04,  1.13s/it, entropy=0.606, grad_norm=0.061, loss=0.464, policy_loss=0.464]
+train:  67%|██████▋   | 8/12 [00:08<00:04,  1.13s/it, entropy=0.651, grad_norm=0.275, loss=-2.14, policy_loss=-2.14]
+train:  75%|███████▌  | 9/12 [00:09<00:03,  1.13s/it, entropy=0.651, grad_norm=0.275, loss=-2.14, policy_loss=-2.14]
+train:  75%|███████▌  | 9/12 [00:09<00:03,  1.13s/it, entropy=0.703, grad_norm=0.185, loss=-1.5, policy_loss=-1.5]  
+train:  83%|████████▎ | 10/12 [00:10<00:02,  1.14s/it, entropy=0.703, grad_norm=0.185, loss=-1.5, policy_loss=-1.5]
+train:  83%|████████▎ | 10/12 [00:10<00:02,  1.14s/it, entropy=0.631, grad_norm=0.0946, loss=0.787, policy_loss=0.787]
+train:  92%|█████████▏| 11/12 [00:11<00:00,  1.04it/s, entropy=0.631, grad_norm=0.0946, loss=0.787, policy_loss=0.787]
+train:  92%|█████████▏| 11/12 [00:11<00:00,  1.04it/s, entropy=0.677, grad_norm=0.0173, loss=0.133, policy_loss=0.133]
+train: 100%|██████████| 12/12 [00:12<00:00,  1.02s/it, entropy=0.677, grad_norm=0.0173, loss=0.133, policy_loss=0.133]
+train: 100%|██████████| 12/12 [00:12<00:00,  1.02s/it, entropy=0.716, grad_norm=0.0612, loss=0.454, policy_loss=0.454]
+train: 100%|██████████| 12/12 [00:24<00:00,  2.01s/it, entropy=0.716, grad_norm=0.0612, loss=0.454, policy_loss=0.454]
+
+Reasoning Evolution Metrics:
+   Total Chains: 32
+   Evolved Chains: 26
+   Average Performance: 0.02
+   Reasoning Sophistication: 0.06
+
+Reasoning Training Step 13
+==================================================
+Gathering reasoning trajectories...
+
+Reasoning Step 13:   0%|          | 0/12 [00:00<?, ?it/s]
+Reasoning Step 13:   8%|▊         | 1/12 [00:11<02:10, 11.85s/it]
+Reasoning Step 13:   8%|▊         | 1/12 [00:11<02:10, 11.85s/it, reward=0.98, reasoning_score=0.68, chain_performance=0.111, evolution_triggered=1, step_success_count=6, total_reasoning_steps=12, completion_tokens=1393.0]
+Reasoning Step 13:  17%|█▋        | 2/12 [00:12<00:51,  5.14s/it, reward=0.98, reasoning_score=0.68, chain_performance=0.111, evolution_triggered=1, step_success_count=6, total_reasoning_steps=12, completion_tokens=1393.0]
+Reasoning Step 13:  17%|█▋        | 2/12 [00:12<00:51,  5.14s/it, reward=0.927, reasoning_score=0.627, chain_performance=0.108, evolution_triggered=1, step_success_count=5, total_reasoning_steps=11.5, completion_tokens=1446.5]
+Reasoning Step 13:  25%|██▌       | 3/12 [00:12<00:46,  5.14s/it, reward=0.897, reasoning_score=0.597, chain_performance=0.105, evolution_triggered=1, step_success_count=7, total_reasoning_steps=14.7, completion_tokens=1.46e+3]
+Reasoning Step 13:  33%|███▎      | 4/12 [00:13<00:19,  2.43s/it, reward=0.897, reasoning_score=0.597, chain_performance=0.105, evolution_triggered=1, step_success_count=7, total_reasoning_steps=14.7, completion_tokens=1.46e+3]
+Reasoning Step 13:  33%|███▎      | 4/12 [00:13<00:19,  2.43s/it, reward=0.876, reasoning_score=0.576, chain_performance=0.103, evolution_triggered=1, step_success_count=6.5, total_reasoning_steps=17, completion_tokens=1458.5] 
+Reasoning Step 13:  42%|████▏     | 5/12 [00:13<00:17,  2.43s/it, reward=0.889, reasoning_score=0.589, chain_performance=0.101, evolution_triggered=1, step_success_count=6.4, total_reasoning_steps=16.2, completion_tokens=1463.0]
+Reasoning Step 13:  50%|█████     | 6/12 [00:13<00:14,  2.43s/it, reward=0.897, reasoning_score=0.597, chain_performance=0.148, evolution_triggered=1, step_success_count=6.17, total_reasoning_steps=15.5, completion_tokens=1454.0]
+Reasoning Step 13:  58%|█████▊    | 7/12 [00:13<00:12,  2.43s/it, reward=0.939, reasoning_score=0.639, chain_performance=0.188, evolution_triggered=1, step_success_count=5.86, total_reasoning_steps=14, completion_tokens=1.45e+3] 
+Reasoning Step 13:  67%|██████▋   | 8/12 [00:13<00:09,  2.43s/it, reward=0.944, reasoning_score=0.644, chain_performance=0.214, evolution_triggered=1, step_success_count=5.88, total_reasoning_steps=13.8, completion_tokens=1460.25]
+Reasoning Step 13:  75%|███████▌  | 9/12 [00:13<00:07,  2.43s/it, reward=0.931, reasoning_score=0.631, chain_performance=0.2, evolution_triggered=1, step_success_count=6, total_reasoning_steps=14.1, completion_tokens=1.46e+3]     
+Reasoning Step 13:  83%|████████▎ | 10/12 [00:13<00:04,  2.43s/it, reward=0.924, reasoning_score=0.624, chain_performance=0.189, evolution_triggered=1, step_success_count=6.2, total_reasoning_steps=14, completion_tokens=1468.2]
+Reasoning Step 13:  92%|█████████▏| 11/12 [00:14<00:00,  1.56it/s, reward=0.924, reasoning_score=0.624, chain_performance=0.189, evolution_triggered=1, step_success_count=6.2, total_reasoning_steps=14, completion_tokens=1468.2]
+Reasoning Step 13:  92%|█████████▏| 11/12 [00:14<00:00,  1.56it/s, reward=0.912, reasoning_score=0.612, chain_performance=0.179, evolution_triggered=1, step_success_count=6.73, total_reasoning_steps=15.3, completion_tokens=1.47e+3]
+Reasoning Step 13: 100%|██████████| 12/12 [00:14<00:00,  1.56it/s, reward=0.935, reasoning_score=0.635, chain_performance=0.2, evolution_triggered=1, step_success_count=6.5, total_reasoning_steps=14.4, completion_tokens=1473.5]    
+Reasoning Step 13: 100%|██████████| 12/12 [00:14<00:00,  1.20s/it, reward=0.935, reasoning_score=0.635, chain_performance=0.2, evolution_triggered=1, step_success_count=6.5, total_reasoning_steps=14.4, completion_tokens=1473.5]
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: tech_scaling (technical)
+Problem: tech_scaling (technical)
+Problem: tech_scaling (technical)
+Problem: tech_scaling (technical)
+Problem: research_ai_safety (research)
+Problem: research_ai_safety (research)
+Problem: research_ai_safety (research)
+Problem: research_ai_safety (research)
+REASONING EVOLVED: technical_active_6 -> technical_032
+Reasoning Score: 0.68
+Chain Performance: 0.11
+Evolution Triggered: New chain technical_032
+REASONING EVOLVED: technical_active_6 -> technical_033
+Reasoning Score: 0.57
+Chain Performance: 0.11
+Evolution Triggered: New chain technical_033
+REASONING EVOLVED: technical_active_6 -> technical_034
+Reasoning Score: 0.54
+Chain Performance: 0.10
+Evolution Triggered: New chain technical_034
+REASONING EVOLVED: technical_active_6 -> technical_035
+Reasoning Score: 0.51
+Chain Performance: 0.10
+Evolution Triggered: New chain technical_035
+REASONING EVOLVED: research_active_0 -> research_036
+Reasoning Score: 0.64
+Chain Performance: 0.38
+Evolution Triggered: New chain research_036
+REASONING EVOLVED: technical_active_6 -> technical_037
+Reasoning Score: 0.64
+Chain Performance: 0.09
+Evolution Triggered: New chain technical_037
+REASONING EVOLVED: research_active_0 -> research_038
+Reasoning Score: 0.89
+Chain Performance: 0.43
+Evolution Triggered: New chain research_038
+REASONING EVOLVED: technical_active_6 -> technical_039
+Reasoning Score: 0.52
+Chain Performance: 0.09
+Evolution Triggered: New chain technical_039
+REASONING EVOLVED: technical_active_6 -> technical_040
+Reasoning Score: 0.56
+Chain Performance: 0.08
+Evolution Triggered: New chain technical_040
+REASONING EVOLVED: research_active_0 -> research_041
+Reasoning Score: 0.69
+Chain Performance: 0.40
+Evolution Triggered: New chain research_041
+REASONING EVOLVED: technical_active_6 -> technical_042
+Reasoning Score: 0.49
+Chain Performance: 0.08
+Evolution Triggered: New chain technical_042
+REASONING EVOLVED: research_active_0 -> research_043
+Reasoning Score: 0.89
+Chain Performance: 0.44
+Evolution Triggered: New chain research_043
+Evaluating reasoning quality...
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+Training model on reasoning improvements...
+
+train:   0%|          | 0/12 [00:00<?, ?it/s]
+train:   8%|▊         | 1/12 [00:00<00:06,  1.74it/s]
+train:   8%|▊         | 1/12 [00:00<00:06,  1.74it/s, entropy=0.677, grad_norm=0.0913, loss=-0.693, policy_loss=-0.693]
+train:  17%|█▋        | 2/12 [00:01<00:09,  1.06it/s, entropy=0.677, grad_norm=0.0913, loss=-0.693, policy_loss=-0.693]
+train:  17%|█▋        | 2/12 [00:01<00:09,  1.06it/s, entropy=0.698, grad_norm=0.0626, loss=0.468, policy_loss=0.468]  
+train:  25%|██▌       | 3/12 [00:02<00:09,  1.03s/it, entropy=0.698, grad_norm=0.0626, loss=0.468, policy_loss=0.468]
+train:  25%|██▌       | 3/12 [00:02<00:09,  1.03s/it, entropy=0.8, grad_norm=0.191, loss=1.36, policy_loss=1.36]     
+train:  33%|███▎      | 4/12 [00:04<00:08,  1.11s/it, entropy=0.8, grad_norm=0.191, loss=1.36, policy_loss=1.36]
+train:  33%|███▎      | 4/12 [00:04<00:08,  1.11s/it, entropy=0.757, grad_norm=0.152, loss=-1.05, policy_loss=-1.05]
+train:  42%|████▏     | 5/12 [00:04<00:06,  1.09it/s, entropy=0.757, grad_norm=0.152, loss=-1.05, policy_loss=-1.05]
+train:  42%|████▏     | 5/12 [00:04<00:06,  1.09it/s, entropy=0.622, grad_norm=0.174, loss=1.49, policy_loss=1.49]  
+train:  50%|█████     | 6/12 [00:05<00:05,  1.01it/s, entropy=0.622, grad_norm=0.174, loss=1.49, policy_loss=1.49]
+train:  50%|█████     | 6/12 [00:05<00:05,  1.01it/s, entropy=0.753, grad_norm=0.156, loss=-1.1, policy_loss=-1.1]
+train:  58%|█████▊    | 7/12 [00:07<00:05,  1.04s/it, entropy=0.753, grad_norm=0.156, loss=-1.1, policy_loss=-1.1]
+train:  58%|█████▊    | 7/12 [00:07<00:05,  1.04s/it, entropy=0.747, grad_norm=0.181, loss=-1.46, policy_loss=-1.46]
+train:  67%|██████▋   | 8/12 [00:08<00:04,  1.08s/it, entropy=0.747, grad_norm=0.181, loss=-1.46, policy_loss=-1.46]
+train:  67%|██████▋   | 8/12 [00:08<00:04,  1.08s/it, entropy=0.734, grad_norm=0.107, loss=0.838, policy_loss=0.838]
+train:  75%|███████▌  | 9/12 [00:09<00:03,  1.12s/it, entropy=0.734, grad_norm=0.107, loss=0.838, policy_loss=0.838]
+train:  75%|███████▌  | 9/12 [00:09<00:03,  1.12s/it, entropy=0.717, grad_norm=0.198, loss=1.56, policy_loss=1.56]  
+train:  83%|████████▎ | 10/12 [00:09<00:01,  1.05it/s, entropy=0.717, grad_norm=0.198, loss=1.56, policy_loss=1.56]
+train:  83%|████████▎ | 10/12 [00:09<00:01,  1.05it/s, entropy=0.668, grad_norm=0.0429, loss=-0.354, policy_loss=-0.354]
+train:  92%|█████████▏| 11/12 [00:11<00:01,  1.01s/it, entropy=0.668, grad_norm=0.0429, loss=-0.354, policy_loss=-0.354]
+train:  92%|█████████▏| 11/12 [00:11<00:01,  1.01s/it, entropy=0.755, grad_norm=0.0424, loss=0.321, policy_loss=0.321]  
+train: 100%|██████████| 12/12 [00:12<00:00,  1.05s/it, entropy=0.755, grad_norm=0.0424, loss=0.321, policy_loss=0.321]
+train: 100%|██████████| 12/12 [00:12<00:00,  1.05s/it, entropy=0.751, grad_norm=0.202, loss=-1.38, policy_loss=-1.38] 
+train: 100%|██████████| 12/12 [00:23<00:00,  1.94s/it, entropy=0.751, grad_norm=0.202, loss=-1.38, policy_loss=-1.38]
+
+Reasoning Evolution Metrics:
+   Total Chains: 44
+   Evolved Chains: 38
+   Average Performance: 0.01
+   Reasoning Sophistication: 0.06
+
+🎯 RUNNING TASK BENCHMARKS (Step 13)
+
+============================================================
+COMPREHENSIVE TASK PERFORMANCE BENCHMARK
+============================================================
+
+Benchmarking Task: microservices_oauth
+Difficulty: 0.9
+--------------------------------------------------
+Task Score: 0.811
+Reasoning Score: 0.000
+Chain Performance: 0.077
+Response Time: 14.6s
+EVOLUTION: technical_active_6 -> technical_044
+
+Benchmarking Task: performance_debugging
+Difficulty: 0.85
+--------------------------------------------------
+Task Score: 0.611
+Reasoning Score: 0.000
+Chain Performance: 0.000
+Response Time: 15.5s
+EVOLUTION: diagnosis_active_1 -> diagnosis_045
+
+Benchmarking Task: real_time_matching
+Difficulty: 0.95
+--------------------------------------------------
+Task Score: 0.790
+Reasoning Score: 0.000
+Chain Performance: 0.000
+Response Time: 11.6s
+
+Benchmarking Task: api_security_audit
+Difficulty: 0.9
+--------------------------------------------------
+Task Score: 0.694
+Reasoning Score: 0.300
+Chain Performance: 0.000
+Response Time: 14.6s
+
+Benchmarking Task: real_time_analytics
+Difficulty: 0.9
+--------------------------------------------------
+Task Score: 0.900
+Reasoning Score: 0.250
+Chain Performance: 0.000
+Response Time: 13.3s
+
+========================================
+BENCHMARK SUMMARY
+========================================
+Average Task Score: 0.761
+Average Reasoning Score: 0.110
+Evolutions Triggered: 2
+High Performance Tasks: 2/5
+Average Response Time: 13.9s
+
+Benchmark results saved to: task_benchmark_results_20251101_182604.json
+Baseline file task_benchmark_results_baseline_20251101_182604.json not found
+
+REASONING EVOLUTION DEMONSTRATION
+============================================================
+Test Problem: Design a secure OAuth2 implementation for a distributed microservices architecture
+
+BASELINE REASONING PATTERN:
+For technical problems, reason as follows:
+
+1. ANALYSIS: Break down the technical requirements and constraints
+2. HYPOTHESIS: Identify the most likely solution approach
+3. VERIFICATION: Test the approach against known cases
+4. CONCLUSION: Provide concrete implementation steps
+
+Performance: 0.00
+
+SIMULATING LEARNING PROCESS...
+REASONING EVOLVED: technical_active_0 -> technical_001
+
+EVOLVED REASONING PATTERN:
+For technical problems, reason as follows:
+
+1. ANALYSIS: Systematically decompose the problem into core components and identify critical constraints
+2. HYPOTHESIS: Identify the most likely solution approach
+3. VERIFICATION: Test each hypothesis against known principles and edge cases
+4. CONCLUSION: Provide concrete implementation steps
+
+
+KEY IMPROVEMENTS:
+• More systematic analysis approach
+• Enhanced hypothesis generation
+• Better verification methods
+• Meta-reasoning for complex problems
+
+EVOLUTION METRICS:
+   Reasoning Sophistication: 0.00
+   Evolution Rate: 0.50
+   Step Effectiveness: {'analysis': 0.0, 'hypothesis': 0.9990234375, 'verification': 0.0, 'conclusion': 0.9990234375}
+
+Reasoning Training Step 14
+==================================================
+Gathering reasoning trajectories...
+
+Reasoning Step 14:   0%|          | 0/12 [00:00<?, ?it/s]
+Reasoning Step 14:   8%|▊         | 1/12 [00:09<01:42,  9.32s/it]
+Reasoning Step 14:   8%|▊         | 1/12 [00:09<01:42,  9.32s/it, reward=0.91, reasoning_score=0.61, chain_performance=0.412, evolution_triggered=1, step_success_count=4, total_reasoning_steps=10, completion_tokens=1357.0]
+Reasoning Step 14:  17%|█▋        | 2/12 [00:10<00:43,  4.30s/it, reward=0.91, reasoning_score=0.61, chain_performance=0.412, evolution_triggered=1, step_success_count=4, total_reasoning_steps=10, completion_tokens=1357.0]
+Reasoning Step 14:  17%|█▋        | 2/12 [00:10<00:43,  4.30s/it, reward=0.96, reasoning_score=0.66, chain_performance=0.428, evolution_triggered=1, step_success_count=5, total_reasoning_steps=10, completion_tokens=1417.0]
+Reasoning Step 14:  25%|██▌       | 3/12 [00:10<00:21,  2.43s/it, reward=0.96, reasoning_score=0.66, chain_performance=0.428, evolution_triggered=1, step_success_count=5, total_reasoning_steps=10, completion_tokens=1417.0]
+Reasoning Step 14:  25%|██▌       | 3/12 [00:10<00:21,  2.43s/it, reward=0.923, reasoning_score=0.623, chain_performance=0.31, evolution_triggered=1, step_success_count=5, total_reasoning_steps=12.3, completion_tokens=1.42e+3]
+Reasoning Step 14:  33%|███▎      | 4/12 [00:10<00:13,  1.66s/it, reward=0.923, reasoning_score=0.623, chain_performance=0.31, evolution_triggered=1, step_success_count=5, total_reasoning_steps=12.3, completion_tokens=1.42e+3]
+Reasoning Step 14:  33%|███▎      | 4/12 [00:10<00:13,  1.66s/it, reward=0.953, reasoning_score=0.653, chain_performance=0.255, evolution_triggered=1, step_success_count=4.5, total_reasoning_steps=10.2, completion_tokens=1441.25]
+Reasoning Step 14:  42%|████▏     | 5/12 [00:10<00:11,  1.66s/it, reward=0.911, reasoning_score=0.611, chain_performance=0.221, evolution_triggered=1, step_success_count=4.4, total_reasoning_steps=11.2, completion_tokens=1453.0] 
+Reasoning Step 14:  50%|█████     | 6/12 [00:11<00:05,  1.19it/s, reward=0.911, reasoning_score=0.611, chain_performance=0.221, evolution_triggered=1, step_success_count=4.4, total_reasoning_steps=11.2, completion_tokens=1453.0]
+Reasoning Step 14:  50%|█████     | 6/12 [00:11<00:05,  1.19it/s, reward=0.904, reasoning_score=0.604, chain_performance=0.196, evolution_triggered=1, step_success_count=5.17, total_reasoning_steps=13.3, completion_tokens=1.46e+3]
+Reasoning Step 14:  58%|█████▊    | 7/12 [00:11<00:03,  1.34it/s, reward=0.904, reasoning_score=0.604, chain_performance=0.196, evolution_triggered=1, step_success_count=5.17, total_reasoning_steps=13.3, completion_tokens=1.46e+3]
+Reasoning Step 14:  58%|█████▊    | 7/12 [00:11<00:03,  1.34it/s, reward=0.918, reasoning_score=0.618, chain_performance=0.236, evolution_triggered=1, step_success_count=4.86, total_reasoning_steps=12.4, completion_tokens=1.47e+3]
+Reasoning Step 14:  67%|██████▋   | 8/12 [00:11<00:02,  1.34it/s, reward=0.934, reasoning_score=0.634, chain_performance=0.269, evolution_triggered=1, step_success_count=4.75, total_reasoning_steps=11.8, completion_tokens=1.47e+3]
+Reasoning Step 14:  75%|███████▌  | 9/12 [00:11<00:01,  2.14it/s, reward=0.934, reasoning_score=0.634, chain_performance=0.269, evolution_triggered=1, step_success_count=4.75, total_reasoning_steps=11.8, completion_tokens=1.47e+3]
+Reasoning Step 14:  75%|███████▌  | 9/12 [00:11<00:01,  2.14it/s, reward=0.935, reasoning_score=0.635, chain_performance=0.247, evolution_triggered=1, step_success_count=4.67, total_reasoning_steps=11.3, completion_tokens=1.47e+3]
+Reasoning Step 14:  83%|████████▎ | 10/12 [00:12<00:00,  2.18it/s, reward=0.935, reasoning_score=0.635, chain_performance=0.247, evolution_triggered=1, step_success_count=4.67, total_reasoning_steps=11.3, completion_tokens=1.47e+3]
+Reasoning Step 14:  83%|████████▎ | 10/12 [00:12<00:00,  2.18it/s, reward=0.919, reasoning_score=0.619, chain_performance=0.23, evolution_triggered=1, step_success_count=4.6, total_reasoning_steps=11.9, completion_tokens=1476.5]   
+Reasoning Step 14:  92%|█████████▏| 11/12 [00:12<00:00,  2.42it/s, reward=0.919, reasoning_score=0.619, chain_performance=0.23, evolution_triggered=1, step_success_count=4.6, total_reasoning_steps=11.9, completion_tokens=1476.5]
+Reasoning Step 14:  92%|█████████▏| 11/12 [00:12<00:00,  2.42it/s, reward=0.911, reasoning_score=0.611, chain_performance=0.215, evolution_triggered=1, step_success_count=4.64, total_reasoning_steps=12.5, completion_tokens=1.48e+3]
+Reasoning Step 14: 100%|██████████| 12/12 [00:12<00:00,  2.42it/s, reward=0.907, reasoning_score=0.607, chain_performance=0.203, evolution_triggered=1, step_success_count=4.58, total_reasoning_steps=12.3, completion_tokens=1.48e+3]
+Reasoning Step 14: 100%|██████████| 12/12 [00:12<00:00,  1.04s/it, reward=0.907, reasoning_score=0.607, chain_performance=0.203, evolution_triggered=1, step_success_count=4.58, total_reasoning_steps=12.3, completion_tokens=1.48e+3]
+Problem: diag_performance (diagnosis)
+Problem: diag_performance (diagnosis)
+Problem: diag_performance (diagnosis)
+Problem: diag_performance (diagnosis)
+Problem: research_quantum (research)
+Problem: research_quantum (research)
+Problem: research_quantum (research)
+Problem: research_quantum (research)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+REASONING EVOLVED: research_active_0 -> research_049
+Reasoning Score: 0.61
+Chain Performance: 0.41
+Evolution Triggered: New chain research_049
+REASONING EVOLVED: research_active_0 -> research_050
+Reasoning Score: 0.71
+Chain Performance: 0.44
+Evolution Triggered: New chain research_050
+REASONING EVOLVED: technical_active_6 -> technical_051
+Reasoning Score: 0.55
+Chain Performance: 0.07
+Evolution Triggered: New chain technical_051
+REASONING EVOLVED: diagnosis_active_1 -> diagnosis_052
+Reasoning Score: 0.74
+Chain Performance: 0.09
+Evolution Triggered: New chain diagnosis_052
+REASONING EVOLVED: diagnosis_active_1 -> diagnosis_053
+Reasoning Score: 0.44
+Chain Performance: 0.08
+Evolution Triggered: New chain diagnosis_053
+REASONING EVOLVED: technical_active_6 -> technical_054
+Reasoning Score: 0.57
+Chain Performance: 0.07
+Evolution Triggered: New chain technical_054
+REASONING EVOLVED: research_active_0 -> research_055
+Reasoning Score: 0.71
+Chain Performance: 0.47
+Evolution Triggered: New chain research_055
+REASONING EVOLVED: research_active_0 -> research_056
+Reasoning Score: 0.75
+Chain Performance: 0.50
+Evolution Triggered: New chain research_056
+REASONING EVOLVED: diagnosis_active_1 -> diagnosis_057
+Reasoning Score: 0.64
+Chain Performance: 0.08
+Evolution Triggered: New chain diagnosis_057
+REASONING EVOLVED: technical_active_6 -> technical_058
+Reasoning Score: 0.48
+Chain Performance: 0.07
+Evolution Triggered: New chain technical_058
+REASONING EVOLVED: technical_active_6 -> technical_059
+Reasoning Score: 0.53
+Chain Performance: 0.07
+Evolution Triggered: New chain technical_059
+REASONING EVOLVED: diagnosis_active_1 -> diagnosis_060
+Reasoning Score: 0.56
+Chain Performance: 0.07
+Evolution Triggered: New chain diagnosis_060
+Evaluating reasoning quality...
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+Training model on reasoning improvements...
+
+train:   0%|          | 0/12 [00:00<?, ?it/s]
+train:   8%|▊         | 1/12 [00:00<00:06,  1.76it/s]
+train:   8%|▊         | 1/12 [00:00<00:06,  1.76it/s, entropy=0.751, grad_norm=0.245, loss=1.65, policy_loss=1.65]
+train:  17%|█▋        | 2/12 [00:01<00:09,  1.11it/s, entropy=0.751, grad_norm=0.245, loss=1.65, policy_loss=1.65]
+train:  17%|█▋        | 2/12 [00:01<00:09,  1.11it/s, entropy=0.623, grad_norm=0.218, loss=-1.61, policy_loss=-1.61]
+train:  25%|██▌       | 3/12 [00:02<00:09,  1.02s/it, entropy=0.623, grad_norm=0.218, loss=-1.61, policy_loss=-1.61]
+train:  25%|██▌       | 3/12 [00:02<00:09,  1.02s/it, entropy=0.672, grad_norm=0.00855, loss=0.0693, policy_loss=0.0693]
+train:  33%|███▎      | 4/12 [00:03<00:08,  1.07s/it, entropy=0.672, grad_norm=0.00855, loss=0.0693, policy_loss=0.0693]
+train:  33%|███▎      | 4/12 [00:03<00:08,  1.07s/it, entropy=0.702, grad_norm=0.0791, loss=-0.656, policy_loss=-0.656] 
+train:  42%|████▏     | 5/12 [00:05<00:07,  1.09s/it, entropy=0.702, grad_norm=0.0791, loss=-0.656, policy_loss=-0.656]
+train:  42%|████▏     | 5/12 [00:05<00:07,  1.09s/it, entropy=0.689, grad_norm=0.278, loss=2.15, policy_loss=2.15]     
+train:  50%|█████     | 6/12 [00:05<00:05,  1.09it/s, entropy=0.689, grad_norm=0.278, loss=2.15, policy_loss=2.15]
+train:  50%|█████     | 6/12 [00:05<00:05,  1.09it/s, entropy=0.596, grad_norm=0.0498, loss=-0.391, policy_loss=-0.391]
+train:  58%|█████▊    | 7/12 [00:06<00:04,  1.01it/s, entropy=0.596, grad_norm=0.0498, loss=-0.391, policy_loss=-0.391]
+train:  58%|█████▊    | 7/12 [00:06<00:04,  1.01it/s, entropy=0.586, grad_norm=0.168, loss=-1.27, policy_loss=-1.27]   
+train:  67%|██████▋   | 8/12 [00:08<00:04,  1.04s/it, entropy=0.586, grad_norm=0.168, loss=-1.27, policy_loss=-1.27]
+train:  67%|██████▋   | 8/12 [00:08<00:04,  1.04s/it, entropy=0.676, grad_norm=0.171, loss=-1.32, policy_loss=-1.32]
+train:  75%|███████▌  | 9/12 [00:09<00:03,  1.07s/it, entropy=0.676, grad_norm=0.171, loss=-1.32, policy_loss=-1.32]
+train:  75%|███████▌  | 9/12 [00:09<00:03,  1.07s/it, entropy=0.797, grad_norm=0.0645, loss=-0.427, policy_loss=-0.427]
+train:  83%|████████▎ | 10/12 [00:10<00:02,  1.09s/it, entropy=0.797, grad_norm=0.0645, loss=-0.427, policy_loss=-0.427]
+train:  83%|████████▎ | 10/12 [00:10<00:02,  1.09s/it, entropy=0.595, grad_norm=0.0381, loss=-0.292, policy_loss=-0.293]
+train:  92%|█████████▏| 11/12 [00:11<00:01,  1.11s/it, entropy=0.595, grad_norm=0.0381, loss=-0.292, policy_loss=-0.293]
+train:  92%|█████████▏| 11/12 [00:11<00:01,  1.11s/it, entropy=0.66, grad_norm=0.238, loss=1.87, policy_loss=1.87]      
+train: 100%|██████████| 12/12 [00:12<00:00,  1.12s/it, entropy=0.66, grad_norm=0.238, loss=1.87, policy_loss=1.87]
+train: 100%|██████████| 12/12 [00:12<00:00,  1.12s/it, entropy=0.724, grad_norm=0.0497, loss=0.376, policy_loss=0.376]
+train: 100%|██████████| 12/12 [00:23<00:00,  2.00s/it, entropy=0.724, grad_norm=0.0497, loss=0.376, policy_loss=0.376]
+
+Reasoning Evolution Metrics:
+   Total Chains: 61
+   Evolved Chains: 52
+   Average Performance: 0.01
+   Reasoning Sophistication: 0.06
+
+Reasoning Training Step 15
+==================================================
+Gathering reasoning trajectories...
+
+Reasoning Step 15:   0%|          | 0/12 [00:00<?, ?it/s]
+Reasoning Step 15:   8%|▊         | 1/12 [00:10<01:51, 10.12s/it]
+Reasoning Step 15:   8%|▊         | 1/12 [00:10<01:51, 10.12s/it, reward=0.918, reasoning_score=0.618, chain_performance=0.476, evolution_triggered=1, step_success_count=3, total_reasoning_steps=6, completion_tokens=1228.0]
+Reasoning Step 15:  17%|█▋        | 2/12 [00:10<00:46,  4.66s/it, reward=0.918, reasoning_score=0.618, chain_performance=0.476, evolution_triggered=1, step_success_count=3, total_reasoning_steps=6, completion_tokens=1228.0]
+Reasoning Step 15:  17%|█▋        | 2/12 [00:10<00:46,  4.66s/it, reward=0.879, reasoning_score=0.579, chain_performance=0.465, evolution_triggered=1, step_success_count=4, total_reasoning_steps=11, completion_tokens=1286.5]
+Reasoning Step 15:  25%|██▌       | 3/12 [00:11<00:23,  2.64s/it, reward=0.879, reasoning_score=0.579, chain_performance=0.465, evolution_triggered=1, step_success_count=4, total_reasoning_steps=11, completion_tokens=1286.5]
+Reasoning Step 15:  25%|██▌       | 3/12 [00:11<00:23,  2.64s/it, reward=0.86, reasoning_score=0.56, chain_performance=0.332, evolution_triggered=1, step_success_count=4.67, total_reasoning_steps=14.3, completion_tokens=1319.0]
+Reasoning Step 15:  33%|███▎      | 4/12 [00:11<00:14,  1.77s/it, reward=0.86, reasoning_score=0.56, chain_performance=0.332, evolution_triggered=1, step_success_count=4.67, total_reasoning_steps=14.3, completion_tokens=1319.0]
+Reasoning Step 15:  33%|███▎      | 4/12 [00:11<00:14,  1.77s/it, reward=0.865, reasoning_score=0.565, chain_performance=0.358, evolution_triggered=1, step_success_count=3.75, total_reasoning_steps=12.2, completion_tokens=1337.25]
+Reasoning Step 15:  42%|████▏     | 5/12 [00:12<00:09,  1.38s/it, reward=0.865, reasoning_score=0.565, chain_performance=0.358, evolution_triggered=1, step_success_count=3.75, total_reasoning_steps=12.2, completion_tokens=1337.25]
+Reasoning Step 15:  42%|████▏     | 5/12 [00:12<00:09,  1.38s/it, reward=0.905, reasoning_score=0.605, chain_performance=0.378, evolution_triggered=1, step_success_count=3.8, total_reasoning_steps=11.2, completion_tokens=1369.8]  
+Reasoning Step 15:  50%|█████     | 6/12 [00:12<00:08,  1.38s/it, reward=0.888, reasoning_score=0.588, chain_performance=0.325, evolution_triggered=1, step_success_count=4.67, total_reasoning_steps=13, completion_tokens=1391.5] 
+Reasoning Step 15:  58%|█████▊    | 7/12 [00:12<00:06,  1.38s/it, reward=0.879, reasoning_score=0.579, chain_performance=0.287, evolution_triggered=1, step_success_count=5.57, total_reasoning_steps=14.4, completion_tokens=1407.0]
+Reasoning Step 15:  67%|██████▋   | 8/12 [00:13<00:03,  1.28it/s, reward=0.879, reasoning_score=0.579, chain_performance=0.287, evolution_triggered=1, step_success_count=5.57, total_reasoning_steps=14.4, completion_tokens=1407.0]
+Reasoning Step 15:  67%|██████▋   | 8/12 [00:13<00:03,  1.28it/s, reward=0.878, reasoning_score=0.578, chain_performance=0.259, evolution_triggered=1, step_success_count=5.62, total_reasoning_steps=14.8, completion_tokens=1.42e+3]
+Reasoning Step 15:  75%|███████▌  | 9/12 [00:13<00:02,  1.28it/s, reward=0.864, reasoning_score=0.564, chain_performance=0.236, evolution_triggered=1, step_success_count=5.56, total_reasoning_steps=15.4, completion_tokens=1.43e+3]
+Reasoning Step 15:  83%|████████▎ | 10/12 [00:13<00:01,  1.28it/s, reward=0.858, reasoning_score=0.558, chain_performance=0.218, evolution_triggered=1, step_success_count=5.8, total_reasoning_steps=16.8, completion_tokens=1434.9] 
+Reasoning Step 15:  92%|█████████▏| 11/12 [00:13<00:00,  1.28it/s, reward=0.855, reasoning_score=0.555, chain_performance=0.203, evolution_triggered=1, step_success_count=6, total_reasoning_steps=17, completion_tokens=1.44e+3]   
+Reasoning Step 15: 100%|██████████| 12/12 [00:13<00:00,  1.28it/s, reward=0.864, reasoning_score=0.564, chain_performance=0.191, evolution_triggered=1, step_success_count=6.17, total_reasoning_steps=16.5, completion_tokens=1445.75]
+Reasoning Step 15: 100%|██████████| 12/12 [00:13<00:00,  1.13s/it, reward=0.864, reasoning_score=0.564, chain_performance=0.191, evolution_triggered=1, step_success_count=6.17, total_reasoning_steps=16.5, completion_tokens=1445.75]
+Problem: research_quantum (research)
+Problem: research_quantum (research)
+Problem: research_quantum (research)
+Problem: research_quantum (research)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: tech_scaling (technical)
+Problem: tech_scaling (technical)
+Problem: tech_scaling (technical)
+Problem: tech_scaling (technical)
+REASONING EVOLVED: research_active_0 -> research_061
+Reasoning Score: 0.62
+Chain Performance: 0.48
+Evolution Triggered: New chain research_061
+REASONING EVOLVED: research_active_0 -> research_062
+Reasoning Score: 0.54
+Chain Performance: 0.45
+Evolution Triggered: New chain research_062
+REASONING EVOLVED: technical_active_6 -> technical_063
+Reasoning Score: 0.52
+Chain Performance: 0.06
+Evolution Triggered: New chain technical_063
+REASONING EVOLVED: research_active_0 -> research_064
+Reasoning Score: 0.58
+Chain Performance: 0.43
+Evolution Triggered: New chain research_064
+REASONING EVOLVED: research_active_0 -> research_065
+Reasoning Score: 0.77
+Chain Performance: 0.46
+Evolution Triggered: New chain research_065
+REASONING EVOLVED: technical_active_6 -> technical_066
+Reasoning Score: 0.50
+Chain Performance: 0.06
+Evolution Triggered: New chain technical_066
+REASONING EVOLVED: technical_active_6 -> technical_067
+Reasoning Score: 0.52
+Chain Performance: 0.06
+Evolution Triggered: New chain technical_067
+REASONING EVOLVED: technical_active_6 -> technical_068
+Reasoning Score: 0.58
+Chain Performance: 0.06
+Evolution Triggered: New chain technical_068
+REASONING EVOLVED: technical_active_6 -> technical_069
+Reasoning Score: 0.53
+Chain Performance: 0.06
+Evolution Triggered: New chain technical_069
+REASONING EVOLVED: technical_active_6 -> technical_070
+Reasoning Score: 0.45
+Chain Performance: 0.06
+Evolution Triggered: New chain technical_070
+REASONING EVOLVED: technical_active_6 -> technical_071
+Reasoning Score: 0.50
+Chain Performance: 0.05
+Evolution Triggered: New chain technical_071
+REASONING EVOLVED: technical_active_6 -> technical_072
+Reasoning Score: 0.66
+Chain Performance: 0.05
+Evolution Triggered: New chain technical_072
+Evaluating reasoning quality...
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+Training model on reasoning improvements...
+
+train:   0%|          | 0/12 [00:00<?, ?it/s]
+train:   8%|▊         | 1/12 [00:00<00:06,  1.72it/s]
+train:   8%|▊         | 1/12 [00:00<00:06,  1.72it/s, entropy=0.7, grad_norm=0.217, loss=-1.64, policy_loss=-1.64]
+train:  17%|█▋        | 2/12 [00:01<00:09,  1.08it/s, entropy=0.7, grad_norm=0.217, loss=-1.64, policy_loss=-1.64]
+train:  17%|█▋        | 2/12 [00:01<00:09,  1.08it/s, entropy=0.678, grad_norm=0.179, loss=1.32, policy_loss=1.32]
+train:  25%|██▌       | 3/12 [00:02<00:09,  1.04s/it, entropy=0.678, grad_norm=0.179, loss=1.32, policy_loss=1.32]
+train:  25%|██▌       | 3/12 [00:02<00:09,  1.04s/it, entropy=0.482, grad_norm=0.214, loss=-1.91, policy_loss=-1.91]
+train:  33%|███▎      | 4/12 [00:04<00:08,  1.09s/it, entropy=0.482, grad_norm=0.214, loss=-1.91, policy_loss=-1.91]
+train:  33%|███▎      | 4/12 [00:04<00:08,  1.09s/it, entropy=0.701, grad_norm=0.0306, loss=0.225, policy_loss=0.225]
+train:  42%|████▏     | 5/12 [00:04<00:06,  1.10it/s, entropy=0.701, grad_norm=0.0306, loss=0.225, policy_loss=0.225]
+train:  42%|████▏     | 5/12 [00:04<00:06,  1.10it/s, entropy=0.638, grad_norm=0.277, loss=-2.01, policy_loss=-2.01] 
+train:  50%|█████     | 6/12 [00:05<00:05,  1.01it/s, entropy=0.638, grad_norm=0.277, loss=-2.01, policy_loss=-2.01]
+train:  50%|█████     | 6/12 [00:05<00:05,  1.01it/s, entropy=0.634, grad_norm=0.195, loss=1.64, policy_loss=1.64]  
+train:  58%|█████▊    | 7/12 [00:06<00:05,  1.04s/it, entropy=0.634, grad_norm=0.195, loss=1.64, policy_loss=1.64]
+train:  58%|█████▊    | 7/12 [00:06<00:05,  1.04s/it, entropy=0.683, grad_norm=0.0174, loss=0.13, policy_loss=0.13]
+train:  67%|██████▋   | 8/12 [00:08<00:04,  1.07s/it, entropy=0.683, grad_norm=0.0174, loss=0.13, policy_loss=0.13]
+train:  67%|██████▋   | 8/12 [00:08<00:04,  1.07s/it, entropy=0.647, grad_norm=0.12, loss=0.672, policy_loss=0.672]
+train:  75%|███████▌  | 9/12 [00:09<00:03,  1.09s/it, entropy=0.647, grad_norm=0.12, loss=0.672, policy_loss=0.672]
+train:  75%|███████▌  | 9/12 [00:09<00:03,  1.09s/it, entropy=0.697, grad_norm=0.0319, loss=-0.24, policy_loss=-0.24]
+train:  83%|████████▎ | 10/12 [00:10<00:02,  1.10s/it, entropy=0.697, grad_norm=0.0319, loss=-0.24, policy_loss=-0.24]
+train:  83%|████████▎ | 10/12 [00:10<00:02,  1.10s/it, entropy=0.693, grad_norm=0.0616, loss=0.503, policy_loss=0.503]
+train:  92%|█████████▏| 11/12 [00:11<00:01,  1.12s/it, entropy=0.693, grad_norm=0.0616, loss=0.503, policy_loss=0.503]
+train:  92%|█████████▏| 11/12 [00:11<00:01,  1.12s/it, entropy=0.746, grad_norm=0.0712, loss=0.59, policy_loss=0.59]  
+train: 100%|██████████| 12/12 [00:12<00:00,  1.12s/it, entropy=0.746, grad_norm=0.0712, loss=0.59, policy_loss=0.59]
+train: 100%|██████████| 12/12 [00:12<00:00,  1.12s/it, entropy=0.548, grad_norm=0.109, loss=0.916, policy_loss=0.916]
+train: 100%|██████████| 12/12 [00:24<00:00,  2.01s/it, entropy=0.548, grad_norm=0.109, loss=0.916, policy_loss=0.916]
+
+Reasoning Evolution Metrics:
+   Total Chains: 73
+   Evolved Chains: 64
+   Average Performance: 0.01
+   Reasoning Sophistication: 0.06
+
+🎯 RUNNING TASK BENCHMARKS (Step 15)
+
+============================================================
+COMPREHENSIVE TASK PERFORMANCE BENCHMARK
+============================================================
+
+Benchmarking Task: microservices_oauth
+Difficulty: 0.9
+--------------------------------------------------
+Task Score: 0.900
+Reasoning Score: 0.300
+Chain Performance: 0.051
+Response Time: 15.3s
+EVOLUTION: technical_active_6 -> technical_073
+
+Benchmarking Task: performance_debugging
+Difficulty: 0.85
+--------------------------------------------------
+Task Score: 0.789
+Reasoning Score: 0.000
+Chain Performance: 0.067
+Response Time: 15.0s
+EVOLUTION: diagnosis_active_1 -> diagnosis_074
+
+Benchmarking Task: real_time_matching
+Difficulty: 0.95
+--------------------------------------------------
+Task Score: 0.790
+Reasoning Score: 0.000
+Chain Performance: 0.000
+Response Time: 13.6s
+
+Benchmarking Task: api_security_audit
+Difficulty: 0.9
+--------------------------------------------------
+Task Score: 0.852
+Reasoning Score: 0.300
+Chain Performance: 0.000
+Response Time: 16.2s
+
+Benchmarking Task: real_time_analytics
+Difficulty: 0.9
+--------------------------------------------------
+Task Score: 0.825
+Reasoning Score: 0.000
+Chain Performance: 0.000
+Response Time: 14.5s
+
+========================================
+BENCHMARK SUMMARY
+========================================
+Average Task Score: 0.831
+Average Reasoning Score: 0.120
+Evolutions Triggered: 2
+High Performance Tasks: 3/5
+Average Response Time: 14.9s
+
+Benchmark results saved to: task_benchmark_results_20251101_182852.json
+Baseline file task_benchmark_results_baseline_20251101_182852.json not found
+
+REASONING EVOLUTION DEMONSTRATION
+============================================================
+Test Problem: Design a secure OAuth2 implementation for a distributed microservices architecture
+
+BASELINE REASONING PATTERN:
+For technical problems, reason as follows:
+
+1. ANALYSIS: Break down the technical requirements and constraints
+2. HYPOTHESIS: Identify the most likely solution approach
+3. VERIFICATION: Test the approach against known cases
+4. CONCLUSION: Provide concrete implementation steps
+
+Performance: 0.00
+
+SIMULATING LEARNING PROCESS...
+REASONING EVOLVED: technical_active_0 -> technical_001
+
+EVOLVED REASONING PATTERN:
+For technical problems, reason as follows:
+
+1. ANALYSIS: Systematically decompose the problem into core components and identify critical constraints
+2. HYPOTHESIS: Identify the most likely solution approach
+3. VERIFICATION: Test each hypothesis against known principles and edge cases
+4. CONCLUSION: Provide concrete implementation steps
+
+
+KEY IMPROVEMENTS:
+• More systematic analysis approach
+• Enhanced hypothesis generation
+• Better verification methods
+• Meta-reasoning for complex problems
+
+EVOLUTION METRICS:
+   Reasoning Sophistication: 0.00
+   Evolution Rate: 0.50
+   Step Effectiveness: {'analysis': 0.0, 'hypothesis': 0.9990234375, 'verification': 0.0, 'conclusion': 0.9990234375}
+
+Reasoning Training Step 16
+==================================================
+Gathering reasoning trajectories...
+
+Reasoning Step 16:   0%|          | 0/12 [00:00<?, ?it/s]
+Reasoning Step 16:   8%|▊         | 1/12 [00:09<01:43,  9.39s/it]
+Reasoning Step 16:   8%|▊         | 1/12 [00:09<01:43,  9.39s/it, reward=0.705, reasoning_score=0.405, chain_performance=0.0625, evolution_triggered=1, step_success_count=3, total_reasoning_steps=25, completion_tokens=1351.0]
+Reasoning Step 16:  17%|█▋        | 2/12 [00:09<00:41,  4.18s/it, reward=0.705, reasoning_score=0.405, chain_performance=0.0625, evolution_triggered=1, step_success_count=3, total_reasoning_steps=25, completion_tokens=1351.0]
+Reasoning Step 16:  17%|█▋        | 2/12 [00:09<00:41,  4.18s/it, reward=0.833, reasoning_score=0.533, chain_performance=0.251, evolution_triggered=1, step_success_count=4, total_reasoning_steps=19, completion_tokens=1421.0] 
+Reasoning Step 16:  25%|██▌       | 3/12 [00:10<00:22,  2.50s/it, reward=0.833, reasoning_score=0.533, chain_performance=0.251, evolution_triggered=1, step_success_count=4, total_reasoning_steps=19, completion_tokens=1421.0]
+Reasoning Step 16:  25%|██▌       | 3/12 [00:10<00:22,  2.50s/it, reward=0.824, reasoning_score=0.524, chain_performance=0.309, evolution_triggered=1, step_success_count=3.67, total_reasoning_steps=17, completion_tokens=1.45e+3]
+Reasoning Step 16:  33%|███▎      | 4/12 [00:10<00:19,  2.50s/it, reward=0.798, reasoning_score=0.498, chain_performance=0.246, evolution_triggered=1, step_success_count=3.25, total_reasoning_steps=15.5, completion_tokens=1460.5]
+Reasoning Step 16:  42%|████▏     | 5/12 [00:12<00:11,  1.63s/it, reward=0.798, reasoning_score=0.498, chain_performance=0.246, evolution_triggered=1, step_success_count=3.25, total_reasoning_steps=15.5, completion_tokens=1460.5]
+Reasoning Step 16:  42%|████▏     | 5/12 [00:12<00:11,  1.63s/it, reward=0.832, reasoning_score=0.532, chain_performance=0.207, evolution_triggered=1, step_success_count=4.2, total_reasoning_steps=15.2, completion_tokens=1468.4] 
+Reasoning Step 16:  50%|█████     | 6/12 [00:12<00:09,  1.63s/it, reward=0.822, reasoning_score=0.522, chain_performance=0.181, evolution_triggered=1, step_success_count=4.5, total_reasoning_steps=16.7, completion_tokens=1.47e+3]
+Reasoning Step 16:  58%|█████▊    | 7/12 [00:12<00:08,  1.63s/it, reward=0.823, reasoning_score=0.523, chain_performance=0.162, evolution_triggered=1, step_success_count=4.86, total_reasoning_steps=17.4, completion_tokens=1.48e+3]
+Reasoning Step 16:  67%|██████▋   | 8/12 [00:12<00:06,  1.63s/it, reward=0.822, reasoning_score=0.522, chain_performance=0.147, evolution_triggered=1, step_success_count=5, total_reasoning_steps=17.5, completion_tokens=1480.25]   
+Reasoning Step 16:  75%|███████▌  | 9/12 [00:12<00:04,  1.63s/it, reward=0.825, reasoning_score=0.525, chain_performance=0.176, evolution_triggered=1, step_success_count=4.89, total_reasoning_steps=17.6, completion_tokens=1.48e+3]
+Reasoning Step 16:  83%|████████▎ | 10/12 [00:12<00:03,  1.63s/it, reward=0.854, reasoning_score=0.554, chain_performance=0.201, evolution_triggered=1, step_success_count=4.9, total_reasoning_steps=16.5, completion_tokens=1484.2] 
+Reasoning Step 16:  92%|█████████▏| 11/12 [00:12<00:01,  1.63s/it, reward=0.838, reasoning_score=0.538, chain_performance=0.188, evolution_triggered=1, step_success_count=4.73, total_reasoning_steps=17.5, completion_tokens=1.49e+3]
+Reasoning Step 16: 100%|██████████| 12/12 [00:12<00:00,  1.63s/it, reward=0.829, reasoning_score=0.529, chain_performance=0.177, evolution_triggered=1, step_success_count=4.75, total_reasoning_steps=18, completion_tokens=1.49e+3]  
+Reasoning Step 16: 100%|██████████| 12/12 [00:12<00:00,  1.03s/it, reward=0.829, reasoning_score=0.529, chain_performance=0.177, evolution_triggered=1, step_success_count=4.75, total_reasoning_steps=18, completion_tokens=1.49e+3]
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: research_ai_safety (research)
+Problem: research_ai_safety (research)
+Problem: research_ai_safety (research)
+Problem: research_ai_safety (research)
+Problem: diag_performance (diagnosis)
+Problem: diag_performance (diagnosis)
+Problem: diag_performance (diagnosis)
+Problem: diag_performance (diagnosis)
+REASONING EVOLVED: diagnosis_active_1 -> diagnosis_078
+Reasoning Score: 0.41
+Chain Performance: 0.06
+Evolution Triggered: New chain diagnosis_078
+REASONING EVOLVED: research_active_0 -> research_079
+Reasoning Score: 0.66
+Chain Performance: 0.44
+Evolution Triggered: New chain research_079
+REASONING EVOLVED: research_active_0 -> research_080
+Reasoning Score: 0.51
+Chain Performance: 0.42
+Evolution Triggered: New chain research_080
+REASONING EVOLVED: diagnosis_active_1 -> diagnosis_081
+Reasoning Score: 0.42
+Chain Performance: 0.06
+Evolution Triggered: New chain diagnosis_081
+REASONING EVOLVED: technical_active_6 -> technical_082
+Reasoning Score: 0.67
+Chain Performance: 0.05
+Evolution Triggered: New chain technical_082
+REASONING EVOLVED: technical_active_6 -> technical_083
+Reasoning Score: 0.47
+Chain Performance: 0.05
+Evolution Triggered: New chain technical_083
+REASONING EVOLVED: technical_active_6 -> technical_084
+Reasoning Score: 0.53
+Chain Performance: 0.05
+Evolution Triggered: New chain technical_084
+REASONING EVOLVED: research_active_0 -> research_085
+Reasoning Score: 0.55
+Chain Performance: 0.41
+Evolution Triggered: New chain research_085
+REASONING EVOLVED: diagnosis_active_1 -> diagnosis_086
+Reasoning Score: 0.38
+Chain Performance: 0.06
+Evolution Triggered: New chain diagnosis_086
+REASONING EVOLVED: diagnosis_active_1 -> diagnosis_087
+Reasoning Score: 0.44
+Chain Performance: 0.05
+Evolution Triggered: New chain diagnosis_087
+REASONING EVOLVED: research_active_0 -> research_088
+Reasoning Score: 0.81
+Chain Performance: 0.43
+Evolution Triggered: New chain research_088
+REASONING EVOLVED: technical_active_6 -> technical_089
+Reasoning Score: 0.52
+Chain Performance: 0.05
+Evolution Triggered: New chain technical_089
+Evaluating reasoning quality...
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+Training model on reasoning improvements...
+
+train:   0%|          | 0/12 [00:00<?, ?it/s]
+train:   8%|▊         | 1/12 [00:00<00:06,  1.76it/s]
+train:   8%|▊         | 1/12 [00:00<00:06,  1.76it/s, entropy=0.754, grad_norm=0.201, loss=-1.45, policy_loss=-1.45]
+train:  17%|█▋        | 2/12 [00:01<00:09,  1.07it/s, entropy=0.754, grad_norm=0.201, loss=-1.45, policy_loss=-1.45]
+train:  17%|█▋        | 2/12 [00:01<00:09,  1.07it/s, entropy=0.705, grad_norm=0.236, loss=-1.92, policy_loss=-1.92]
+train:  25%|██▌       | 3/12 [00:02<00:09,  1.06s/it, entropy=0.705, grad_norm=0.236, loss=-1.92, policy_loss=-1.92]
+train:  25%|██▌       | 3/12 [00:02<00:09,  1.06s/it, entropy=0.697, grad_norm=0.106, loss=0.817, policy_loss=0.817]
+train:  33%|███▎      | 4/12 [00:03<00:07,  1.14it/s, entropy=0.697, grad_norm=0.106, loss=0.817, policy_loss=0.817]
+train:  33%|███▎      | 4/12 [00:03<00:07,  1.14it/s, entropy=0.646, grad_norm=0.159, loss=1.22, policy_loss=1.22]  
+train:  42%|████▏     | 5/12 [00:04<00:06,  1.02it/s, entropy=0.646, grad_norm=0.159, loss=1.22, policy_loss=1.22]
+train:  42%|████▏     | 5/12 [00:04<00:06,  1.02it/s, entropy=0.725, grad_norm=0.0376, loss=0.285, policy_loss=0.285]
+train:  50%|█████     | 6/12 [00:05<00:06,  1.04s/it, entropy=0.725, grad_norm=0.0376, loss=0.285, policy_loss=0.285]
+train:  50%|█████     | 6/12 [00:05<00:06,  1.04s/it, entropy=0.76, grad_norm=0.151, loss=1.14, policy_loss=1.14]    
+train:  58%|█████▊    | 7/12 [00:07<00:05,  1.08s/it, entropy=0.76, grad_norm=0.151, loss=1.14, policy_loss=1.14]
+train:  58%|█████▊    | 7/12 [00:07<00:05,  1.08s/it, entropy=0.655, grad_norm=0.076, loss=-0.551, policy_loss=-0.551]
+train:  67%|██████▋   | 8/12 [00:08<00:04,  1.10s/it, entropy=0.655, grad_norm=0.076, loss=-0.551, policy_loss=-0.551]
+train:  67%|██████▋   | 8/12 [00:08<00:04,  1.10s/it, entropy=0.776, grad_norm=0.0409, loss=-0.283, policy_loss=-0.283]
+train:  75%|███████▌  | 9/12 [00:09<00:03,  1.12s/it, entropy=0.776, grad_norm=0.0409, loss=-0.283, policy_loss=-0.283]
+train:  75%|███████▌  | 9/12 [00:09<00:03,  1.12s/it, entropy=0.805, grad_norm=0.264, loss=1.67, policy_loss=1.67]     
+train:  83%|████████▎ | 10/12 [00:10<00:02,  1.13s/it, entropy=0.805, grad_norm=0.264, loss=1.67, policy_loss=1.67]
+train:  83%|████████▎ | 10/12 [00:10<00:02,  1.13s/it, entropy=0.747, grad_norm=0.256, loss=-1.75, policy_loss=-1.75]
+train:  92%|█████████▏| 11/12 [00:11<00:01,  1.14s/it, entropy=0.747, grad_norm=0.256, loss=-1.75, policy_loss=-1.75]
+train:  92%|█████████▏| 11/12 [00:11<00:01,  1.14s/it, entropy=0.73, grad_norm=0.0683, loss=0.496, policy_loss=0.496]
+train: 100%|██████████| 12/12 [00:12<00:00,  1.18s/it, entropy=0.73, grad_norm=0.0683, loss=0.496, policy_loss=0.496]
+train: 100%|██████████| 12/12 [00:12<00:00,  1.18s/it, entropy=0.885, grad_norm=0.0541, loss=0.356, policy_loss=0.356]
+train: 100%|██████████| 12/12 [00:23<00:00,  1.95s/it, entropy=0.885, grad_norm=0.0541, loss=0.356, policy_loss=0.356]
+
+Reasoning Evolution Metrics:
+   Total Chains: 90
+   Evolved Chains: 78
+   Average Performance: 0.01
+   Reasoning Sophistication: 0.05
+
+Reasoning Training Step 17
+==================================================
+Gathering reasoning trajectories...
+
+Reasoning Step 17:   0%|          | 0/12 [00:00<?, ?it/s]
+Reasoning Step 17:   8%|▊         | 1/12 [00:10<01:55, 10.51s/it]
+Reasoning Step 17:   8%|▊         | 1/12 [00:10<01:55, 10.51s/it, reward=0.925, reasoning_score=0.625, chain_performance=0.414, evolution_triggered=1, step_success_count=2, total_reasoning_steps=7, completion_tokens=1314.0]
+Reasoning Step 17:  17%|█▋        | 2/12 [00:11<00:47,  4.79s/it, reward=0.925, reasoning_score=0.625, chain_performance=0.414, evolution_triggered=1, step_success_count=2, total_reasoning_steps=7, completion_tokens=1314.0]
+Reasoning Step 17:  17%|█▋        | 2/12 [00:11<00:47,  4.79s/it, reward=1.01, reasoning_score=0.708, chain_performance=0.424, evolution_triggered=1, step_success_count=2.5, total_reasoning_steps=6, completion_tokens=1375.0]
+Reasoning Step 17:  25%|██▌       | 3/12 [00:11<00:24,  2.76s/it, reward=1.01, reasoning_score=0.708, chain_performance=0.424, evolution_triggered=1, step_success_count=2.5, total_reasoning_steps=6, completion_tokens=1375.0]
+Reasoning Step 17:  25%|██▌       | 3/12 [00:11<00:24,  2.76s/it, reward=0.972, reasoning_score=0.672, chain_performance=0.422, evolution_triggered=1, step_success_count=4, total_reasoning_steps=10.3, completion_tokens=1.42e+3]
+Reasoning Step 17:  33%|███▎      | 4/12 [00:12<00:15,  1.95s/it, reward=0.972, reasoning_score=0.672, chain_performance=0.422, evolution_triggered=1, step_success_count=4, total_reasoning_steps=10.3, completion_tokens=1.42e+3]
+Reasoning Step 17:  33%|███▎      | 4/12 [00:12<00:15,  1.95s/it, reward=0.936, reasoning_score=0.636, chain_performance=0.328, evolution_triggered=1, step_success_count=4.75, total_reasoning_steps=12.8, completion_tokens=1437.5]
+Reasoning Step 17:  42%|████▏     | 5/12 [00:12<00:13,  1.95s/it, reward=0.9, reasoning_score=0.6, chain_performance=0.271, evolution_triggered=1, step_success_count=5.4, total_reasoning_steps=16.6, completion_tokens=1450.0]     
+Reasoning Step 17:  50%|█████     | 6/12 [00:12<00:11,  1.95s/it, reward=0.918, reasoning_score=0.618, chain_performance=0.299, evolution_triggered=1, step_success_count=5.17, total_reasoning_steps=15.2, completion_tokens=1.46e+3]
+Reasoning Step 17:  58%|█████▊    | 7/12 [00:13<00:05,  1.01s/it, reward=0.918, reasoning_score=0.618, chain_performance=0.299, evolution_triggered=1, step_success_count=5.17, total_reasoning_steps=15.2, completion_tokens=1.46e+3]
+Reasoning Step 17:  58%|█████▊    | 7/12 [00:13<00:05,  1.01s/it, reward=0.905, reasoning_score=0.605, chain_performance=0.317, evolution_triggered=1, step_success_count=4.86, total_reasoning_steps=15.3, completion_tokens=1.46e+3]
+Reasoning Step 17:  67%|██████▋   | 8/12 [00:13<00:04,  1.01s/it, reward=0.904, reasoning_score=0.604, chain_performance=0.329, evolution_triggered=1, step_success_count=4.88, total_reasoning_steps=15.2, completion_tokens=1.46e+3]
+Reasoning Step 17:  75%|███████▌  | 9/12 [00:13<00:03,  1.01s/it, reward=0.902, reasoning_score=0.602, chain_performance=0.337, evolution_triggered=1, step_success_count=4.56, total_reasoning_steps=14.6, completion_tokens=1.47e+3]
+Reasoning Step 17:  83%|████████▎ | 10/12 [00:13<00:02,  1.01s/it, reward=0.93, reasoning_score=0.63, chain_performance=0.345, evolution_triggered=1, step_success_count=4.5, total_reasoning_steps=13.6, completion_tokens=1469.5]   
+Reasoning Step 17:  92%|█████████▏| 11/12 [00:13<00:01,  1.01s/it, reward=0.915, reasoning_score=0.615, chain_performance=0.317, evolution_triggered=1, step_success_count=4.55, total_reasoning_steps=14.5, completion_tokens=1.47e+3]
+Reasoning Step 17: 100%|██████████| 12/12 [00:13<00:00,  1.01s/it, reward=0.906, reasoning_score=0.606, chain_performance=0.294, evolution_triggered=1, step_success_count=4.83, total_reasoning_steps=15.4, completion_tokens=1.47e+3]
+Reasoning Step 17: 100%|██████████| 12/12 [00:13<00:00,  1.14s/it, reward=0.906, reasoning_score=0.606, chain_performance=0.294, evolution_triggered=1, step_success_count=4.83, total_reasoning_steps=15.4, completion_tokens=1.47e+3]
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: research_quantum (research)
+Problem: research_quantum (research)
+Problem: research_quantum (research)
+Problem: research_quantum (research)
+Problem: research_ai_safety (research)
+Problem: research_ai_safety (research)
+Problem: research_ai_safety (research)
+Problem: research_ai_safety (research)
+REASONING EVOLVED: research_active_0 -> research_090
+Reasoning Score: 0.62
+Chain Performance: 0.41
+Evolution Triggered: New chain research_090
+REASONING EVOLVED: research_active_0 -> research_091
+Reasoning Score: 0.79
+Chain Performance: 0.43
+Evolution Triggered: New chain research_091
+REASONING EVOLVED: research_active_0 -> research_092
+Reasoning Score: 0.60
+Chain Performance: 0.42
+Evolution Triggered: New chain research_092
+REASONING EVOLVED: technical_active_6 -> technical_093
+Reasoning Score: 0.53
+Chain Performance: 0.05
+Evolution Triggered: New chain technical_093
+REASONING EVOLVED: research_active_0 -> research_094
+Reasoning Score: 0.71
+Chain Performance: 0.44
+Evolution Triggered: New chain research_094
+REASONING EVOLVED: technical_active_6 -> technical_095
+Reasoning Score: 0.46
+Chain Performance: 0.04
+Evolution Triggered: New chain technical_095
+REASONING EVOLVED: research_active_0 -> research_096
+Reasoning Score: 0.52
+Chain Performance: 0.42
+Evolution Triggered: New chain research_096
+REASONING EVOLVED: research_active_0 -> research_097
+Reasoning Score: 0.60
+Chain Performance: 0.41
+Evolution Triggered: New chain research_097
+REASONING EVOLVED: research_active_0 -> research_098
+Reasoning Score: 0.59
+Chain Performance: 0.40
+Evolution Triggered: New chain research_098
+REASONING EVOLVED: research_active_0 -> research_099
+Reasoning Score: 0.88
+Chain Performance: 0.42
+Evolution Triggered: New chain research_099
+REASONING EVOLVED: technical_active_6 -> technical_100
+Reasoning Score: 0.46
+Chain Performance: 0.04
+Evolution Triggered: New chain technical_100
+REASONING EVOLVED: technical_active_6 -> technical_101
+Reasoning Score: 0.51
+Chain Performance: 0.04
+Evolution Triggered: New chain technical_101
+Evaluating reasoning quality...
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+Training model on reasoning improvements...
+
+train:   0%|          | 0/12 [00:00<?, ?it/s]
+train:   8%|▊         | 1/12 [00:00<00:06,  1.69it/s]
+train:   8%|▊         | 1/12 [00:00<00:06,  1.69it/s, entropy=0.613, grad_norm=0.0597, loss=0.461, policy_loss=0.46]
+train:  17%|█▋        | 2/12 [00:01<00:09,  1.08it/s, entropy=0.613, grad_norm=0.0597, loss=0.461, policy_loss=0.46]
+train:  17%|█▋        | 2/12 [00:01<00:09,  1.08it/s, entropy=0.521, grad_norm=0.0586, loss=-0.504, policy_loss=-0.504]
+train:  25%|██▌       | 3/12 [00:02<00:09,  1.03s/it, entropy=0.521, grad_norm=0.0586, loss=-0.504, policy_loss=-0.504]
+train:  25%|██▌       | 3/12 [00:02<00:09,  1.03s/it, entropy=0.649, grad_norm=0.178, loss=-1.36, policy_loss=-1.36]   
+train:  33%|███▎      | 4/12 [00:04<00:08,  1.07s/it, entropy=0.649, grad_norm=0.178, loss=-1.36, policy_loss=-1.36]
+train:  33%|███▎      | 4/12 [00:04<00:08,  1.07s/it, entropy=0.657, grad_norm=0.079, loss=0.611, policy_loss=0.611]
+train:  42%|████▏     | 5/12 [00:05<00:07,  1.12s/it, entropy=0.657, grad_norm=0.079, loss=0.611, policy_loss=0.611]
+train:  42%|████▏     | 5/12 [00:05<00:07,  1.12s/it, entropy=0.628, grad_norm=0.21, loss=1.56, policy_loss=1.56]   
+train:  50%|█████     | 6/12 [00:06<00:06,  1.16s/it, entropy=0.628, grad_norm=0.21, loss=1.56, policy_loss=1.56]
+train:  50%|█████     | 6/12 [00:06<00:06,  1.16s/it, entropy=0.753, grad_norm=0.14, loss=1.03, policy_loss=1.03]
+train:  58%|█████▊    | 7/12 [00:07<00:04,  1.04it/s, entropy=0.753, grad_norm=0.14, loss=1.03, policy_loss=1.03]
+train:  58%|█████▊    | 7/12 [00:07<00:04,  1.04it/s, entropy=0.671, grad_norm=0.0884, loss=0.686, policy_loss=0.686]
+train:  67%|██████▋   | 8/12 [00:08<00:04,  1.03s/it, entropy=0.671, grad_norm=0.0884, loss=0.686, policy_loss=0.686]
+train:  67%|██████▋   | 8/12 [00:08<00:04,  1.03s/it, entropy=0.684, grad_norm=0.097, loss=-0.753, policy_loss=-0.753]
+train:  75%|███████▌  | 9/12 [00:09<00:03,  1.07s/it, entropy=0.684, grad_norm=0.097, loss=-0.753, policy_loss=-0.753]
+train:  75%|███████▌  | 9/12 [00:09<00:03,  1.07s/it, entropy=0.709, grad_norm=0.0764, loss=0.573, policy_loss=0.573] 
+train:  83%|████████▎ | 10/12 [00:10<00:02,  1.09s/it, entropy=0.709, grad_norm=0.0764, loss=0.573, policy_loss=0.573]
+train:  83%|████████▎ | 10/12 [00:10<00:02,  1.09s/it, entropy=0.548, grad_norm=0.178, loss=-1.47, policy_loss=-1.47] 
+train:  92%|█████████▏| 11/12 [00:11<00:01,  1.11s/it, entropy=0.548, grad_norm=0.178, loss=-1.47, policy_loss=-1.47]
+train:  92%|█████████▏| 11/12 [00:11<00:01,  1.11s/it, entropy=0.754, grad_norm=0.273, loss=-1.87, policy_loss=-1.87]
+train: 100%|██████████| 12/12 [00:12<00:00,  1.14s/it, entropy=0.754, grad_norm=0.273, loss=-1.87, policy_loss=-1.87]
+train: 100%|██████████| 12/12 [00:12<00:00,  1.14s/it, entropy=0.677, grad_norm=0.129, loss=1.09, policy_loss=1.09]  
+train: 100%|██████████| 12/12 [00:23<00:00,  1.98s/it, entropy=0.677, grad_norm=0.129, loss=1.09, policy_loss=1.09]
+
+Reasoning Evolution Metrics:
+   Total Chains: 102
+   Evolved Chains: 90
+   Average Performance: 0.01
+   Reasoning Sophistication: 0.05
+
+🎯 RUNNING TASK BENCHMARKS (Step 17)
+
+============================================================
+COMPREHENSIVE TASK PERFORMANCE BENCHMARK
+============================================================
+
+Benchmarking Task: microservices_oauth
+Difficulty: 0.9
+--------------------------------------------------
+Task Score: 0.864
+Reasoning Score: 0.300
+Chain Performance: 0.042
+Response Time: 16.7s
+EVOLUTION: technical_active_6 -> technical_102
+
+Benchmarking Task: performance_debugging
+Difficulty: 0.85
+--------------------------------------------------
+Task Score: 0.706
+Reasoning Score: 0.000
+Chain Performance: 0.050
+Response Time: 12.1s
+EVOLUTION: diagnosis_active_1 -> diagnosis_103
+
+Benchmarking Task: real_time_matching
+Difficulty: 0.95
+--------------------------------------------------
+Task Score: 0.694
+Reasoning Score: 0.300
+Chain Performance: 0.000
+Response Time: 13.3s
+
+Benchmarking Task: api_security_audit
+Difficulty: 0.9
+--------------------------------------------------
+Task Score: 0.755
+Reasoning Score: 0.300
+Chain Performance: 0.000
+Response Time: 14.0s
+
+Benchmarking Task: real_time_analytics
+Difficulty: 0.9
+--------------------------------------------------
+Task Score: 0.943
+Reasoning Score: 0.000
+Chain Performance: 0.000
+Response Time: 13.5s
+
+========================================
+BENCHMARK SUMMARY
+========================================
+Average Task Score: 0.792
+Average Reasoning Score: 0.180
+Evolutions Triggered: 2
+High Performance Tasks: 2/5
+Average Response Time: 13.9s
+
+Benchmark results saved to: task_benchmark_results_20251101_183137.json
+Baseline file task_benchmark_results_baseline_20251101_183137.json not found
+
+REASONING EVOLUTION DEMONSTRATION
+============================================================
+Test Problem: Design a secure OAuth2 implementation for a distributed microservices architecture
+
+BASELINE REASONING PATTERN:
+For technical problems, reason as follows:
+
+1. ANALYSIS: Break down the technical requirements and constraints
+2. HYPOTHESIS: Identify the most likely solution approach
+3. VERIFICATION: Test the approach against known cases
+4. CONCLUSION: Provide concrete implementation steps
+
+Performance: 0.00
+
+SIMULATING LEARNING PROCESS...
+REASONING EVOLVED: technical_active_0 -> technical_001
+
+EVOLVED REASONING PATTERN:
+For technical problems, reason as follows:
+
+1. ANALYSIS: Systematically decompose the problem into core components and identify critical constraints
+2. HYPOTHESIS: Identify the most likely solution approach
+3. VERIFICATION: Test each hypothesis against known principles and edge cases
+4. CONCLUSION: Provide concrete implementation steps
+
+
+KEY IMPROVEMENTS:
+• More systematic analysis approach
+• Enhanced hypothesis generation
+• Better verification methods
+• Meta-reasoning for complex problems
+
+EVOLUTION METRICS:
+   Reasoning Sophistication: 0.00
+   Evolution Rate: 0.50
+   Step Effectiveness: {'analysis': 0.0, 'hypothesis': 0.9990234375, 'verification': 0.0, 'conclusion': 0.9990234375}
+
+Reasoning Training Step 18
+==================================================
+Gathering reasoning trajectories...
+
+Reasoning Step 18:   0%|          | 0/12 [00:00<?, ?it/s]
+Reasoning Step 18:   8%|▊         | 1/12 [00:08<01:31,  8.33s/it]
+Reasoning Step 18:   8%|▊         | 1/12 [00:08<01:31,  8.33s/it, reward=0.896, reasoning_score=0.596, chain_performance=0.405, evolution_triggered=1, step_success_count=5, total_reasoning_steps=11, completion_tokens=1232.0]
+Reasoning Step 18:  17%|█▋        | 2/12 [00:09<00:40,  4.08s/it, reward=0.896, reasoning_score=0.596, chain_performance=0.405, evolution_triggered=1, step_success_count=5, total_reasoning_steps=11, completion_tokens=1232.0]
+Reasoning Step 18:  17%|█▋        | 2/12 [00:09<00:40,  4.08s/it, reward=0.922, reasoning_score=0.622, chain_performance=0.223, evolution_triggered=1, step_success_count=5.5, total_reasoning_steps=12, completion_tokens=1307.0]
+Reasoning Step 18:  25%|██▌       | 3/12 [00:09<00:20,  2.32s/it, reward=0.922, reasoning_score=0.622, chain_performance=0.223, evolution_triggered=1, step_success_count=5.5, total_reasoning_steps=12, completion_tokens=1307.0]
+Reasoning Step 18:  25%|██▌       | 3/12 [00:09<00:20,  2.32s/it, reward=0.912, reasoning_score=0.612, chain_performance=0.162, evolution_triggered=1, step_success_count=6, total_reasoning_steps=14, completion_tokens=1342.0]  
+Reasoning Step 18:  33%|███▎      | 4/12 [00:10<00:12,  1.56s/it, reward=0.912, reasoning_score=0.612, chain_performance=0.162, evolution_triggered=1, step_success_count=6, total_reasoning_steps=14, completion_tokens=1342.0]
+Reasoning Step 18:  33%|███▎      | 4/12 [00:10<00:12,  1.56s/it, reward=0.914, reasoning_score=0.614, chain_performance=0.131, evolution_triggered=1, step_success_count=6, total_reasoning_steps=14.2, completion_tokens=1349.5]
+Reasoning Step 18:  42%|████▏     | 5/12 [00:10<00:10,  1.56s/it, reward=0.934, reasoning_score=0.634, chain_performance=0.189, evolution_triggered=1, step_success_count=5.2, total_reasoning_steps=12.4, completion_tokens=1332.8]
+Reasoning Step 18:  50%|█████     | 6/12 [00:10<00:05,  1.16it/s, reward=0.934, reasoning_score=0.634, chain_performance=0.189, evolution_triggered=1, step_success_count=5.2, total_reasoning_steps=12.4, completion_tokens=1332.8]
+Reasoning Step 18:  50%|█████     | 6/12 [00:10<00:05,  1.16it/s, reward=0.924, reasoning_score=0.624, chain_performance=0.166, evolution_triggered=1, step_success_count=5.33, total_reasoning_steps=12.5, completion_tokens=1.36e+3]
+Reasoning Step 18:  58%|█████▊    | 7/12 [00:10<00:04,  1.16it/s, reward=0.899, reasoning_score=0.599, chain_performance=0.149, evolution_triggered=1, step_success_count=5.14, total_reasoning_steps=13.7, completion_tokens=1.38e+3]
+Reasoning Step 18:  67%|██████▋   | 8/12 [00:11<00:02,  1.63it/s, reward=0.899, reasoning_score=0.599, chain_performance=0.149, evolution_triggered=1, step_success_count=5.14, total_reasoning_steps=13.7, completion_tokens=1.38e+3]
+Reasoning Step 18:  67%|██████▋   | 8/12 [00:11<00:02,  1.63it/s, reward=0.88, reasoning_score=0.58, chain_performance=0.135, evolution_triggered=1, step_success_count=5, total_reasoning_steps=14.2, completion_tokens=1395.5]      
+Reasoning Step 18:  75%|███████▌  | 9/12 [00:11<00:01,  1.70it/s, reward=0.88, reasoning_score=0.58, chain_performance=0.135, evolution_triggered=1, step_success_count=5, total_reasoning_steps=14.2, completion_tokens=1395.5]
+Reasoning Step 18:  75%|███████▌  | 9/12 [00:11<00:01,  1.70it/s, reward=0.881, reasoning_score=0.581, chain_performance=0.125, evolution_triggered=1, step_success_count=5.33, total_reasoning_steps=14.7, completion_tokens=1.41e+3]
+Reasoning Step 18:  83%|████████▎ | 10/12 [00:11<00:01,  1.70it/s, reward=0.88, reasoning_score=0.58, chain_performance=0.153, evolution_triggered=1, step_success_count=5, total_reasoning_steps=13.9, completion_tokens=1414.2]     
+Reasoning Step 18:  92%|█████████▏| 11/12 [00:12<00:00,  2.28it/s, reward=0.88, reasoning_score=0.58, chain_performance=0.153, evolution_triggered=1, step_success_count=5, total_reasoning_steps=13.9, completion_tokens=1414.2]
+Reasoning Step 18:  92%|█████████▏| 11/12 [00:12<00:00,  2.28it/s, reward=0.891, reasoning_score=0.591, chain_performance=0.178, evolution_triggered=1, step_success_count=4.73, total_reasoning_steps=13.1, completion_tokens=1422.0]
+Reasoning Step 18: 100%|██████████| 12/12 [00:12<00:00,  2.28it/s, reward=0.89, reasoning_score=0.59, chain_performance=0.167, evolution_triggered=1, step_success_count=4.58, total_reasoning_steps=12.7, completion_tokens=1428.5]  
+Reasoning Step 18: 100%|██████████| 12/12 [00:12<00:00,  1.00s/it, reward=0.89, reasoning_score=0.59, chain_performance=0.167, evolution_triggered=1, step_success_count=4.58, total_reasoning_steps=12.7, completion_tokens=1428.5]
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: research_quantum (research)
+Problem: research_quantum (research)
+Problem: research_quantum (research)
+Problem: research_quantum (research)
+Problem: diag_performance (diagnosis)
+Problem: diag_performance (diagnosis)
+Problem: diag_performance (diagnosis)
+Problem: diag_performance (diagnosis)
+REASONING EVOLVED: research_active_0 -> research_107
+Reasoning Score: 0.60
+Chain Performance: 0.41
+Evolution Triggered: New chain research_107
+REASONING EVOLVED: technical_active_6 -> technical_108
+Reasoning Score: 0.65
+Chain Performance: 0.04
+Evolution Triggered: New chain technical_108
+REASONING EVOLVED: technical_active_6 -> technical_109
+Reasoning Score: 0.59
+Chain Performance: 0.04
+Evolution Triggered: New chain technical_109
+REASONING EVOLVED: technical_active_6 -> technical_110
+Reasoning Score: 0.62
+Chain Performance: 0.04
+Evolution Triggered: New chain technical_110
+REASONING EVOLVED: research_active_0 -> research_111
+Reasoning Score: 0.72
+Chain Performance: 0.42
+Evolution Triggered: New chain research_111
+REASONING EVOLVED: diagnosis_active_1 -> diagnosis_112
+Reasoning Score: 0.57
+Chain Performance: 0.05
+Evolution Triggered: New chain diagnosis_112
+REASONING EVOLVED: diagnosis_active_1 -> diagnosis_113
+Reasoning Score: 0.45
+Chain Performance: 0.05
+Evolution Triggered: New chain diagnosis_113
+REASONING EVOLVED: diagnosis_active_1 -> diagnosis_114
+Reasoning Score: 0.45
+Chain Performance: 0.04
+Evolution Triggered: New chain diagnosis_114
+REASONING EVOLVED: technical_active_6 -> technical_115
+Reasoning Score: 0.59
+Chain Performance: 0.04
+Evolution Triggered: New chain technical_115
+REASONING EVOLVED: research_active_0 -> research_116
+Reasoning Score: 0.57
+Chain Performance: 0.41
+Evolution Triggered: New chain research_116
+REASONING EVOLVED: research_active_0 -> research_117
+Reasoning Score: 0.71
+Chain Performance: 0.42
+Evolution Triggered: New chain research_117
+REASONING EVOLVED: diagnosis_active_1 -> diagnosis_118
+Reasoning Score: 0.58
+Chain Performance: 0.04
+Evolution Triggered: New chain diagnosis_118
+Evaluating reasoning quality...
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+Training model on reasoning improvements...
+
+train:   0%|          | 0/12 [00:00<?, ?it/s]
+train:   8%|▊         | 1/12 [00:00<00:07,  1.54it/s]
+train:   8%|▊         | 1/12 [00:00<00:07,  1.54it/s, entropy=0.728, grad_norm=0.152, loss=-1.04, policy_loss=-1.05]
+train:  17%|█▋        | 2/12 [00:01<00:09,  1.05it/s, entropy=0.728, grad_norm=0.152, loss=-1.04, policy_loss=-1.05]
+train:  17%|█▋        | 2/12 [00:01<00:09,  1.05it/s, entropy=0.724, grad_norm=0.15, loss=0.975, policy_loss=0.975] 
+train:  25%|██▌       | 3/12 [00:02<00:09,  1.04s/it, entropy=0.724, grad_norm=0.15, loss=0.975, policy_loss=0.975]
+train:  25%|██▌       | 3/12 [00:02<00:09,  1.04s/it, entropy=0.708, grad_norm=0.119, loss=0.966, policy_loss=0.966]
+train:  33%|███▎      | 4/12 [00:04<00:08,  1.09s/it, entropy=0.708, grad_norm=0.119, loss=0.966, policy_loss=0.966]
+train:  33%|███▎      | 4/12 [00:04<00:08,  1.09s/it, entropy=0.626, grad_norm=0.178, loss=-1.25, policy_loss=-1.25]
+train:  42%|████▏     | 5/12 [00:05<00:07,  1.11s/it, entropy=0.626, grad_norm=0.178, loss=-1.25, policy_loss=-1.25]
+train:  42%|████▏     | 5/12 [00:05<00:07,  1.11s/it, entropy=0.666, grad_norm=0.139, loss=0.991, policy_loss=0.991]
+train:  50%|█████     | 6/12 [00:06<00:06,  1.12s/it, entropy=0.666, grad_norm=0.139, loss=0.991, policy_loss=0.991]
+train:  50%|█████     | 6/12 [00:06<00:06,  1.12s/it, entropy=0.758, grad_norm=0.0567, loss=-0.378, policy_loss=-0.378]
+train:  58%|█████▊    | 7/12 [00:07<00:05,  1.14s/it, entropy=0.758, grad_norm=0.0567, loss=-0.378, policy_loss=-0.378]
+train:  58%|█████▊    | 7/12 [00:07<00:05,  1.14s/it, entropy=0.716, grad_norm=0.216, loss=-1.58, policy_loss=-1.58]   
+train:  67%|██████▋   | 8/12 [00:08<00:03,  1.04it/s, entropy=0.716, grad_norm=0.216, loss=-1.58, policy_loss=-1.58]
+train:  67%|██████▋   | 8/12 [00:08<00:03,  1.04it/s, entropy=0.69, grad_norm=0.138, loss=-0.92, policy_loss=-0.92] 
+train:  75%|███████▌  | 9/12 [00:09<00:03,  1.03s/it, entropy=0.69, grad_norm=0.138, loss=-0.92, policy_loss=-0.92]
+train:  75%|███████▌  | 9/12 [00:09<00:03,  1.03s/it, entropy=0.707, grad_norm=0.127, loss=0.886, policy_loss=0.886]
+train:  83%|████████▎ | 10/12 [00:10<00:02,  1.07s/it, entropy=0.707, grad_norm=0.127, loss=0.886, policy_loss=0.886]
+train:  83%|████████▎ | 10/12 [00:10<00:02,  1.07s/it, entropy=0.716, grad_norm=0.148, loss=0.981, policy_loss=0.981]
+train:  92%|█████████▏| 11/12 [00:11<00:01,  1.09s/it, entropy=0.716, grad_norm=0.148, loss=0.981, policy_loss=0.981]
+train:  92%|█████████▏| 11/12 [00:11<00:01,  1.09s/it, entropy=0.62, grad_norm=0.154, loss=1.16, policy_loss=1.16]   
+train: 100%|██████████| 12/12 [00:12<00:00,  1.11s/it, entropy=0.62, grad_norm=0.154, loss=1.16, policy_loss=1.16]
+train: 100%|██████████| 12/12 [00:12<00:00,  1.11s/it, entropy=0.487, grad_norm=0.103, loss=-0.889, policy_loss=-0.89]
+train: 100%|██████████| 12/12 [00:24<00:00,  2.03s/it, entropy=0.487, grad_norm=0.103, loss=-0.889, policy_loss=-0.89]
+
+Reasoning Evolution Metrics:
+   Total Chains: 119
+   Evolved Chains: 104
+   Average Performance: 0.00
+   Reasoning Sophistication: 0.05
+
+Reasoning Training Step 19
+==================================================
+Gathering reasoning trajectories...
+
+Reasoning Step 19:   0%|          | 0/12 [00:00<?, ?it/s]
+Reasoning Step 19:   8%|▊         | 1/12 [00:11<02:06, 11.47s/it]
+Reasoning Step 19:   8%|▊         | 1/12 [00:11<02:06, 11.47s/it, reward=0.955, reasoning_score=0.655, chain_performance=0.0377, evolution_triggered=1, step_success_count=6, total_reasoning_steps=13, completion_tokens=1360.0]
+Reasoning Step 19:  17%|█▋        | 2/12 [00:11<00:48,  4.90s/it, reward=0.955, reasoning_score=0.655, chain_performance=0.0377, evolution_triggered=1, step_success_count=6, total_reasoning_steps=13, completion_tokens=1360.0]
+Reasoning Step 19:  17%|█▋        | 2/12 [00:11<00:48,  4.90s/it, reward=0.936, reasoning_score=0.636, chain_performance=0.0374, evolution_triggered=1, step_success_count=7, total_reasoning_steps=15.5, completion_tokens=1389.0]
+Reasoning Step 19:  25%|██▌       | 3/12 [00:11<00:24,  2.76s/it, reward=0.936, reasoning_score=0.636, chain_performance=0.0374, evolution_triggered=1, step_success_count=7, total_reasoning_steps=15.5, completion_tokens=1389.0]
+Reasoning Step 19:  25%|██▌       | 3/12 [00:11<00:24,  2.76s/it, reward=0.91, reasoning_score=0.61, chain_performance=0.163, evolution_triggered=1, step_success_count=5.67, total_reasoning_steps=14, completion_tokens=1384.0]  
+Reasoning Step 19:  33%|███▎      | 4/12 [00:12<00:14,  1.77s/it, reward=0.91, reasoning_score=0.61, chain_performance=0.163, evolution_triggered=1, step_success_count=5.67, total_reasoning_steps=14, completion_tokens=1384.0]
+Reasoning Step 19:  33%|███▎      | 4/12 [00:12<00:14,  1.77s/it, reward=0.978, reasoning_score=0.678, chain_performance=0.229, evolution_triggered=1, step_success_count=5.25, total_reasoning_steps=11.8, completion_tokens=1396.5]
+Reasoning Step 19:  42%|████▏     | 5/12 [00:13<00:11,  1.64s/it, reward=0.978, reasoning_score=0.678, chain_performance=0.229, evolution_triggered=1, step_success_count=5.25, total_reasoning_steps=11.8, completion_tokens=1396.5]
+Reasoning Step 19:  42%|████▏     | 5/12 [00:13<00:11,  1.64s/it, reward=0.973, reasoning_score=0.673, chain_performance=0.267, evolution_triggered=1, step_success_count=5.8, total_reasoning_steps=12.8, completion_tokens=1417.2] 
+Reasoning Step 19:  50%|█████     | 6/12 [00:13<00:09,  1.64s/it, reward=0.961, reasoning_score=0.661, chain_performance=0.291, evolution_triggered=1, step_success_count=5.5, total_reasoning_steps=12.2, completion_tokens=1431.0]
+Reasoning Step 19:  58%|█████▊    | 7/12 [00:13<00:08,  1.64s/it, reward=0.942, reasoning_score=0.642, chain_performance=0.255, evolution_triggered=1, step_success_count=6, total_reasoning_steps=13.6, completion_tokens=1.44e+3] 
+Reasoning Step 19:  67%|██████▋   | 8/12 [00:13<00:06,  1.64s/it, reward=0.932, reasoning_score=0.632, chain_performance=0.227, evolution_triggered=1, step_success_count=6.5, total_reasoning_steps=14.1, completion_tokens=1448.25]
+Reasoning Step 19:  75%|███████▌  | 9/12 [00:13<00:04,  1.64s/it, reward=0.911, reasoning_score=0.611, chain_performance=0.206, evolution_triggered=1, step_success_count=6.56, total_reasoning_steps=15.8, completion_tokens=1454.0]
+Reasoning Step 19:  83%|████████▎ | 10/12 [00:13<00:03,  1.64s/it, reward=0.905, reasoning_score=0.605, chain_performance=0.189, evolution_triggered=1, step_success_count=6.7, total_reasoning_steps=16.6, completion_tokens=1458.6]
+Reasoning Step 19:  92%|█████████▏| 11/12 [00:14<00:00,  2.16it/s, reward=0.905, reasoning_score=0.605, chain_performance=0.189, evolution_triggered=1, step_success_count=6.7, total_reasoning_steps=16.6, completion_tokens=1458.6]
+Reasoning Step 19:  92%|█████████▏| 11/12 [00:14<00:00,  2.16it/s, reward=0.895, reasoning_score=0.595, chain_performance=0.175, evolution_triggered=1, step_success_count=7, total_reasoning_steps=17.1, completion_tokens=1.46e+3] 
+Reasoning Step 19: 100%|██████████| 12/12 [00:14<00:00,  2.16it/s, reward=0.896, reasoning_score=0.596, chain_performance=0.163, evolution_triggered=1, step_success_count=7, total_reasoning_steps=17.2, completion_tokens=1465.5] 
+Reasoning Step 19: 100%|██████████| 12/12 [00:14<00:00,  1.18s/it, reward=0.896, reasoning_score=0.596, chain_performance=0.163, evolution_triggered=1, step_success_count=7, total_reasoning_steps=17.2, completion_tokens=1465.5]
+Problem: research_ai_safety (research)
+Problem: research_ai_safety (research)
+Problem: research_ai_safety (research)
+Problem: research_ai_safety (research)
+Problem: tech_scaling (technical)
+Problem: tech_scaling (technical)
+Problem: tech_scaling (technical)
+Problem: tech_scaling (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+Problem: tech_oauth (technical)
+REASONING EVOLVED: technical_active_6 -> technical_119
+Reasoning Score: 0.66
+Chain Performance: 0.04
+Evolution Triggered: New chain technical_119
+REASONING EVOLVED: technical_active_6 -> technical_120
+Reasoning Score: 0.62
+Chain Performance: 0.04
+Evolution Triggered: New chain technical_120
+REASONING EVOLVED: research_active_0 -> research_121
+Reasoning Score: 0.56
+Chain Performance: 0.41
+Evolution Triggered: New chain research_121
+REASONING EVOLVED: research_active_0 -> research_122
+Reasoning Score: 0.88
+Chain Performance: 0.43
+Evolution Triggered: New chain research_122
+REASONING EVOLVED: research_active_0 -> research_123
+Reasoning Score: 0.65
+Chain Performance: 0.42
+Evolution Triggered: New chain research_123
+REASONING EVOLVED: technical_active_6 -> technical_124
+Reasoning Score: 0.53
+Chain Performance: 0.04
+Evolution Triggered: New chain technical_124
+REASONING EVOLVED: research_active_0 -> research_125
+Reasoning Score: 0.60
+Chain Performance: 0.41
+Evolution Triggered: New chain research_125
+REASONING EVOLVED: technical_active_6 -> technical_126
+Reasoning Score: 0.56
+Chain Performance: 0.04
+Evolution Triggered: New chain technical_126
+REASONING EVOLVED: technical_active_6 -> technical_127
+Reasoning Score: 0.44
+Chain Performance: 0.04
+Evolution Triggered: New chain technical_127
+REASONING EVOLVED: technical_active_6 -> technical_128
+Reasoning Score: 0.55
+Chain Performance: 0.03
+Evolution Triggered: New chain technical_128
+REASONING EVOLVED: technical_active_6 -> technical_129
+Reasoning Score: 0.50
+Chain Performance: 0.03
+Evolution Triggered: New chain technical_129
+REASONING EVOLVED: technical_active_6 -> technical_130
+Reasoning Score: 0.60
+Chain Performance: 0.03
+Evolution Triggered: New chain technical_130
+Evaluating reasoning quality...
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+ Swallowed exception: litellm.UnsupportedParamsError: openai does not support 
+parameters: ['response_format'], for model=gpt-4. To drop these, set 
+`litellm.drop_params=True` or for proxy:
+
+`litellm_settings:
+ drop_params: true`
+. 
+ If you want to use these params dynamically send 
+allowed_openai_params=['response_format'] in your request.
+⚠️ RULER returned None, using original group
+Training model on reasoning improvements...
+
+train:   0%|          | 0/12 [00:00<?, ?it/s]
+train:   8%|▊         | 1/12 [00:00<00:06,  1.67it/s]
+train:   8%|▊         | 1/12 [00:00<00:06,  1.67it/s, entropy=0.615, grad_norm=0.0702, loss=-0.575, policy_loss=-0.575]
+train:  17%|█▋        | 2/12 [00:01<00:09,  1.07it/s, entropy=0.615, grad_norm=0.0702, loss=-0.575, policy_loss=-0.575]
+train:  17%|█▋        | 2/12 [00:01<00:09,  1.07it/s, entropy=0.728, grad_norm=0.0445, loss=-0.324, policy_loss=-0.324]
+train:  25%|██▌       | 3/12 [00:02<00:09,  1.04s/it, entropy=0.728, grad_norm=0.0445, loss=-0.324, policy_loss=-0.324]
+train:  25%|██▌       | 3/12 [00:02<00:09,  1.04s/it, entropy=0.645, grad_norm=0.243, loss=1.8, policy_loss=1.8]       
+train:  33%|███▎      | 4/12 [00:04<00:08,  1.08s/it, entropy=0.645, grad_norm=0.243, loss=1.8, policy_loss=1.8]
+train:  33%|███▎      | 4/12 [00:04<00:08,  1.08s/it, entropy=0.751, grad_norm=0.00964, loss=0.065, policy_loss=0.065]
+train:  42%|████▏     | 5/12 [00:05<00:07,  1.10s/it, entropy=0.751, grad_norm=0.00964, loss=0.065, policy_loss=0.065]
+train:  42%|████▏     | 5/12 [00:05<00:07,  1.10s/it, entropy=0.678, grad_norm=0.0278, loss=0.199, policy_loss=0.199] 
+train:  50%|█████     | 6/12 [00:06<00:06,  1.12s/it, entropy=0.678, grad_norm=0.0278, loss=0.199, policy_loss=0.199]
+train:  50%|█████     | 6/12 [00:06<00:06,  1.12s/it, entropy=0.693, grad_norm=0.0986, loss=0.674, policy_loss=0.674]
+train:  58%|█████▊    | 7/12 [00:06<00:04,  1.06it/s, entropy=0.693, grad_norm=0.0986, loss=0.674, policy_loss=0.674]
+train:  58%|█████▊    | 7/12 [00:06<00:04,  1.06it/s, entropy=0.785, grad_norm=0.179, loss=1.23, policy_loss=1.23]   
+train:  67%|██████▋   | 8/12 [00:08<00:04,  1.01s/it, entropy=0.785, grad_norm=0.179, loss=1.23, policy_loss=1.23]
+train:  67%|██████▋   | 8/12 [00:08<00:04,  1.01s/it, entropy=0.635, grad_norm=0.183, loss=-1.42, policy_loss=-1.42]
+train:  75%|███████▌  | 9/12 [00:09<00:03,  1.05s/it, entropy=0.635, grad_norm=0.183, loss=-1.42, policy_loss=-1.42]
+train:  75%|███████▌  | 9/12 [00:09<00:03,  1.05s/it, entropy=0.703, grad_norm=0.24, loss=1.83, policy_loss=1.83]   
+train:  83%|████████▎ | 10/12 [00:10<00:02,  1.09s/it, entropy=0.703, grad_norm=0.24, loss=1.83, policy_loss=1.83]
+train:  83%|████████▎ | 10/12 [00:10<00:02,  1.09s/it, entropy=0.635, grad_norm=0.0221, loss=0.171, policy_loss=0.171]
+train:  92%|█████████▏| 11/12 [00:11<00:01,  1.11s/it, entropy=0.635, grad_norm=0.0221, loss=0.171, policy_loss=0.171]
+train:  92%|█████████▏| 11/12 [00:11<00:01,  1.11s/it, entropy=0.765, grad_norm=0.242, loss=-1.72, policy_loss=-1.72] 
+train: 100%|██████████| 12/12 [00:12<00:00,  1.14s/it, entropy=0.765, grad_norm=0.242, loss=-1.72, policy_loss=-1.72]
+train: 100%|██████████| 12/12 [00:12<00:00,  1.14s/it, entropy=0.747, grad_norm=0.347, loss=-2.09, policy_loss=-2.09]
+train: 100%|██████████| 12/12 [00:23<00:00,  1.93s/it, entropy=0.747, grad_norm=0.347, loss=-2.09, policy_loss=-2.09]
+
+Reasoning Evolution Metrics:
+   Total Chains: 131
+   Evolved Chains: 116
+   Average Performance: 0.00
+   Reasoning Sophistication: 0.05
+
+🎯 RUNNING TASK BENCHMARKS (Step 19)
+
+============================================================
+COMPREHENSIVE TASK PERFORMANCE BENCHMARK
+============================================================
+
+Benchmarking Task: microservices_oauth
+Difficulty: 0.9
+--------------------------------------------------
+Task Score: 0.811
+Reasoning Score: 0.250
+Chain Performance: 0.033
+Response Time: 17.5s
+EVOLUTION: technical_active_6 -> technical_131
+
+Benchmarking Task: performance_debugging
+Difficulty: 0.85
+--------------------------------------------------
+Task Score: 0.591
+Reasoning Score: 0.000
+Chain Performance: 0.040
+Response Time: 15.4s
+EVOLUTION: diagnosis_active_1 -> diagnosis_132
+
+Benchmarking Task: real_time_matching
+Difficulty: 0.95
+--------------------------------------------------
+Task Score: 0.770
+Reasoning Score: 0.300
+Chain Performance: 0.000
+Response Time: 11.7s
+
+Benchmarking Task: api_security_audit
+Difficulty: 0.9
+--------------------------------------------------
+Task Score: 0.883
+Reasoning Score: 0.300
+Chain Performance: 0.000
+Response Time: 16.0s
+
+Benchmarking Task: real_time_analytics
+Difficulty: 0.9
+--------------------------------------------------
+Task Score: 0.882
+Reasoning Score: 0.000
+Chain Performance: 0.000
+Response Time: 13.4s
+
+========================================
+BENCHMARK SUMMARY
+========================================
+Average Task Score: 0.787
+Average Reasoning Score: 0.170
+Evolutions Triggered: 2
+High Performance Tasks: 3/5
+Average Response Time: 14.8s
+
+Benchmark results saved to: task_benchmark_results_20251101_183423.json
+Baseline file task_benchmark_results_baseline_20251101_183423.json not found
+
+REASONING EVOLUTION DEMONSTRATION
+============================================================
+Test Problem: Design a secure OAuth2 implementation for a distributed microservices architecture
+
+BASELINE REASONING PATTERN:
+For technical problems, reason as follows:
+
+1. ANALYSIS: Break down the technical requirements and constraints
+2. HYPOTHESIS: Identify the most likely solution approach
+3. VERIFICATION: Test the approach against known cases
+4. CONCLUSION: Provide concrete implementation steps
+
+Performance: 0.00
+
+SIMULATING LEARNING PROCESS...
+REASONING EVOLVED: technical_active_0 -> technical_001
+
+EVOLVED REASONING PATTERN:
+For technical problems, reason as follows:
+
+1. ANALYSIS: Systematically decompose the problem into core components and identify critical constraints
+2. HYPOTHESIS: Identify the most likely solution approach
+3. VERIFICATION: Test each hypothesis against known principles and edge cases
+4. CONCLUSION: Provide concrete implementation steps
+
+
+KEY IMPROVEMENTS:
+• More systematic analysis approach
+• Enhanced hypothesis generation
+• Better verification methods
+• Meta-reasoning for complex problems
+
+EVOLUTION METRICS:
+   Reasoning Sophistication: 0.00
+   Evolution Rate: 0.50
+   Step Effectiveness: {'analysis': 0.0, 'hypothesis': 0.9990234375, 'verification': 0.0, 'conclusion': 0.9990234375}
+
+Reasoning training completed! Final step: 20
+
+============================================================
+FINAL PERFORMANCE EVALUATION
+============================================================
+
+============================================================
+COMPREHENSIVE TASK PERFORMANCE BENCHMARK
+============================================================
+
+Benchmarking Task: microservices_oauth
+Difficulty: 0.9
+--------------------------------------------------
+Task Score: 0.864
+Reasoning Score: 0.300
+Chain Performance: 0.032
+Response Time: 14.6s
+EVOLUTION: technical_active_6 -> technical_136
+
+Benchmarking Task: performance_debugging
+Difficulty: 0.85
+--------------------------------------------------
+Task Score: 0.812
+Reasoning Score: 0.000
+Chain Performance: 0.038
+Response Time: 11.4s
+EVOLUTION: diagnosis_active_1 -> diagnosis_137
+
+Benchmarking Task: real_time_matching
+Difficulty: 0.95
+--------------------------------------------------
+Task Score: 0.790
+Reasoning Score: 0.000
+Chain Performance: 0.000
+Response Time: 12.5s
+
+Benchmarking Task: api_security_audit
+Difficulty: 0.9
+--------------------------------------------------
+Task Score: 0.895
+Reasoning Score: 0.000
+Chain Performance: 0.000
+Response Time: 15.6s
+
+Benchmarking Task: real_time_analytics
+Difficulty: 0.9
+--------------------------------------------------
+Task Score: 0.943
+Reasoning Score: 0.000
+Chain Performance: 0.000
+Response Time: 14.0s
+
+========================================
+BENCHMARK SUMMARY
+========================================
+Average Task Score: 0.861
+Average Reasoning Score: 0.060
+Evolutions Triggered: 2
+High Performance Tasks: 4/5
+Average Response Time: 13.6s
+
+Benchmark results saved to: final_benchmark_results.json
+
+🔍 TRAINING IMPACT ANALYSIS
+----------------------------------------
+Baseline file task_benchmark_results_baseline_*.json not found
+
+🧠 REASONING EVOLUTION SUMMARY:
+   Total Chains Created: 141
+   Chains Evolved: 120
+   Evolution Rate: 85.1%
+   Reasoning Sophistication: 0.044
+
+REASONING EVOLUTION DEMONSTRATION
+============================================================
+Test Problem: Design a secure OAuth2 implementation for a distributed microservices architecture
+
+BASELINE REASONING PATTERN:
+For technical problems, reason as follows:
+
+1. ANALYSIS: Break down the technical requirements and constraints
+2. HYPOTHESIS: Identify the most likely solution approach
+3. VERIFICATION: Test the approach against known cases
+4. CONCLUSION: Provide concrete implementation steps
+
+Performance: 0.00
+
+SIMULATING LEARNING PROCESS...
+REASONING EVOLVED: technical_active_0 -> technical_001
+
+EVOLVED REASONING PATTERN:
+For technical problems, reason as follows:
+
+1. ANALYSIS: Systematically decompose the problem into core components and identify critical constraints
+2. HYPOTHESIS: Identify the most likely solution approach
+3. VERIFICATION: Test each hypothesis against known principles and edge cases
+4. CONCLUSION: Provide concrete implementation steps
+
+
+KEY IMPROVEMENTS:
+• More systematic analysis approach
+• Enhanced hypothesis generation
+• Better verification methods
+• Meta-reasoning for complex problems
+
+EVOLUTION METRICS:
+   Reasoning Sophistication: 0.00
+   Evolution Rate: 0.50
+   Step Effectiveness: {'analysis': 0.0, 'hypothesis': 0.9990234375, 'verification': 0.0, 'conclusion': 0.9990234375}
+
+================================================================================
+TRAINING SESSION COMPLETED
+================================================================================
+End Time: 2025-11-01T18:35:34.141210
+Return Code: 0
+Status: SUCCESS
+Log File: training_output_20251101_182027.log
+================================================================================

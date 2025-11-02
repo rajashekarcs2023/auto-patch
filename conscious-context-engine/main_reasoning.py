@@ -307,8 +307,8 @@ async def main():
     model, backend = await setup_reasoning_model()
     reasoning_engine = MetaReasoningEngine()
     
-    # Training configuration (lightweight for demo)
-    max_steps = 8
+    # Training configuration (extended for full evolution demonstration)
+    max_steps = 20
     current_step = await model.get_step()
     
     print(f"\nStarting reasoning training from step {current_step}")
