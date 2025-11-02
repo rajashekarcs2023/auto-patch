@@ -11,6 +11,10 @@ from dataclasses import dataclass
 from datetime import datetime
 import numpy as np
 from litellm import acompletion
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 
 @dataclass

@@ -11,6 +11,10 @@ import art
 from openai import AsyncOpenAI
 import os
 from datetime import datetime
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 
 @dataclass

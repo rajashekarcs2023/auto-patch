@@ -5,6 +5,10 @@ import os
 from typing import List
 import art
 from art.rewards import ruler_score_group
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 
 async def evaluate_with_ruler(trajectory_group: art.TrajectoryGroup, judge_model: str = "openai/gpt-4") -> art.TrajectoryGroup:

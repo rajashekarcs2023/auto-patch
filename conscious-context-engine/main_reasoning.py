@@ -36,7 +36,10 @@ async def setup_reasoning_model():
         base_model="OpenPipe/Qwen3-14B-Instruct",
     )
     
+    # Initialize the server - Training and inference will run on Weights & Biases servers
     backend = ServerlessBackend()
+    
+    # Register the model with the Serverless Backend (sets up logging, inference, and training)
     await model.register(backend)
     
     print(f"Model registered: {model.name}")
