@@ -365,16 +365,15 @@ class SelfImprovingMCPAgent:
     """Main self-improving MCP agent that coordinates all components"""
     
     def __init__(self):
-        self.tools: Dict[str, MCPTool] = {
-            "firecrawl": FirecrawlMCP(),
-            "vapi": VapiMCP(),
-            "perplexity": PerplexityMCP(),
-            "airbnb": AirbnbMCP()
-        }
+        # Import real tools
+        from real_mcp_tools import get_all_real_mcp_tools
+        self.tools: Dict[str, MCPTool] = get_all_real_mcp_tools()
         
         self.tool_learner = ToolSelectionLearner()
         self.context_optimizer = ContextOptimizer()
-        self.memory_system = MemoryEvolutionSystem()
+        # Use intelligent memory system
+        from smart_memory_system import IntelligentMemoryEvolutionSystem
+        self.memory_system = IntelligentMemoryEvolutionSystem(max_memory_items=30)
         
         self.task_history: List[ToolCall] = []
         self.improvement_metrics = {
@@ -401,9 +400,9 @@ class SelfImprovingMCPAgent:
             memory_items=[]
         )
         
-        # Optimize context using learned patterns
-        relevant_memories = self.memory_system.retrieve_relevant_memories(context)
-        context.memory_items = relevant_memories
+        # Optimize context using learned patterns with smart memory system
+        relevant_memories = self.memory_system.retrieve_relevant_memories(user_intent, task_type, max_memories=5)
+        context.memory_items = [mem["key"] for mem in relevant_memories]
         context = self.context_optimizer.optimize_context(context, [])
         
         # Get best tools for this task
@@ -441,14 +440,36 @@ class SelfImprovingMCPAgent:
             self.tool_learner.record_tool_usage(tool_call, context, outcome_score)
             self.context_optimizer.record_context_outcome(context.context_window, outcome_score)
             
-            # Store relevant information in memory
+            # Store relevant information in intelligent memory system
             if outcome_score > 0.7:
-                memory_key = f"{task_type}_{best_tool_name}_success"
-                self.memory_system.store_memory(memory_key, {
-                    "parameters": parameters,
-                    "outcome": result,
-                    "context": user_intent
-                }, importance=outcome_score)
+                memory_key = f"{task_type}_{best_tool_name}_success_{len(self.task_history)}"
+                self.memory_system.store_memory(
+                    memory_key, 
+                    {
+                        "tool": best_tool_name,
+                        "parameters": parameters,
+                        "outcome_score": outcome_score,
+                        "context": user_intent,
+                        "execution_time": execution_time
+                    }, 
+                    importance=outcome_score,
+                    context_type=task_type
+                )
+            elif outcome_score < 0.3:
+                # Also store failures to learn from them
+                memory_key = f"{task_type}_{best_tool_name}_failure_{len(self.task_history)}"
+                self.memory_system.store_memory(
+                    memory_key,
+                    {
+                        "tool": best_tool_name,
+                        "parameters": parameters, 
+                        "outcome_score": outcome_score,
+                        "context": user_intent,
+                        "lesson": "avoid_this_combination"
+                    },
+                    importance=0.3,
+                    context_type=task_type
+                )
             
             # Update metrics
             self._update_metrics(tool_call, outcome_score)
@@ -561,11 +582,16 @@ class SelfImprovingMCPAgent:
     
     def get_learning_insights(self) -> Dict[str, Any]:
         """Get insights about what the agent has learned"""
+        memory_insights = self.memory_system.get_memory_insights()
+        
         return {
             "tool_performance": self.tool_learner.tool_performance,
             "successful_patterns": len(self.tool_learner.success_combinations),
             "context_patterns": len(self.context_optimizer.context_effectiveness),
-            "memory_items": len(self.memory_system.memory_store),
+            "memory_items": memory_insights["total_memories"],
+            "memory_efficiency": memory_insights["memory_efficiency"],
+            "memory_pruning_events": memory_insights["pruning_events"],
+            "memory_categories": memory_insights["categories"],
             "improvement_metrics": self.improvement_metrics,
             "total_experience": len(self.task_history)
         }
