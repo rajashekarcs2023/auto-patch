@@ -306,7 +306,8 @@ class MetaReasoningEngine:
             self.improvement_history = memory_data.get("improvement_history", [])
             
         except (FileNotFoundError, json.JSONDecodeError) as e:
-            print(f"No previous reasoning memory found: {e}")
+            # Create initial memory file
+            self.save_reasoning_memory(filepath)
 
 
 class ReasoningTaskEnvironment:

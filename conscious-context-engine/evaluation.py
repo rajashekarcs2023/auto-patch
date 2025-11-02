@@ -7,7 +7,7 @@ import art
 from art.rewards import ruler_score_group
 
 
-async def evaluate_with_ruler(trajectory_group: art.TrajectoryGroup, model: str = "openai/gpt-4") -> art.TrajectoryGroup:
+async def evaluate_with_ruler(trajectory_group: art.TrajectoryGroup, judge_model: str = "openai/gpt-4") -> art.TrajectoryGroup:
     """
     Use RULER to evaluate and score a group of trajectories
     
@@ -24,7 +24,7 @@ async def evaluate_with_ruler(trajectory_group: art.TrajectoryGroup, model: str 
         # Use RULER to score the group
         judged_group = await ruler_score_group(
             trajectory_group, 
-            model=model,
+            judge_model,
             debug=False  # Set to True for debugging
         )
         

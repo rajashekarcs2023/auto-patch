@@ -1,0 +1,2464 @@
+{
+  "reasoning_chains": {
+    "tech_001": {
+      "chain_id": "tech_001",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Provide concrete implementation steps",
+          "success_rate": 0.4722222222222222,
+          "usage_count": 36
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 36
+    },
+    "diag_001": {
+      "chain_id": "diag_001",
+      "problem_type": "diagnosis",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Gather symptoms and environmental factors",
+          "success_rate": 0.0,
+          "usage_count": 16
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Generate ranked list of potential causes",
+          "success_rate": 1.0,
+          "usage_count": 16
+        },
+        {
+          "step_type": "verification",
+          "content": "Test hypotheses systematically",
+          "success_rate": 0.375,
+          "usage_count": 16
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Identify root cause and solution path",
+          "success_rate": 0.25,
+          "usage_count": 16
+        }
+      ],
+      "overall_success_rate": 0.0625,
+      "improvement_count": 16
+    },
+    "technical_002": {
+      "chain_id": "technical_002",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Generate multiple solution candidates and rank them by feasibility and impact",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_003": {
+      "chain_id": "technical_003",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Generate multiple solution candidates and rank them by feasibility and impact",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_004": {
+      "chain_id": "technical_004",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Generate multiple solution candidates and rank them by feasibility and impact",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_005": {
+      "chain_id": "technical_005",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "research_001": {
+      "chain_id": "research_001",
+      "problem_type": "research",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Identify key information needs and sources",
+          "success_rate": 0.05,
+          "usage_count": 20
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Form initial understanding from available data",
+          "success_rate": 0.95,
+          "usage_count": 20
+        },
+        {
+          "step_type": "verification",
+          "content": "Cross-reference with authoritative sources",
+          "success_rate": 0.2,
+          "usage_count": 20
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize findings with confidence levels",
+          "success_rate": 0.25,
+          "usage_count": 20
+        }
+      ],
+      "overall_success_rate": 0.3,
+      "improvement_count": 20
+    },
+    "technical_007": {
+      "chain_id": "technical_007",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "research_008": {
+      "chain_id": "research_008",
+      "problem_type": "research",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Form initial understanding from available data",
+          "success_rate": 0.95,
+          "usage_count": 20
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_009": {
+      "chain_id": "technical_009",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "research_010": {
+      "chain_id": "research_010",
+      "problem_type": "research",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Form initial understanding from available data",
+          "success_rate": 0.95,
+          "usage_count": 20
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize findings with confidence levels",
+          "success_rate": 0.25,
+          "usage_count": 20
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "research_011": {
+      "chain_id": "research_011",
+      "problem_type": "research",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Form initial understanding from available data",
+          "success_rate": 0.95,
+          "usage_count": 20
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "research_012": {
+      "chain_id": "research_012",
+      "problem_type": "research",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Form initial understanding from available data",
+          "success_rate": 0.95,
+          "usage_count": 20
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_013": {
+      "chain_id": "technical_013",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_014": {
+      "chain_id": "technical_014",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "research_015": {
+      "chain_id": "research_015",
+      "problem_type": "research",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Form initial understanding from available data",
+          "success_rate": 0.95,
+          "usage_count": 20
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "diagnosis_016": {
+      "chain_id": "diagnosis_016",
+      "problem_type": "diagnosis",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Generate ranked list of potential causes",
+          "success_rate": 1.0,
+          "usage_count": 16
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "research_017": {
+      "chain_id": "research_017",
+      "problem_type": "research",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Form initial understanding from available data",
+          "success_rate": 0.95,
+          "usage_count": 20
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "research_018": {
+      "chain_id": "research_018",
+      "problem_type": "research",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Form initial understanding from available data",
+          "success_rate": 0.95,
+          "usage_count": 20
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "research_019": {
+      "chain_id": "research_019",
+      "problem_type": "research",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Form initial understanding from available data",
+          "success_rate": 0.95,
+          "usage_count": 20
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_020": {
+      "chain_id": "technical_020",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_021": {
+      "chain_id": "technical_021",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "diagnosis_022": {
+      "chain_id": "diagnosis_022",
+      "problem_type": "diagnosis",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Generate ranked list of potential causes",
+          "success_rate": 1.0,
+          "usage_count": 16
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "diagnosis_023": {
+      "chain_id": "diagnosis_023",
+      "problem_type": "diagnosis",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Generate ranked list of potential causes",
+          "success_rate": 1.0,
+          "usage_count": 16
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_024": {
+      "chain_id": "technical_024",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_025": {
+      "chain_id": "technical_025",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "diagnosis_026": {
+      "chain_id": "diagnosis_026",
+      "problem_type": "diagnosis",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Generate ranked list of potential causes",
+          "success_rate": 1.0,
+          "usage_count": 16
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "research_027": {
+      "chain_id": "research_027",
+      "problem_type": "research",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Form initial understanding from available data",
+          "success_rate": 0.95,
+          "usage_count": 20
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "research_028": {
+      "chain_id": "research_028",
+      "problem_type": "research",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Form initial understanding from available data",
+          "success_rate": 0.95,
+          "usage_count": 20
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_029": {
+      "chain_id": "technical_029",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_030": {
+      "chain_id": "technical_030",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_031": {
+      "chain_id": "technical_031",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_032": {
+      "chain_id": "technical_032",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_033": {
+      "chain_id": "technical_033",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_034": {
+      "chain_id": "technical_034",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "research_035": {
+      "chain_id": "research_035",
+      "problem_type": "research",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Form initial understanding from available data",
+          "success_rate": 0.95,
+          "usage_count": 20
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "research_036": {
+      "chain_id": "research_036",
+      "problem_type": "research",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Form initial understanding from available data",
+          "success_rate": 0.95,
+          "usage_count": 20
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_037": {
+      "chain_id": "technical_037",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_038": {
+      "chain_id": "technical_038",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "research_039": {
+      "chain_id": "research_039",
+      "problem_type": "research",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Form initial understanding from available data",
+          "success_rate": 0.95,
+          "usage_count": 20
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_040": {
+      "chain_id": "technical_040",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_041": {
+      "chain_id": "technical_041",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "diagnosis_042": {
+      "chain_id": "diagnosis_042",
+      "problem_type": "diagnosis",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Generate ranked list of potential causes",
+          "success_rate": 1.0,
+          "usage_count": 16
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "research_043": {
+      "chain_id": "research_043",
+      "problem_type": "research",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Form initial understanding from available data",
+          "success_rate": 0.95,
+          "usage_count": 20
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_044": {
+      "chain_id": "technical_044",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "research_045": {
+      "chain_id": "research_045",
+      "problem_type": "research",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Form initial understanding from available data",
+          "success_rate": 0.95,
+          "usage_count": 20
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "diagnosis_046": {
+      "chain_id": "diagnosis_046",
+      "problem_type": "diagnosis",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Generate ranked list of potential causes",
+          "success_rate": 1.0,
+          "usage_count": 16
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "diagnosis_047": {
+      "chain_id": "diagnosis_047",
+      "problem_type": "diagnosis",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Generate ranked list of potential causes",
+          "success_rate": 1.0,
+          "usage_count": 16
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "research_048": {
+      "chain_id": "research_048",
+      "problem_type": "research",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Form initial understanding from available data",
+          "success_rate": 0.95,
+          "usage_count": 20
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_049": {
+      "chain_id": "technical_049",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Provide concrete implementation steps",
+          "success_rate": 0.4722222222222222,
+          "usage_count": 36
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "diagnosis_050": {
+      "chain_id": "diagnosis_050",
+      "problem_type": "diagnosis",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Generate ranked list of potential causes",
+          "success_rate": 1.0,
+          "usage_count": 16
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_051": {
+      "chain_id": "technical_051",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_052": {
+      "chain_id": "technical_052",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_053": {
+      "chain_id": "technical_053",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_054": {
+      "chain_id": "technical_054",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Provide concrete implementation steps",
+          "success_rate": 0.4722222222222222,
+          "usage_count": 36
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_055": {
+      "chain_id": "technical_055",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "diagnosis_056": {
+      "chain_id": "diagnosis_056",
+      "problem_type": "diagnosis",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Generate ranked list of potential causes",
+          "success_rate": 1.0,
+          "usage_count": 16
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "diagnosis_057": {
+      "chain_id": "diagnosis_057",
+      "problem_type": "diagnosis",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Generate ranked list of potential causes",
+          "success_rate": 1.0,
+          "usage_count": 16
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_058": {
+      "chain_id": "technical_058",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_059": {
+      "chain_id": "technical_059",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "diagnosis_060": {
+      "chain_id": "diagnosis_060",
+      "problem_type": "diagnosis",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Generate ranked list of potential causes",
+          "success_rate": 1.0,
+          "usage_count": 16
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "diagnosis_061": {
+      "chain_id": "diagnosis_061",
+      "problem_type": "diagnosis",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Systematically decompose the problem into core components and identify critical constraints",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Generate ranked list of potential causes",
+          "success_rate": 1.0,
+          "usage_count": 16
+        },
+        {
+          "step_type": "verification",
+          "content": "Test each hypothesis against known principles and edge cases",
+          "success_rate": 0.0,
+          "usage_count": 0
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    },
+    "technical_062": {
+      "chain_id": "technical_062",
+      "problem_type": "technical",
+      "steps": [
+        {
+          "step_type": "analysis",
+          "content": "Break down the technical requirements and constraints",
+          "success_rate": 0.9444444444444444,
+          "usage_count": 36
+        },
+        {
+          "step_type": "hypothesis",
+          "content": "Identify the most likely solution approach",
+          "success_rate": 0.5277777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "verification",
+          "content": "Test the approach against known cases",
+          "success_rate": 0.7777777777777778,
+          "usage_count": 36
+        },
+        {
+          "step_type": "conclusion",
+          "content": "Synthesize the most robust solution with clear implementation steps",
+          "success_rate": 0.0,
+          "usage_count": 0
+        }
+      ],
+      "overall_success_rate": 0.0,
+      "improvement_count": 0
+    }
+  },
+  "step_effectiveness": {
+    "analysis": {
+      "diagnosis": 0.0,
+      "technical": 0.9503456839135058,
+      "research": 0.05299490663889325
+    },
+    "hypothesis": {
+      "diagnosis": 0.9999847412109375,
+      "technical": 0.538730558493574,
+      "research": 0.9470041396867903
+    },
+    "verification": {
+      "diagnosis": 0.3808394029066636,
+      "technical": 0.7749516615683631,
+      "research": 0.20969439320287292
+    },
+    "conclusion": {
+      "diagnosis": 0.24609011526125785,
+      "technical": 0.47726737060135543,
+      "research": 0.23661346818713344
+    }
+  },
+  "improvement_history": [
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_002",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_003",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_004",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_005",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_007",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "research_001",
+      "evolved_chain": "research_008",
+      "original_performance": 0.4,
+      "problem_type": "research",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_009",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "research_001",
+      "evolved_chain": "research_010",
+      "original_performance": 0.5,
+      "problem_type": "research",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "research_001",
+      "evolved_chain": "research_011",
+      "original_performance": 0.42857142857142855,
+      "problem_type": "research",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "research_001",
+      "evolved_chain": "research_012",
+      "original_performance": 0.375,
+      "problem_type": "research",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_013",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_014",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "research_001",
+      "evolved_chain": "research_015",
+      "original_performance": 0.3333333333333333,
+      "problem_type": "research",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "diag_001",
+      "evolved_chain": "diagnosis_016",
+      "original_performance": 0.0,
+      "problem_type": "diagnosis",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "research_001",
+      "evolved_chain": "research_017",
+      "original_performance": 0.4,
+      "problem_type": "research",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "research_001",
+      "evolved_chain": "research_018",
+      "original_performance": 0.36363636363636365,
+      "problem_type": "research",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "research_001",
+      "evolved_chain": "research_019",
+      "original_performance": 0.3333333333333333,
+      "problem_type": "research",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_020",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_021",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "diag_001",
+      "evolved_chain": "diagnosis_022",
+      "original_performance": 0.0,
+      "problem_type": "diagnosis",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "diag_001",
+      "evolved_chain": "diagnosis_023",
+      "original_performance": 0.0,
+      "problem_type": "diagnosis",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_024",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_025",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "diag_001",
+      "evolved_chain": "diagnosis_026",
+      "original_performance": 0.0,
+      "problem_type": "diagnosis",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "research_001",
+      "evolved_chain": "research_027",
+      "original_performance": 0.38461538461538464,
+      "problem_type": "research",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "research_001",
+      "evolved_chain": "research_028",
+      "original_performance": 0.35714285714285715,
+      "problem_type": "research",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_029",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_030",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_031",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_032",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_033",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_034",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "research_001",
+      "evolved_chain": "research_035",
+      "original_performance": 0.3333333333333333,
+      "problem_type": "research",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "research_001",
+      "evolved_chain": "research_036",
+      "original_performance": 0.3125,
+      "problem_type": "research",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_037",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_038",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "research_001",
+      "evolved_chain": "research_039",
+      "original_performance": 0.29411764705882354,
+      "problem_type": "research",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_040",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_041",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "diag_001",
+      "evolved_chain": "diagnosis_042",
+      "original_performance": 0.0,
+      "problem_type": "diagnosis",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "research_001",
+      "evolved_chain": "research_043",
+      "original_performance": 0.2777777777777778,
+      "problem_type": "research",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_044",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "research_001",
+      "evolved_chain": "research_045",
+      "original_performance": 0.2631578947368421,
+      "problem_type": "research",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "diag_001",
+      "evolved_chain": "diagnosis_046",
+      "original_performance": 0.0,
+      "problem_type": "diagnosis",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "diag_001",
+      "evolved_chain": "diagnosis_047",
+      "original_performance": 0.0,
+      "problem_type": "diagnosis",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "research_001",
+      "evolved_chain": "research_048",
+      "original_performance": 0.3,
+      "problem_type": "research",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_049",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "diag_001",
+      "evolved_chain": "diagnosis_050",
+      "original_performance": 0.0,
+      "problem_type": "diagnosis",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_051",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_052",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_053",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_054",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_055",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "diag_001",
+      "evolved_chain": "diagnosis_056",
+      "original_performance": 0.0,
+      "problem_type": "diagnosis",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "diag_001",
+      "evolved_chain": "diagnosis_057",
+      "original_performance": 0.0,
+      "problem_type": "diagnosis",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_058",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_059",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "diag_001",
+      "evolved_chain": "diagnosis_060",
+      "original_performance": 0.06666666666666667,
+      "problem_type": "diagnosis",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "diag_001",
+      "evolved_chain": "diagnosis_061",
+      "original_performance": 0.0625,
+      "problem_type": "diagnosis",
+      "improvement_type": "reasoning_evolution"
+    },
+    {
+      "original_chain": "tech_001",
+      "evolved_chain": "technical_062",
+      "original_performance": 0.0,
+      "problem_type": "technical",
+      "improvement_type": "reasoning_evolution"
+    }
+  ]
+}
