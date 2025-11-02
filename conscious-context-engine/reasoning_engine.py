@@ -91,14 +91,18 @@ class MetaReasoningEngine:
                      if chain.problem_type == problem_type]
         
         if candidates:
-            # Return highest performing chain
-            best_chain = max(candidates, key=lambda x: x.overall_success_rate)
+            # Return highest performing chain (consider both success rate and usage)
+            best_chain = max(candidates, key=lambda x: (x.overall_success_rate, x.improvement_count))
         else:
-            # Use base pattern
+            # Use base pattern and immediately add to active chains
             best_chain = self.pattern_library.get(problem_type, 
                                                 list(self.pattern_library.values())[0])
-            # Add to active chains
-            self.reasoning_chains[best_chain.chain_id] = best_chain
+            # Create a copy for active use
+            import copy
+            active_chain = copy.deepcopy(best_chain)
+            active_chain.chain_id = f"{problem_type}_active_{len(self.reasoning_chains)}"
+            self.reasoning_chains[active_chain.chain_id] = active_chain
+            best_chain = active_chain
         
         return best_chain
     

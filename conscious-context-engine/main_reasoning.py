@@ -13,6 +13,7 @@ import art
 from art.serverless.backend import ServerlessBackend
 from reasoning_engine import MetaReasoningEngine, ReasoningTaskEnvironment, ReasoningChain
 from evaluation import evaluate_with_ruler
+from task_benchmarks import TaskPerformanceTracker
 
 load_dotenv()
 
@@ -53,6 +54,9 @@ async def reasoning_rollout(model: art.Model, problem: Dict, reasoning_engine: M
     
     # Get current best reasoning chain for this problem type
     reasoning_chain = reasoning_engine.get_reasoning_chain(problem_type)
+    
+    # Store chain performance for tracking
+    chain_performance = reasoning_chain.overall_success_rate
     
     # Create reasoning-guided prompt
     reasoning_template = reasoning_chain.to_prompt_template()
@@ -108,8 +112,10 @@ Please follow the reasoning pattern step by step and provide a comprehensive sol
         response_content = response.choices[0].message.content
         traj.messages_and_choices.append(response.choices[0])
         
-        # Evaluate reasoning quality
+        # Evaluate reasoning quality using passed reasoning_engine
+        from reasoning_engine import ReasoningTaskEnvironment
         env = ReasoningTaskEnvironment()
+        env.meta_engine = reasoning_engine  # Use shared engine
         reasoning_score, step_results = env.evaluate_reasoning_quality(response_content, problem)
         
         # Record reasoning performance
@@ -134,10 +140,13 @@ Please follow the reasoning pattern step by step and provide a comprehensive sol
             traj.reward += 0.3  # Bonus for triggering evolution
             print(f"REASONING EVOLVED: {reasoning_chain.chain_id} -> {evolved_chain.chain_id}")
         
+        # Update chain performance after recording outcome
+        updated_chain_performance = reasoning_chain.overall_success_rate
+        
         # Store detailed metrics
         traj.metrics.update({
             "reasoning_score": reasoning_score,
-            "chain_performance": reasoning_chain.overall_success_rate,
+            "chain_performance": updated_chain_performance,
             "evolution_triggered": traj.reasoning_evolution_step,
             "step_success_count": sum(1 for _, success in step_results if success),
             "total_reasoning_steps": len(step_results)
@@ -146,7 +155,7 @@ Please follow the reasoning pattern step by step and provide a comprehensive sol
         traj.reasoning_steps_quality = [score for _, score in step_results]
         
         print(f"Reasoning Score: {reasoning_score:.2f}")
-        print(f"Chain Performance: {reasoning_chain.overall_success_rate:.2f}")
+        print(f"Chain Performance: {updated_chain_performance:.2f}")
         if evolved_chain:
             print(f"Evolution Triggered: New chain {evolved_chain.chain_id}")
         
@@ -301,13 +310,39 @@ async def main():
     
     print(f"\nStarting reasoning training from step {current_step}")
     
+    # Initialize task performance tracker
+    task_tracker = TaskPerformanceTracker()
+    baseline_results = None
+    
     # Training loop
     for step in range(current_step, max_steps):
         try:
             await run_reasoning_training_step(model, reasoning_engine, step)
             
-            # Show evolution every 2 steps
+            # Run task benchmarks every 2 steps
             if step % 2 == 1:
+                print(f"\n🎯 RUNNING TASK BENCHMARKS (Step {step})")
+                benchmark_results = await task_tracker.run_comprehensive_benchmark(model, reasoning_engine)
+                
+                # Save results
+                filename = task_tracker.save_benchmark_results(benchmark_results)
+                
+                # Compare with baseline if available
+                if baseline_results is None:
+                    baseline_results = benchmark_results
+                    print("\n📊 BASELINE ESTABLISHED")
+                    # Save baseline for comparison
+                    baseline_filename = filename.replace("task_benchmark_results_", "task_benchmark_results_baseline_")
+                    task_tracker.save_benchmark_results(baseline_results, baseline_filename)
+                else:
+                    comparison = task_tracker.compare_benchmark_runs(
+                        filename.replace("task_benchmark_results_", "task_benchmark_results_baseline_"), 
+                        benchmark_results
+                    )
+                    if comparison.get("summary"):
+                        improvement = comparison["summary"].get("improvement_percent", 0)
+                        print(f"\n📈 IMPROVEMENT: {improvement:.1f}% vs baseline")
+                
                 await demonstrate_reasoning_evolution()
                 
         except KeyboardInterrupt:
@@ -318,6 +353,33 @@ async def main():
             continue
     
     print(f"\nReasoning training completed! Final step: {await model.get_step()}")
+    
+    # Final comprehensive benchmark and summary
+    print("\n" + "="*60)
+    print("FINAL PERFORMANCE EVALUATION")
+    print("="*60)
+    
+    final_results = await task_tracker.run_comprehensive_benchmark(model, reasoning_engine)
+    final_filename = task_tracker.save_benchmark_results(final_results, "final_benchmark_results.json")
+    
+    if baseline_results:
+        print("\n🔍 TRAINING IMPACT ANALYSIS")
+        print("-" * 40)
+        final_comparison = task_tracker.compare_benchmark_runs("task_benchmark_results_baseline_*.json", final_results)
+        
+        if final_comparison.get("summary"):
+            total_improvement = final_comparison["summary"].get("improvement_percent", 0)
+            print(f"📊 OVERALL IMPROVEMENT: {total_improvement:.1f}%")
+            print(f"📈 TASKS IMPROVED: {final_comparison['summary']['tasks_improved']}")
+            print(f"🚀 SIGNIFICANT IMPROVEMENTS: {final_comparison['summary']['significant_improvements']}")
+    
+    # Show reasoning evolution summary
+    evolution_metrics = reasoning_engine.get_reasoning_evolution_metrics()
+    print(f"\n🧠 REASONING EVOLUTION SUMMARY:")
+    print(f"   Total Chains Created: {evolution_metrics['total_reasoning_chains']}")
+    print(f"   Chains Evolved: {evolution_metrics['evolved_chains']}")
+    print(f"   Evolution Rate: {evolution_metrics['evolution_rate']:.1%}")
+    print(f"   Reasoning Sophistication: {evolution_metrics['reasoning_sophistication']:.3f}")
     
     # Final demonstration
     await demonstrate_reasoning_evolution()

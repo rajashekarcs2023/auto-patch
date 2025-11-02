@@ -21,11 +21,12 @@ async def evaluate_with_ruler(trajectory_group: art.TrajectoryGroup, judge_model
         return trajectory_group
     
     try:
-        # Use RULER to score the group
+        # Use RULER to score the group - proper API call
         judged_group = await ruler_score_group(
             trajectory_group, 
-            judge_model,
-            debug=False  # Set to True for debugging
+            judge_model=judge_model,
+            swallow_exceptions=True,  # Handle API failures gracefully
+            debug=False
         )
         
         if judged_group is None:
