@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Improving Agent Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .dashboard {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+        
+        .memory-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .task-area {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .memory-panel {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .task-input {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+        
+        .execute-btn {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        }
+        
+        .execute-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ffd700, #ff6b6b);
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+        
+        .memory-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border-left: 4px solid #ffd700;
+            transition: all 0.3s ease;
+        }
+        
+        .memory-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(5px);
+        }
+        
+        .memory-item.active {
+            border-left-color: #ff6b6b;
+            background: rgba(255, 107, 107, 0.2);
+        }
+        
+        .tool-confidence {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+        }
+        
+        .confidence-bar {
+            flex: 1;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 3px;
+            margin: 0 10px;
+            overflow: hidden;
+        }
+        
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ff6b6b, #ffd700);
+            transition: width 0.5s ease;
+        }
+        
+        .log {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+        
+        .log-entry {
+            margin-bottom: 8px;
+            padding: 5px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .log-entry.success {
+            color: #4ade80;
+        }
+        
+        .log-entry.info {
+            color: #60a5fa;
+        }
+        
+        .log-entry.memory {
+            color: #fbbf24;
+        }
+        
+        .metric {
+            text-align: center;
+        }
+        
+        .metric-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ffd700;
+            display: block;
+        }
+        
+        .metric-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .chart-container {
+            height: 150px;
+            position: relative;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 10px;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        .thinking {
+            animation: pulse 1.5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧠 Self-Improving Agent</h1>
+            <p>Watch AI learn through experience without retraining</p>
+        </div>
+        
+        <div class="dashboard">
+            <div class="card">
+                <h3>📊 Learning Progress</h3>
+                <div class="metric">
+                    <span class="metric-value" id="taskCount">0</span>
+                    <span class="metric-label">Tasks Completed</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="learningProgress"></div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>🧠 Memory System</h3>
+                <div class="metric">
+                    <span class="metric-value" id="memoryCount">0</span>
+                    <span class="metric-label">Memories Stored</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value" id="memoryUsage">0%</span>
+                    <span class="metric-label">Memory Utilization</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>🎯 Performance</h3>
+                <div class="metric">
+                    <span class="metric-value" id="confidence">50%</span>
+                    <span class="metric-label">Avg Confidence</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value" id="efficiency">0%</span>
+                    <span class="metric-label">Improvement</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="memory-grid">
+            <div class="task-area">
+                <h3>🎯 Task Execution</h3>
+                <input type="text" class="task-input" id="taskInput" placeholder="Enter a customer service task (e.g., 'Research our refund policy')">
+                <button class="execute-btn" onclick="executeTask()">Execute Task</button>
+                
+                <div style="margin-top: 20px;">
+                    <h4>🔧 Tool Selection & Confidence</h4>
+                    <div class="tool-confidence">
+                        <span>Selected Tool:</span>
+                        <span id="selectedTool">None</span>
+                    </div>
+                    <div class="tool-confidence">
+                        <span>Confidence:</span>
+                        <div class="confidence-bar">
+                            <div class="confidence-fill" id="toolConfidence"></div>
+                        </div>
+                        <span id="confidenceValue">50%</span>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 20px;">
+                    <h4>📝 Execution Log</h4>
+                    <div class="log" id="executionLog">
+                        <div class="log-entry info">System ready. Enter a task to begin...</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="memory-panel">
+                <h3>🧠 Active Memories</h3>
+                <div id="memoryList">
+                    <div class="memory-item">
+                        <strong>No memories yet</strong><br>
+                        <small>Complete tasks to build memory</small>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 20px;">
+                    <h4>📈 Learning Chart</h4>
+                    <div class="chart-container">
+                        <canvas id="learningChart" width="300" height="130"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let taskCount = 0;
+        let memories = [];
+        let confidenceHistory = [];
+        let memoryUsageHistory = [];
+        
+        const tools = {
+            "perplexity_search": "🔍 Research & Information",
+            "airbnb_search": "🏨 Travel & Booking", 
+            "vapi_synthesize": "🎤 Voice & Audio",
+            "firecrawl_scrape": "🕷️ Web Scraping",
+            "context7_get_library_docs": "📚 Documentation"
+        };
+        
+        function addLogEntry(message, type = 'info') {
+            const log = document.getElementById('executionLog');
+            const entry = document.createElement('div');
+            entry.className = `log-entry ${type}`;
+            entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            log.appendChild(entry);
+            log.scrollTop = log.scrollHeight;
+        }
+        
+        function updateMetrics() {
+            document.getElementById('taskCount').textContent = taskCount;
+            document.getElementById('memoryCount').textContent = memories.length;
+            
+            const avgConfidence = confidenceHistory.length > 0 ? 
+                Math.round(confidenceHistory.reduce((a, b) => a + b) / confidenceHistory.length) : 50;
+            document.getElementById('confidence').textContent = `${avgConfidence}%`;
+            
+            const memoryUsage = taskCount > 0 ? Math.round((memories.length / taskCount) * 100) : 0;
+            document.getElementById('memoryUsage').textContent = `${memoryUsage}%`;
+            
+            const improvement = confidenceHistory.length > 2 ? 
+                Math.round(((confidenceHistory[confidenceHistory.length-1] - confidenceHistory[0]) / confidenceHistory[0]) * 100) : 0;
+            document.getElementById('efficiency').textContent = `${improvement}%`;
+            
+            const progress = Math.min(taskCount * 10, 100);
+            document.getElementById('learningProgress').style.width = `${progress}%`;
+        }
+        
+        function updateMemoryDisplay() {
+            const memoryList = document.getElementById('memoryList');
+            memoryList.innerHTML = '';
+            
+            if (memories.length === 0) {
+                memoryList.innerHTML = `
+                    <div class="memory-item">
+                        <strong>No memories yet</strong><br>
+                        <small>Complete tasks to build memory</small>
+                    </div>
+                `;
+                return;
+            }
+            
+            memories.slice(-5).reverse().forEach((memory, index) => {
+                const item = document.createElement('div');
+                item.className = `memory-item ${memory.active ? 'active' : ''}`;
+                item.innerHTML = `
+                    <strong>${memory.tool}</strong><br>
+                    <small>Score: ${memory.score}% | Uses: ${memory.uses}</small><br>
+                    <small style="opacity: 0.7;">${memory.task.substring(0, 50)}...</small>
+                `;
+                memoryList.appendChild(item);
+            });
+        }
+        
+        function findRelevantMemories(task) {
+            const taskWords = task.toLowerCase().split(' ');
+            const relevant = [];
+            
+            memories.forEach(memory => {
+                const memoryWords = memory.task.toLowerCase().split(' ');
+                const overlap = taskWords.filter(word => memoryWords.includes(word)).length;
+                const similarity = overlap / Math.max(taskWords.length, memoryWords.length);
+                
+                if (similarity > 0.3) {
+                    relevant.push({...memory, similarity});
+                }
+            });
+            
+            return relevant.sort((a, b) => b.similarity - a.similarity).slice(0, 3);
+        }
+        
+        function selectTool(task, relevantMemories) {
+            // Reset memory active states
+            memories.forEach(m => m.active = false);
+            
+            // Check memories first
+            for (let memory of relevantMemories) {
+                if (memory.score > 80) {
+                    memory.active = true;
+                    addLogEntry(`Using memory: ${memory.tool} (similarity: ${Math.round(memory.similarity * 100)}%)`, 'memory');
+                    return {tool: memory.tool, confidence: 50 + (memory.similarity * 30)};
+                }
+            }
+            
+            // Fallback to keyword matching
+            const taskLower = task.toLowerCase();
+            let selectedTool = 'perplexity_search';
+            
+            if (taskLower.includes('hotel') || taskLower.includes('travel') || taskLower.includes('accommodation')) {
+                selectedTool = 'airbnb_search';
+            } else if (taskLower.includes('voice') || taskLower.includes('audio') || taskLower.includes('call')) {
+                selectedTool = 'vapi_synthesize';
+            } else if (taskLower.includes('scrape') || taskLower.includes('extract') || taskLower.includes('website')) {
+                selectedTool = 'firecrawl_scrape';
+            } else if (taskLower.includes('documentation') || taskLower.includes('docs') || taskLower.includes('library')) {
+                selectedTool = 'context7_get_library_docs';
+            }
+            
+            return {tool: selectedTool, confidence: 50};
+        }
+        
+        function executeTask() {
+            const taskInput = document.getElementById('taskInput');
+            const task = taskInput.value.trim();
+            
+            if (!task) {
+                addLogEntry('Please enter a task description', 'info');
+                return;
+            }
+            
+            taskCount++;
+            addLogEntry(`Starting Task ${taskCount}: ${task}`, 'info');
+            
+            // Add thinking animation
+            document.getElementById('selectedTool').textContent = 'Thinking...';
+            document.getElementById('selectedTool').classList.add('thinking');
+            
+            setTimeout(() => {
+                // Find relevant memories
+                const relevantMemories = findRelevantMemories(task);
+                
+                if (relevantMemories.length > 0) {
+                    addLogEntry(`Found ${relevantMemories.length} relevant memories`, 'memory');
+                }
+                
+                // Select tool
+                const {tool, confidence} = selectTool(task, relevantMemories);
+                
+                // Update UI
+                document.getElementById('selectedTool').textContent = tools[tool];
+                document.getElementById('selectedTool').classList.remove('thinking');
+                document.getElementById('toolConfidence').style.width = `${confidence}%`;
+                document.getElementById('confidenceValue').textContent = `${Math.round(confidence)}%`;
+                
+                addLogEntry(`Selected tool: ${tools[tool]} (confidence: ${Math.round(confidence)}%)`, 'success');
+                
+                // Simulate execution
+                setTimeout(() => {
+                    const score = 85 + Math.random() * 10; // Simulate good performance
+                    addLogEntry(`Task completed successfully! Score: ${Math.round(score)}%`, 'success');
+                    
+                    // Store in memory
+                    const existingMemory = memories.find(m => m.tool === tool);
+                    if (existingMemory) {
+                        existingMemory.uses++;
+                        existingMemory.score = (existingMemory.score + score) / 2;
+                        existingMemory.task = task; // Update with latest task
+                    } else {
+                        memories.push({
+                            tool,
+                            task,
+                            score: Math.round(score),
+                            uses: 1,
+                            active: false
+                        });
+                    }
+                    
+                    confidenceHistory.push(confidence);
+                    updateMetrics();
+                    updateMemoryDisplay();
+                    
+                    addLogEntry(`Memory updated. Total memories: ${memories.length}`, 'memory');
+                    
+                    // Clear input
+                    taskInput.value = '';
+                }, 1500);
+            }, 1000);
+        }
+        
+        // Allow Enter key to execute task
+        document.getElementById('taskInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                executeTask();
+            }
+        });
+        
+        // Initialize
+        updateMetrics();
+        updateMemoryDisplay();
+    </script>
+</body>
+</html>

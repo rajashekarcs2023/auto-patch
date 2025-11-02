@@ -1,0 +1,305 @@
+{
+  "error_signatures": {
+    "a75f929f80c2": {
+      "api": "firecrawl_scrape",
+      "error_type": "timeout",
+      "params": {
+        "url": "https://httpbin.org/delay/8",
+        "timeout": 3
+      },
+      "first_seen": "2025-11-01T20:37:18.600776",
+      "occurrences": 3,
+      "successful_recoveries": [
+        {
+          "strategy": "retry_with_exponential_backoff",
+          "success": true,
+          "success_score": 0.99,
+          "execution_time": 0.5,
+          "confidence": 1.2,
+          "source": "research",
+          "research_insights": 3,
+          "timestamp": "2025-11-01T20:37:19.875261"
+        },
+        {
+          "strategy": "retry_with_exponential_backoff",
+          "success": true,
+          "success_score": 0.99,
+          "execution_time": 0.15,
+          "confidence": 0.95,
+          "source": "memory",
+          "research_insights": 0,
+          "timestamp": "2025-11-01T20:37:30.709595"
+        },
+        {
+          "strategy": "retry_with_exponential_backoff",
+          "success": true,
+          "success_score": 0.99,
+          "execution_time": 0.15,
+          "confidence": 0.95,
+          "source": "memory",
+          "research_insights": 0,
+          "timestamp": "2025-11-01T20:37:34.014477"
+        }
+      ],
+      "failed_attempts": [],
+      "last_seen": "2025-11-01T20:37:33.863943"
+    },
+    "4a2e748e6367": {
+      "api": "firecrawl_scrape",
+      "error_type": "rate_limit",
+      "params": {
+        "url": "https://httpbin.org/status/429"
+      },
+      "first_seen": "2025-11-01T20:37:21.376952",
+      "occurrences": 3,
+      "successful_recoveries": [
+        {
+          "strategy": "exponential_backoff",
+          "success": true,
+          "success_score": 0.99,
+          "execution_time": 0.5,
+          "confidence": 1.3,
+          "source": "research",
+          "research_insights": 3,
+          "timestamp": "2025-11-01T20:37:22.543828"
+        },
+        {
+          "strategy": "exponential_backoff",
+          "success": true,
+          "success_score": 0.99,
+          "execution_time": 0.15,
+          "confidence": 0.95,
+          "source": "memory",
+          "research_insights": 0,
+          "timestamp": "2025-11-01T20:37:32.362665"
+        },
+        {
+          "strategy": "exponential_backoff",
+          "success": true,
+          "success_score": 0.99,
+          "execution_time": 0.15,
+          "confidence": 0.95,
+          "source": "memory",
+          "research_insights": 0,
+          "timestamp": "2025-11-01T20:37:35.670019"
+        }
+      ],
+      "failed_attempts": [],
+      "last_seen": "2025-11-01T20:37:35.514855"
+    },
+    "a148cc7e9f83": {
+      "api": "context7_get_library_docs",
+      "error_type": "not_found",
+      "params": {
+        "library": "nonexistent",
+        "query": "test"
+      },
+      "first_seen": "2025-11-01T20:37:24.045055",
+      "occurrences": 2,
+      "successful_recoveries": [
+        {
+          "strategy": "basic_retry",
+          "success": true,
+          "success_score": 0.8917469075123923,
+          "execution_time": 0.5,
+          "confidence": 0.6,
+          "source": "research",
+          "research_insights": 2,
+          "timestamp": "2025-11-01T20:37:38.979714"
+        }
+      ],
+      "failed_attempts": [
+        {
+          "strategy": "basic_retry",
+          "success": false,
+          "success_score": 0.25769038330471694,
+          "execution_time": 0.5,
+          "confidence": 0.6,
+          "source": "research",
+          "research_insights": 2,
+          "timestamp": "2025-11-01T20:37:25.920180"
+        }
+      ],
+      "last_seen": "2025-11-01T20:37:37.171365"
+    },
+    "783a42d0483a": {
+      "api": "firecrawl_scrape",
+      "error_type": "server_error",
+      "params": {
+        "url": "https://httpbin.org/status/500"
+      },
+      "first_seen": "2025-11-01T20:37:27.421365",
+      "occurrences": 1,
+      "successful_recoveries": [
+        {
+          "strategy": "circuit_breaker",
+          "success": true,
+          "success_score": 0.99,
+          "execution_time": 0.5,
+          "confidence": 1.0,
+          "source": "research",
+          "research_insights": 3,
+          "timestamp": "2025-11-01T20:37:29.053876"
+        }
+      ],
+      "failed_attempts": [],
+      "last_seen": "2025-11-01T20:37:27.421374"
+    }
+  },
+  "recovery_patterns": {
+    "firecrawl_scrape_timeout_retry_with_exponential_backoff": {
+      "attempts": 3,
+      "successes": 3,
+      "avg_score": 0.9899999999999999,
+      "last_updated": "2025-11-01T20:37:34.014505"
+    },
+    "firecrawl_scrape_rate_limit_exponential_backoff": {
+      "attempts": 3,
+      "successes": 3,
+      "avg_score": 0.9899999999999999,
+      "last_updated": "2025-11-01T20:37:35.670060"
+    },
+    "context7_get_library_docs_not_found_basic_retry": {
+      "attempts": 2,
+      "successes": 1,
+      "avg_score": 0.5747186454085547,
+      "last_updated": "2025-11-01T20:37:38.979755"
+    },
+    "firecrawl_scrape_server_error_circuit_breaker": {
+      "attempts": 1,
+      "successes": 1,
+      "avg_score": 0.99,
+      "last_updated": "2025-11-01T20:37:29.053909"
+    }
+  },
+  "session_attempts": [
+    {
+      "attempt": 1,
+      "stage": "learning",
+      "api": "firecrawl_scrape",
+      "error_type": "timeout",
+      "signature": "a75f929f80c2",
+      "strategy": "retry_with_exponential_backoff",
+      "success": true,
+      "performance_score": 0.99,
+      "execution_time": 0.5,
+      "source": "research",
+      "total_time": 1.274571180343628,
+      "timestamp": "2025-11-01T20:37:19.875336"
+    },
+    {
+      "attempt": 2,
+      "stage": "learning",
+      "api": "firecrawl_scrape",
+      "error_type": "rate_limit",
+      "signature": "4a2e748e6367",
+      "strategy": "exponential_backoff",
+      "success": true,
+      "performance_score": 0.99,
+      "execution_time": 0.5,
+      "source": "research",
+      "total_time": 1.1669716835021973,
+      "timestamp": "2025-11-01T20:37:22.543880"
+    },
+    {
+      "attempt": 3,
+      "stage": "learning",
+      "api": "context7_get_library_docs",
+      "error_type": "not_found",
+      "signature": "a148cc7e9f83",
+      "strategy": "basic_retry",
+      "success": false,
+      "performance_score": 0.25769038330471694,
+      "execution_time": 0.5,
+      "source": "research",
+      "total_time": 1.8752052783966064,
+      "timestamp": "2025-11-01T20:37:25.920230"
+    },
+    {
+      "attempt": 4,
+      "stage": "learning",
+      "api": "firecrawl_scrape",
+      "error_type": "server_error",
+      "signature": "783a42d0483a",
+      "strategy": "circuit_breaker",
+      "success": true,
+      "performance_score": 0.99,
+      "execution_time": 0.5,
+      "source": "research",
+      "total_time": 1.6325712203979492,
+      "timestamp": "2025-11-01T20:37:29.053913"
+    },
+    {
+      "attempt": 5,
+      "stage": "recognition",
+      "api": "firecrawl_scrape",
+      "error_type": "timeout",
+      "signature": "a75f929f80c2",
+      "strategy": "retry_with_exponential_backoff",
+      "success": true,
+      "performance_score": 0.99,
+      "execution_time": 0.15,
+      "source": "memory",
+      "total_time": 0.15434598922729492,
+      "timestamp": "2025-11-01T20:37:30.709614"
+    },
+    {
+      "attempt": 6,
+      "stage": "recognition",
+      "api": "firecrawl_scrape",
+      "error_type": "rate_limit",
+      "signature": "4a2e748e6367",
+      "strategy": "exponential_backoff",
+      "success": true,
+      "performance_score": 0.99,
+      "execution_time": 0.15,
+      "source": "memory",
+      "total_time": 0.15210318565368652,
+      "timestamp": "2025-11-01T20:37:32.362691"
+    },
+    {
+      "attempt": 7,
+      "stage": "prediction",
+      "api": "firecrawl_scrape",
+      "error_type": "timeout",
+      "signature": "a75f929f80c2",
+      "strategy": "retry_with_exponential_backoff",
+      "success": true,
+      "performance_score": 0.99,
+      "execution_time": 0.15,
+      "source": "memory",
+      "total_time": 0.1506030559539795,
+      "timestamp": "2025-11-01T20:37:34.014512"
+    },
+    {
+      "attempt": 8,
+      "stage": "prediction",
+      "api": "firecrawl_scrape",
+      "error_type": "rate_limit",
+      "signature": "4a2e748e6367",
+      "strategy": "exponential_backoff",
+      "success": true,
+      "performance_score": 0.99,
+      "execution_time": 0.15,
+      "source": "memory",
+      "total_time": 0.15525603294372559,
+      "timestamp": "2025-11-01T20:37:35.670069"
+    },
+    {
+      "attempt": 9,
+      "stage": "prediction",
+      "api": "context7_get_library_docs",
+      "error_type": "not_found",
+      "signature": "a148cc7e9f83",
+      "strategy": "basic_retry",
+      "success": true,
+      "performance_score": 0.8917469075123923,
+      "execution_time": 0.5,
+      "source": "research",
+      "total_time": 1.8086609840393066,
+      "timestamp": "2025-11-01T20:37:38.979763"
+    }
+  ],
+  "evolution_stages": [],
+  "last_updated": "2025-11-01T20:37:40.481180"
+}

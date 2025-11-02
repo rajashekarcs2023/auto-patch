@@ -1,0 +1,323 @@
+{
+  "training_completed": "2025-11-01T19:23:40.949201",
+  "episode_metrics": [
+    {
+      "episode": 1,
+      "task_type": "research",
+      "tool_used": "firecrawl_scrape",
+      "is_optimal": false,
+      "success": true,
+      "execution_time": 0.3015878200531006,
+      "learning_score": 0.3,
+      "memory_items": 0,
+      "total_experience": 1,
+      "memory_efficiency": 0.0
+    },
+    {
+      "episode": 2,
+      "task_type": "travel",
+      "tool_used": "firecrawl_scrape",
+      "is_optimal": false,
+      "success": true,
+      "execution_time": 0.30124878883361816,
+      "learning_score": 0.3,
+      "memory_items": 0,
+      "total_experience": 2,
+      "memory_efficiency": 0.0
+    },
+    {
+      "episode": 3,
+      "task_type": "communication",
+      "tool_used": "firecrawl_scrape",
+      "is_optimal": false,
+      "success": true,
+      "execution_time": 0.301332950592041,
+      "learning_score": 0.3,
+      "memory_items": 0,
+      "total_experience": 3,
+      "memory_efficiency": 0.0
+    },
+    {
+      "episode": 4,
+      "task_type": "web_scraping",
+      "tool_used": "firecrawl_scrape",
+      "is_optimal": true,
+      "success": true,
+      "execution_time": 0.30166006088256836,
+      "learning_score": 1.0,
+      "memory_items": 1,
+      "total_experience": 4,
+      "memory_efficiency": 0.0
+    },
+    {
+      "episode": 5,
+      "task_type": "documentation",
+      "tool_used": "firecrawl_scrape",
+      "is_optimal": false,
+      "success": true,
+      "execution_time": 0.3014848232269287,
+      "learning_score": 0.3,
+      "memory_items": 1,
+      "total_experience": 5,
+      "memory_efficiency": 0.0
+    },
+    {
+      "episode": 6,
+      "task_type": "research",
+      "tool_used": "firecrawl_batch_scrape",
+      "is_optimal": false,
+      "success": true,
+      "execution_time": 0.8006300926208496,
+      "learning_score": 0.5,
+      "memory_items": 2,
+      "total_experience": 6,
+      "memory_efficiency": 0.0
+    },
+    {
+      "episode": 7,
+      "task_type": "travel",
+      "tool_used": "firecrawl_batch_scrape",
+      "is_optimal": false,
+      "success": true,
+      "execution_time": 0.801760196685791,
+      "learning_score": 0.5,
+      "memory_items": 3,
+      "total_experience": 7,
+      "memory_efficiency": 0.0
+    },
+    {
+      "episode": 8,
+      "task_type": "communication",
+      "tool_used": "firecrawl_batch_scrape",
+      "is_optimal": false,
+      "success": true,
+      "execution_time": 0.8006670475006104,
+      "learning_score": 0.5,
+      "memory_items": 4,
+      "total_experience": 8,
+      "memory_efficiency": 0.0
+    },
+    {
+      "episode": 9,
+      "task_type": "web_scraping",
+      "tool_used": "firecrawl_batch_scrape",
+      "is_optimal": true,
+      "success": true,
+      "execution_time": 0.8003721237182617,
+      "learning_score": 1.0,
+      "memory_items": 5,
+      "total_experience": 9,
+      "memory_efficiency": 0.0
+    },
+    {
+      "episode": 10,
+      "task_type": "documentation",
+      "tool_used": "firecrawl_batch_scrape",
+      "is_optimal": false,
+      "success": true,
+      "execution_time": 0.801414966583252,
+      "learning_score": 0.5,
+      "memory_items": 6,
+      "total_experience": 10,
+      "memory_efficiency": 0.0
+    },
+    {
+      "episode": 11,
+      "task_type": "research",
+      "tool_used": "firecrawl_check_batch_status",
+      "is_optimal": false,
+      "success": true,
+      "execution_time": 0.20174622535705566,
+      "learning_score": 0.5,
+      "memory_items": 7,
+      "total_experience": 11,
+      "memory_efficiency": 0.0
+    },
+    {
+      "episode": 12,
+      "task_type": "travel",
+      "tool_used": "firecrawl_check_batch_status",
+      "is_optimal": false,
+      "success": true,
+      "execution_time": 0.20167922973632812,
+      "learning_score": 0.5,
+      "memory_items": 8,
+      "total_experience": 12,
+      "memory_efficiency": 0.0
+    },
+    {
+      "episode": 13,
+      "task_type": "communication",
+      "tool_used": "firecrawl_check_batch_status",
+      "is_optimal": false,
+      "success": true,
+      "execution_time": 0.20207715034484863,
+      "learning_score": 0.5,
+      "memory_items": 9,
+      "total_experience": 13,
+      "memory_efficiency": 0.0
+    },
+    {
+      "episode": 14,
+      "task_type": "web_scraping",
+      "tool_used": "firecrawl_check_batch_status",
+      "is_optimal": true,
+      "success": true,
+      "execution_time": 0.20141196250915527,
+      "learning_score": 1.0,
+      "memory_items": 10,
+      "total_experience": 14,
+      "memory_efficiency": 0.0
+    },
+    {
+      "episode": 15,
+      "task_type": "documentation",
+      "tool_used": "firecrawl_check_batch_status",
+      "is_optimal": false,
+      "success": true,
+      "execution_time": 0.20077896118164062,
+      "learning_score": 0.5,
+      "memory_items": 11,
+      "total_experience": 15,
+      "memory_efficiency": 0.0
+    }
+  ],
+  "improvement_rate": 0.10714285714285715,
+  "final_agent_state": {
+    "tool_performance": {
+      "firecrawl_scrape_research": {
+        "success_rate": 0.4,
+        "avg_execution_time": 0.301227,
+        "avg_tokens": 150.0,
+        "usage_count": 1
+      },
+      "firecrawl_scrape_travel": {
+        "success_rate": 0.52,
+        "avg_execution_time": 0.301096,
+        "avg_tokens": 150.0,
+        "usage_count": 1
+      },
+      "firecrawl_scrape_communication": {
+        "success_rate": 0.4,
+        "avg_execution_time": 0.301138,
+        "avg_tokens": 150.0,
+        "usage_count": 1
+      },
+      "firecrawl_scrape_web_scraping": {
+        "success_rate": 0.76,
+        "avg_execution_time": 0.301262,
+        "avg_tokens": 150.0,
+        "usage_count": 1
+      },
+      "firecrawl_scrape_documentation": {
+        "success_rate": 0.52,
+        "avg_execution_time": 0.301161,
+        "avg_tokens": 150.0,
+        "usage_count": 1
+      },
+      "firecrawl_batch_scrape_research": {
+        "success_rate": 0.0,
+        "avg_execution_time": 0.800394,
+        "avg_tokens": 50.0,
+        "usage_count": 1
+      },
+      "firecrawl_batch_scrape_travel": {
+        "success_rate": 0.15,
+        "avg_execution_time": 0.801275,
+        "avg_tokens": 50.0,
+        "usage_count": 1
+      },
+      "firecrawl_batch_scrape_communication": {
+        "success_rate": 0.0,
+        "avg_execution_time": 0.800399,
+        "avg_tokens": 50.0,
+        "usage_count": 1
+      },
+      "firecrawl_batch_scrape_web_scraping": {
+        "success_rate": 0.0,
+        "avg_execution_time": 0.800137,
+        "avg_tokens": 50.0,
+        "usage_count": 1
+      },
+      "firecrawl_batch_scrape_documentation": {
+        "success_rate": 0.0,
+        "avg_execution_time": 0.801198,
+        "avg_tokens": 50.0,
+        "usage_count": 1
+      },
+      "firecrawl_check_batch_status_research": {
+        "success_rate": 0.15,
+        "avg_execution_time": 0.201362,
+        "avg_tokens": 30.0,
+        "usage_count": 1
+      },
+      "firecrawl_check_batch_status_travel": {
+        "success_rate": 0.0,
+        "avg_execution_time": 0.201282,
+        "avg_tokens": 30.0,
+        "usage_count": 1
+      },
+      "firecrawl_check_batch_status_communication": {
+        "success_rate": 0.0,
+        "avg_execution_time": 0.200783,
+        "avg_tokens": 30.0,
+        "usage_count": 1
+      },
+      "firecrawl_check_batch_status_web_scraping": {
+        "success_rate": 0.0,
+        "avg_execution_time": 0.201104,
+        "avg_tokens": 30.0,
+        "usage_count": 1
+      },
+      "firecrawl_check_batch_status_documentation": {
+        "success_rate": 0.0,
+        "avg_execution_time": 0.200478,
+        "avg_tokens": 30.0,
+        "usage_count": 1
+      }
+    },
+    "successful_patterns": 0,
+    "context_patterns": 1,
+    "memory_items": 11,
+    "memory_efficiency": 0.0,
+    "memory_pruning_events": 0,
+    "memory_categories": {
+      "tool_patterns": 0,
+      "successful_strategies": 1,
+      "failed_attempts": 10,
+      "context_patterns": 0,
+      "user_preferences": 0
+    },
+    "improvement_metrics": {
+      "total_tasks": 15,
+      "successful_tasks": 15,
+      "avg_execution_time": 0.4342864000000001,
+      "tool_efficiency": 236.58201305074812,
+      "context_optimization": 0.0,
+      "memory_utilization": 0.0
+    },
+    "total_experience": 15
+  },
+  "specialization_by_task": {
+    "research": {
+      "total": 3,
+      "optimal": 0
+    },
+    "travel": {
+      "total": 3,
+      "optimal": 0
+    },
+    "communication": {
+      "total": 3,
+      "optimal": 0
+    },
+    "web_scraping": {
+      "total": 3,
+      "optimal": 3
+    },
+    "documentation": {
+      "total": 3,
+      "optimal": 0
+    }
+  }
+}

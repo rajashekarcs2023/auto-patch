@@ -367,7 +367,12 @@ class SelfImprovingMCPAgent:
     def __init__(self):
         # Import real tools
         from real_mcp_tools import get_all_real_mcp_tools
-        self.tools: Dict[str, MCPTool] = get_all_real_mcp_tools()
+        from additional_mcp_tools import get_additional_mcp_tools
+        
+        # Combine all tools
+        self.tools: Dict[str, MCPTool] = {}
+        self.tools.update(get_all_real_mcp_tools())
+        self.tools.update(get_additional_mcp_tools())
         
         self.tool_learner = ToolSelectionLearner()
         self.context_optimizer = ContextOptimizer()

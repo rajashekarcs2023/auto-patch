@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Evolution - Live Self-Improvement Demo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.4/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(20px);
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #ffd700, #ff6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .control-panel {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .evolution-display {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .task-input-area {
+            margin-bottom: 25px;
+        }
+        
+        .task-input {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .task-input:focus {
+            outline: none;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            transform: translateY(-2px);
+        }
+        
+        .category-select {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        
+        .execute-btn {
+            width: 100%;
+            padding: 18px;
+            border: none;
+            border-radius: 15px;
+            background: linear-gradient(45deg, #ff6b6b, #ffd700);
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+        }
+        
+        .execute-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.6);
+        }
+        
+        .execute-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .demo-suggestions {
+            margin-top: 20px;
+        }
+        
+        .suggestion-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 8px;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .suggestion-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(5px);
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .metric-card {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ffd700, #ff6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .metric-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .evolution-timeline {
+            height: 400px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+        
+        .timeline-event {
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #ffd700;
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateX(-20px);
+            animation: slideIn 0.5s ease forwards;
+        }
+        
+        .timeline-event.memory-analysis {
+            background: rgba(138, 43, 226, 0.2);
+            border-left-color: #8a2be2;
+        }
+        
+        .timeline-event.tool-selection {
+            background: rgba(255, 165, 0, 0.2);
+            border-left-color: #ffa500;
+        }
+        
+        .timeline-event.execution {
+            background: rgba(50, 205, 50, 0.2);
+            border-left-color: #32cd32;
+        }
+        
+        .timeline-event.evolution {
+            background: rgba(255, 215, 0, 0.2);
+            border-left-color: #ffd700;
+        }
+        
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .event-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #ffd700;
+        }
+        
+        .event-details {
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+        
+        .memory-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 12px;
+            border-radius: 8px;
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        
+        .tool-confidence-bars {
+            margin-top: 20px;
+        }
+        
+        .tool-bar {
+            margin-bottom: 15px;
+        }
+        
+        .tool-name {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+            color: #ffd700;
+        }
+        
+        .confidence-bar {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ff6b6b, #ffd700);
+            transition: width 1s ease;
+            border-radius: 4px;
+        }
+        
+        .thinking-indicator {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            color: #ffd700;
+            font-size: 1.1rem;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .phase-indicator {
+            background: rgba(255, 215, 0, 0.2);
+            border: 2px solid #ffd700;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+            display: none;
+        }
+        
+        .chart-container {
+            height: 200px;
+            margin-top: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 15px;
+        }
+        
+        .status-indicator {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: rgba(50, 205, 50, 0.9);
+            border-radius: 25px;
+            font-weight: bold;
+            z-index: 1000;
+        }
+        
+        .performance-boost {
+            background: rgba(255, 215, 0, 0.3);
+            border: 1px solid #ffd700;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="status-indicator" id="connectionStatus">🟢 Connected</div>
+    
+    <div class="hero">
+        <h1>🧠 Agent Evolution Live Demo</h1>
+        <p>Watch an AI agent learn and improve in real-time through experience, memory, and intelligent adaptation</p>
+    </div>
+    
+    <div class="main-grid">
+        <div class="control-panel">
+            <h2>🎯 Task Execution Control</h2>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-value" id="taskCount">0</span>
+                    <span class="metric-label">Tasks</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-value" id="experiencePoints">0</span>
+                    <span class="metric-label">XP</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-value" id="memoryCount">0</span>
+                    <span class="metric-label">Memories</span>
+                </div>
+            </div>
+            
+            <div class="phase-indicator" id="phaseIndicator">
+                🔍 Ready to learn...
+            </div>
+            
+            <div class="thinking-indicator" id="thinkingIndicator">
+                🤔 Agent is thinking and evolving...
+            </div>
+            
+            <div class="task-input-area">
+                <input type="text" class="task-input" id="taskInput" 
+                       placeholder="Enter a task for the agent to learn from...">
+                <select class="category-select" id="categorySelect">
+                    <option value="research">🔍 Research & Information</option>
+                    <option value="travel">✈️ Travel & Booking</option>
+                    <option value="communication">💬 Communication</option>
+                    <option value="web_scraping">🕷️ Web Scraping</option>
+                    <option value="documentation">📚 Documentation</option>
+                </select>
+                <button class="execute-btn" id="executeBtn" onclick="executeTask()">
+                    🚀 Execute & Learn
+                </button>
+            </div>
+            
+            <div class="demo-suggestions">
+                <h3>💡 Try These Demo Tasks:</h3>
+                <div id="suggestionsList"></div>
+            </div>
+            
+            <div class="tool-confidence-bars">
+                <h3>🔧 Tool Confidence Evolution</h3>
+                <div id="toolBars"></div>
+            </div>
+        </div>
+        
+        <div class="evolution-display">
+            <h2>🧬 Real-Time Agent Evolution</h2>
+            
+            <div class="evolution-timeline" id="evolutionTimeline">
+                <div class="timeline-event">
+                    <div class="event-title">🎬 Demo Ready</div>
+                    <div class="event-details">Agent initialized with 31 MCP tools. Ready to learn and evolve!</div>
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="learningChart" width="400" height="150"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const socket = io();
+        let taskCount = 0;
+        let experiencePoints = 0;
+        let memoryCount = 0;
+        let learningData = [];
+        let confidenceChart = null;
+        
+        // Initialize chart
+        const ctx = document.getElementById('learningChart').getContext('2d');
+        confidenceChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [{
+                    label: 'Learning Progress',
+                    data: [],
+                    borderColor: '#ffd700',
+                    backgroundColor: 'rgba(255, 215, 0, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        ticks: { color: 'white' }
+                    },
+                    x: {
+                        ticks: { color: 'white' }
+                    }
+                },
+                plugins: {
+                    legend: { labels: { color: 'white' } }
+                }
+            }
+        });
+        
+        // Socket event handlers
+        socket.on('connect', function() {
+            document.getElementById('connectionStatus').innerHTML = '🟢 Connected';
+            loadDemoSuggestions();
+        });
+        
+        socket.on('task_started', function(data) {
+            taskCount++;
+            updateMetrics();
+            showPhase('🎯 Task Started: ' + data.description);
+            addTimelineEvent('🎯 Task Execution Started', 
+                `Task ${data.task_id}: ${data.description} (${data.category})`, 'execution');
+            setThinking(true);
+        });
+        
+        socket.on('memory_analysis', function(data) {
+            showPhase('🧠 Analyzing Memories...');
+            let details = `Found ${data.memories_found} relevant memories`;
+            if (data.memories.length > 0) {
+                details += ':<br>';
+                data.memories.forEach(mem => {
+                    details += `<div class="memory-item">💾 ${mem.tool} (relevance: ${mem.relevance.toFixed(2)})</div>`;
+                });
+            }
+            addTimelineEvent('🧠 Memory Analysis Complete', details, 'memory-analysis');
+        });
+        
+        socket.on('tool_selection', function(data) {
+            showPhase('🔧 Evolving Tool Selection...');
+            let details = `Selected: <strong>${data.selected_tool}</strong><br>`;
+            details += `Confidence: ${data.confidence_before.toFixed(3)} → Processing...`;
+            if (data.reasoning.memory_influence) {
+                details += '<div class="performance-boost">🚀 Memory boost applied!</div>';
+            }
+            addTimelineEvent('🔧 Tool Selection Evolution', details, 'tool-selection');
+        });
+        
+        socket.on('task_completed', function(data) {
+            experiencePoints = data.total_experience;
+            memoryCount = data.memory_state.total_memories;
+            updateMetrics();
+            
+            showPhase('✅ Task Completed Successfully!');
+            setThinking(false);
+            
+            let details = `<strong>Results:</strong><br>`;
+            details += `Success Score: ${data.result.success_score}%<br>`;
+            details += `Tool: ${data.result.tool_used}<br>`;
+            details += `Experience Gained: +${data.evolution_impact.experience_gained} XP<br>`;
+            
+            if (data.evolution_impact.confidence_delta > 0) {
+                details += '<div class="performance-boost">📈 Tool confidence improved!</div>';
+            }
+            
+            addTimelineEvent('🧬 Agent Evolution Complete', details, 'evolution');
+            
+            // Update learning chart
+            learningData.push(data.result.success_score);
+            updateChart();
+            
+            // Update tool confidence bars
+            updateToolBars(data.evolution_impact.new_tool_confidence, data.result.tool_used);
+            
+            setTimeout(() => showPhase('🔍 Ready for next task...'), 2000);
+        });
+        
+        function executeTask() {
+            const task = document.getElementById('taskInput').value.trim();
+            const category = document.getElementById('categorySelect').value;
+            
+            if (!task) {
+                alert('Please enter a task description');
+                return;
+            }
+            
+            document.getElementById('executeBtn').disabled = true;
+            
+            socket.emit('execute_task', {
+                task_description: task,
+                task_category: category
+            });
+            
+            document.getElementById('taskInput').value = '';
+            
+            setTimeout(() => {
+                document.getElementById('executeBtn').disabled = false;
+            }, 5000);
+        }
+        
+        function loadDemoSuggestions() {
+            socket.emit('get_demo_suggestions');
+        }
+        
+        socket.on('demo_suggestions', function(data) {
+            const list = document.getElementById('suggestionsList');
+            list.innerHTML = '';
+            
+            data.suggestions.forEach(suggestion => {
+                const btn = document.createElement('button');
+                btn.className = 'suggestion-btn';
+                btn.innerHTML = `${getCategoryIcon(suggestion.category)} ${suggestion.task}`;
+                btn.onclick = () => {
+                    document.getElementById('taskInput').value = suggestion.task;
+                    document.getElementById('categorySelect').value = suggestion.category;
+                };
+                list.appendChild(btn);
+            });
+        });
+        
+        function getCategoryIcon(category) {
+            const icons = {
+                'research': '🔍',
+                'travel': '✈️',
+                'communication': '💬',
+                'web_scraping': '🕷️',
+                'documentation': '📚'
+            };
+            return icons[category] || '🔧';
+        }
+        
+        function updateMetrics() {
+            document.getElementById('taskCount').textContent = taskCount;
+            document.getElementById('experiencePoints').textContent = experiencePoints;
+            document.getElementById('memoryCount').textContent = memoryCount;
+        }
+        
+        function showPhase(message) {
+            const indicator = document.getElementById('phaseIndicator');
+            indicator.textContent = message;
+            indicator.style.display = 'block';
+        }
+        
+        function setThinking(thinking) {
+            const indicator = document.getElementById('thinkingIndicator');
+            indicator.style.display = thinking ? 'block' : 'none';
+        }
+        
+        function addTimelineEvent(title, details, type) {
+            const timeline = document.getElementById('evolutionTimeline');
+            const event = document.createElement('div');
+            event.className = `timeline-event ${type}`;
+            event.innerHTML = `
+                <div class="event-title">${title}</div>
+                <div class="event-details">${details}</div>
+            `;
+            timeline.appendChild(event);
+            timeline.scrollTop = timeline.scrollHeight;
+        }
+        
+        function updateChart() {
+            confidenceChart.data.labels.push(`Task ${learningData.length}`);
+            confidenceChart.data.datasets[0].data.push(learningData[learningData.length - 1]);
+            confidenceChart.update();
+        }
+        
+        function updateToolBars(newConfidence, activeTool) {
+            // This would update tool confidence bars - simplified for demo
+            const barsContainer = document.getElementById('toolBars');
+            
+            // Show top 5 tools for demo
+            const tools = ['perplexity_search', 'airbnb_search', 'vapi_create_assistant', 'firecrawl_scrape', 'context7_get_library_docs'];
+            
+            barsContainer.innerHTML = '';
+            
+            tools.forEach(tool => {
+                const isActive = tool === activeTool;
+                const confidence = isActive ? newConfidence : Math.random() * 0.7 + 0.2;
+                
+                const barDiv = document.createElement('div');
+                barDiv.className = 'tool-bar';
+                barDiv.innerHTML = `
+                    <span class="tool-name">${tool} ${isActive ? '🔥' : ''}</span>
+                    <div class="confidence-bar">
+                        <div class="confidence-fill" style="width: ${confidence * 100}%"></div>
+                    </div>
+                `;
+                barsContainer.appendChild(barDiv);
+            });
+        }
+        
+        // Allow Enter key
+        document.getElementById('taskInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                executeTask();
+            }
+        });
+        
+        // Initialize
+        updateMetrics();
+    </script>
+</body>
+</html>

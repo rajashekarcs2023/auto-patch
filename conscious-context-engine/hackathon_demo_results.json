@@ -1,0 +1,107 @@
+{
+  "scenario": "Customer Service Agent Learning",
+  "total_tasks": 10,
+  "learning_progression": [
+    {
+      "task": 1,
+      "tool": "perplexity_search",
+      "confidence": 0.5,
+      "success": true,
+      "score": 0.9,
+      "memories_used": 0
+    },
+    {
+      "task": 2,
+      "tool": "perplexity_search",
+      "confidence": 0.5,
+      "success": true,
+      "score": 0.9,
+      "memories_used": 0
+    },
+    {
+      "task": 3,
+      "tool": "airbnb_search",
+      "confidence": 0.5,
+      "success": true,
+      "score": 0.9,
+      "memories_used": 0
+    },
+    {
+      "task": 4,
+      "tool": "airbnb_search",
+      "confidence": 0.5,
+      "success": true,
+      "score": 0.9,
+      "memories_used": 0
+    },
+    {
+      "task": 5,
+      "tool": "vapi_synthesize",
+      "confidence": 0.5,
+      "success": true,
+      "score": 0.9,
+      "memories_used": 0
+    },
+    {
+      "task": 6,
+      "tool": "vapi_synthesize",
+      "confidence": 0.5,
+      "success": true,
+      "score": 0.9,
+      "memories_used": 0
+    },
+    {
+      "task": 7,
+      "tool": "perplexity_search",
+      "confidence": 0.6142857142857143,
+      "success": true,
+      "score": 0.9,
+      "memories_used": 1
+    },
+    {
+      "task": 8,
+      "tool": "airbnb_search",
+      "confidence": 0.5857142857142857,
+      "success": true,
+      "score": 0.9,
+      "memories_used": 1
+    },
+    {
+      "task": 9,
+      "tool": "vapi_synthesize",
+      "confidence": 0.6523809523809524,
+      "success": true,
+      "score": 0.9,
+      "memories_used": 2
+    },
+    {
+      "task": 10,
+      "tool": "firecrawl_scrape",
+      "confidence": 0.5,
+      "success": true,
+      "score": 0.9,
+      "memories_used": 0
+    }
+  ],
+  "memory_insights": {
+    "total_memories": 10,
+    "total_accesses": 4,
+    "average_utility": 0.035599985420896166,
+    "average_success_rate": 0.32,
+    "age_distribution": {
+      "recent": 10,
+      "medium": 0,
+      "old": 0
+    },
+    "pruning_events": 0,
+    "categories": {
+      "tool_patterns": 0,
+      "successful_strategies": 0,
+      "failed_attempts": 0,
+      "context_patterns": 0,
+      "user_preferences": 10
+    },
+    "memory_efficiency": 0.011391995334686773
+  },
+  "demo_completed": "2025-11-01T20:09:37.199117"
+}

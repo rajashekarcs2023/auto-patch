@@ -1,0 +1,46 @@
+{
+  "total_tasks": 10,
+  "memory_insights": {
+    "total_memories": 10,
+    "total_accesses": 0,
+    "average_utility": 0.0,
+    "average_success_rate": 0.0,
+    "age_distribution": {
+      "recent": 10,
+      "medium": 0,
+      "old": 0
+    },
+    "pruning_events": 0,
+    "categories": {
+      "tool_patterns": 0,
+      "successful_strategies": 0,
+      "failed_attempts": 0,
+      "context_patterns": 0,
+      "user_preferences": 10
+    },
+    "memory_efficiency": 0.0
+  },
+  "tool_performance": {
+    "perplexity_search_research": {
+      "successes": 4,
+      "total": 4,
+      "avg_score": 0.8
+    },
+    "airbnb_search_travel": {
+      "successes": 3,
+      "total": 3,
+      "avg_score": 0.8000000000000002
+    },
+    "vapi_synthesize_communication": {
+      "successes": 2,
+      "total": 2,
+      "avg_score": 0.8
+    },
+    "firecrawl_scrape_web_scraping": {
+      "successes": 1,
+      "total": 1,
+      "avg_score": 0.8
+    }
+  },
+  "timestamp": "2025-11-01T20:04:51.080054"
+}

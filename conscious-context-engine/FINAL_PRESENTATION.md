@@ -1,9 +1,24 @@
-# 🧠 Self-Improving MCP Agent
-## Revolutionary Tool Learning System
+# 🧠 Conscious Context Engine
+## Self-Improving AI Agent with Memory Evolution
 
 ---
 
-## 🎯 THE PROBLEM WE SOLVED
+## 🎯 PROJECT OVERVIEW
+
+**Conscious Context Engine** is a revolutionary self-improving AI agent that gets smarter through experience rather than traditional model retraining. Unlike conventional AI systems that require expensive GPU training cycles, our agent evolves through intelligent memory management and context optimization.
+
+### 🚀 The Core Innovation
+
+Most AI agents are static - they perform the same way on day 1 as they do on day 1000. Our agent **learns and improves continuously** by:
+
+1. **Smart Memory Management** - Stores successful strategies and prunes ineffective ones
+2. **Experience-Based Learning** - Selects better tools based on past performance  
+3. **Context Evolution** - Adapts responses using accumulated wisdom
+4. **Zero Retraining** - Improves without expensive model updates
+
+---
+
+## 💡 THE PROBLEM WE SOLVED
 
 **Current agents waste time using wrong tools and never learn from experience**
 
@@ -12,13 +27,7 @@
 - ❌ Same mistakes repeated over and over
 - ❌ No memory of what worked before
 
----
-
-## 💡 OUR SOLUTION
-
-**Self-improving agent that learns optimal tool selection through experience**
-
-### Core Innovation: **Tool Intelligence Learning**
+### Core Innovation: **Memory-Based Intelligence Evolution**
 
 1. **🎯 Tool Selection Learning**: Learns which tools work best for different task types
 2. **🧠 Smart Memory Evolution**: Automatically identifies and removes useless memories
@@ -30,11 +39,13 @@
 
 ## 🔧 TECHNICAL IMPLEMENTATION
 
-### **22 Real MCP Tools Integrated**
+### **31 Real MCP Tools Integrated**
 - **Firecrawl**: 8 tools (scraping, crawling, extraction)
+- **Real Firecrawl MCP**: 6 tools (advanced scraping, batch processing, AI extraction)
 - **Vapi**: 8 tools (voice calls, assistants, telephony)  
 - **Perplexity**: 4 tools (search, research, reasoning)
 - **Airbnb**: 2 tools (search, property details)
+- **Context7**: 3 tools (documentation, library resolution, code examples)
 
 ### **Self-Improvement Architecture**
 ```
@@ -55,7 +66,7 @@ Task Request → Tool Selection → Execution → Outcome Evaluation → Learnin
 
 ### **What You'll See:**
 
-1. **🆕 Initial State**: Agent has 22 tools, zero knowledge
+1. **🆕 Initial State**: Agent has 31 tools, zero knowledge
 2. **📚 Learning Phase**: Execute tasks across different categories
 3. **📈 Improvement**: Watch tool confidence scores increase
 4. **🧠 Smart Memory**: Successful patterns stored, useless memories automatically removed
@@ -66,7 +77,8 @@ Task Request → Tool Selection → Execution → Outcome Evaluation → Learnin
 - **Research**: "Research latest AI developments" → learns to prefer Perplexity tools
 - **Travel**: "Find hotels in San Francisco" → learns to prefer Airbnb tools  
 - **Communication**: "Create voice message" → learns to prefer Vapi tools
-- **Web Scraping**: "Extract website data" → learns to prefer Firecrawl tools
+- **Web Scraping**: "Extract website data" → learns to prefer Firecrawl/Real Firecrawl tools
+- **Documentation**: "Get React hooks documentation" → learns to prefer Context7 tools
 
 ### **Measurable Improvements:**
 - Tool confidence scores: 0.500 → 0.800+ for specialized tasks
@@ -147,7 +159,7 @@ Task Request → Tool Selection → Execution → Outcome Evaluation → Learnin
 5. **🌟 Broad Impact**: Applicable to any domain using multiple tools
 
 ### **Technical Achievements:**
-- ✅ 22 real MCP tools integrated
+- ✅ 31 real MCP tools integrated
 - ✅ Self-improving tool selection system
 - ✅ Memory and learning persistence
 - ✅ Real-time performance tracking
